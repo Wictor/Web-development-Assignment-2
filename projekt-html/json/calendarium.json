@@ -1,0 +1,29 @@
+{
+  "events": [
+    {
+      "calDate": "11 December 2018",
+      "text": "LinkedIn Workshop",
+      "time": "10:00"
+    },
+    {
+      "calDate": "13 December 2018",
+      "text": "Attraktiv arbetsgivare/Employee Branding Workshop",
+      "time": "09:00"
+    },
+    {
+      "calDate": "15 December 2018",
+      "text": "IT-projekt ledare: sista ansökninsdatum",
+      "time": "12:00"
+    },
+    {
+      "calDate": "16 December 2018",
+      "text": "Språkträff på Campus Mölndal",
+      "time": "17:00"
+    },
+    {
+      "calDate": "20 December 2018",
+      "text": "Mingelkväll Språkvän",
+      "time": "18:00"
+    }
+  ]
+}
