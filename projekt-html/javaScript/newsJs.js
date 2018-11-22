@@ -1,11 +1,11 @@
 let xmlhttp, data, x, url, newContent = "";
 
 xmlhttp = new XMLHttpRequest();
-url = "news.php";
+url = 'php/news.php';
 
-xmlhttp.open("GET", url, true);
+
+xmlhttp.open("GET", url , true);
 xmlhttp.send();
-
 
 xmlhttp.onreadystatechange = function()
 {
@@ -13,7 +13,7 @@ xmlhttp.onreadystatechange = function()
     {
         data = JSON.parse(this.responseText);
 
-        for (x in data.reverse())
+        for (x in data)
         {
             newContent += '<article class="newsArticle">';
             newContent += '<img src="' + data[x].ArticleImage + '" ';

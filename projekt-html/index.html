@@ -216,6 +216,22 @@
 <section id="news">
 
 </section>
+
+<!--- Modal for subscribe-->
+<button id="ModalButton">Subscribe</button>
+<div id="subscribeModal" class="modal">
+    <div class="modal-content">
+        <span class="closeBtn">&times;</span>
+        <form action="php/subscribe.php" method="post" id="subscribeForm">
+            <label>Email:</label>
+            <p><input required type="email" id="subscriberEmail" name="subscriberEmail" placeholder="Your email:"></p>
+            <input type="submit" value="Subscribe" id="subscribeSubmit">
+            <input type="submit" value="Close" id="subscribeClose">
+            <p id="submitedText"></p>
+        </form>
+    </div>
+</div>
+
 <footer>
     <section>
         <p> CAMPUS MÖLNDAL <br>
@@ -246,6 +262,9 @@
 
 </footer>
 
-
+<script src="javaScript/jquery-3.3.1.min.js"></script>
+<script src="javaScript/subscriberJs.js"></script>
+<script src="javaScript/subscribeModal.js"></script>
+<script src="javaScript/newsJs.js"></script>
 </body>
 </html>

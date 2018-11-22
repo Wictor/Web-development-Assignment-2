@@ -343,5 +343,57 @@ button:hover {
 
 /*Lucie end!*/
 
+/*Wictor for now */
+#news {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+}
+.newsImage {
+    max-width: 100%;
 
+}
+.newsText {
+    max-width: 100%;
+}
+article p {
+    display: inline;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.modal-content {
+    background-color: #f4f4f4;
+    margin: 20% auto;
+    padding: 20px;
+    width: 80%;
+    color: black;
+}
+.closeBtn {
+    color: black;
+    float: right;
+    font-size: 30px;
+}
+.closeBtn:hover,.closeBtn:focus {
+    color: #790009;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1025px) {
+    #news {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+/* Wictor end, please someone fix this i'm sad trying to read all of this (this file) */
 
