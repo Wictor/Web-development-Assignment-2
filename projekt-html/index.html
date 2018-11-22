@@ -4,6 +4,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="javaScript/jsnav.js"></script>
+    <script src="javaScript/scriptslide.js"></script>
+
 
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -55,7 +57,54 @@
     <script src="javaScript/jsnav.js"></script>
 
 </header>
-<section id="slideshow">
+    <section class="slideshow" id="slideshow">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="headtext">SFI</div>
+                <img src="images/img1.jpg" class="img-slide">
+                <div class="text">
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="headtext">Yrkesutbildning</div>
+                <img src="images/img2.jpg" class="img-slide">
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="headtext">Gymnasial vuxenutbildning</div>
+                <img src="images/img3.jpg" class="img-slide">
+                <div class="text"></div>
+            </div>
+
+
+            <div class="mySlides fade">
+                <div class="headtext">Yrkeshögskola</div>
+
+                <img src="images/img4.jpg" class="img-slide">
+                <div class="text"></div>
+            </div>
+
+
+            <div class="mySlides fade">
+                <div class="headtext">IT projektledare - <br>ansök senast 15/12!</div>
+                <img src="images/img5.jpg" class="img-slide">
+                <div class="text"></div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+
+    </section>
 
 
 </section>
