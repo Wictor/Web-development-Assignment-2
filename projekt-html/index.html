@@ -3,6 +3,9 @@
 <head>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/basics.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script src="jsnav.js"></script>
 
 
 
@@ -15,41 +18,74 @@
 </head>
 <body>
 <header>
+
     <nav class="navbar">
-        <span class="navbar-toggle" id="js-navbar-toggle">
-            <i class="fas fa-bars"></i>
-        </span>
-        <a class="logo" href="#"><img src="images/campuslogo1.png"></a>
+        <span class="opennav" onclick="openNav()">&#9776;</span>
+        <a class="logo1" href="#"><img src="images/campuslogo2.png"></a>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times; Close</a>
+            <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/reviewer-male-filled.png"/><p>Ansök</p></a>
+
+            <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/graduation-cap-filled.png"/> <p>Utbildn..</p></a>
+            <a href="#" class="dropdown-icon"><img src="https://img.icons8.com/metro/30/ffffff/expand-arrow.png" onclick="myFunction('utb-links')"/></a>
+            <div id="utb-links">
+                <a href="#">Yrkeshögskola</a>
+                <a href="#">Grundläggande Gymna...</a>
+                <a href="#">SFI</a>
+                <a href="#">Företags Utbildningar</a>
+                <a href="#">Alla Utbildningar</a>
+
+
+
+            </div>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <div id="main">
+
+        </div>
 
         <ul class="main-nav" id="js-menu">
+            <a class="logo" href="#"><img src="images/campuslogo1.png"></a>
             <li>
-                <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/reviewer-male-filled.png"/><p>Ansök</p></a>
-
-            </li>
-            <li>
-                <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/graduation-cap-filled.png" onclick="myFunction('utb-links')" /> <p>Utbildn..</p></a>
-                <div id="utb-links">
-                    <a href="#news">News</a>
-                    <a href="#contact">Contact</a>
-                    <a href="#about">About</a>
+                <div class="hover-nav-links">
+                    <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/reviewer-male-filled.png"/><p>Ansök</p></a>
                 </div>
-
+            </li>
+            <li class="utb-li">
+                <div class="hover-nav-links">
+                    <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/graduation-cap-filled.png" onclick="myFunction('utb-linkspc')"/> <p>Utbildn..</p></a>
+                </div>
+                <div id="utb-linkspc">
+                    <a href="#">Yrkeshögskola</a>
+                    <a href="#">Grundläggande Gymna...</a>
+                    <a href="#">SFI</a>
+                    <a href="#">Företags Utbildningar</a>
+                    <a href="#">Alla Utbildningar</a>
+                </div>
             </li>
             <li>
-                <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/school-filled.png"/><p>Studier</p></a>
-
+                <div class="hover-nav-links">
+                    <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/school-filled.png"/><p>Studier</p></a>
+                </div>
             </li>
             <li>
-                <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/company-filled.png"/><p>Företag</p></a>
-
+                <div class="hover-nav-links">
+                    <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/company-filled.png"/><p>Företag</p></a>
+                </div>
             </li>
             <li>
-                <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/phone-filled.png"/><p>Kontakt</p></a>
+                <div class="hover-nav-links">
 
+                    <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/phone-filled.png"/><p>Kontakt</p></a>
+                </div>
             </li>
             <li>
-                <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/search-filled.png"/><p>Sök</p></a>
-
+                <div class="hover-nav-links">
+                    <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/search-filled.png"/><p>Sök</p></a>
+                </div>
             </li>
         </ul>
     </nav>

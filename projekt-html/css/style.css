@@ -1,15 +1,37 @@
 /* Joshua css navbar */
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     list-style-type: none;
 }
+.logo {
+    display: none;
+}
+#utb-links {
+    position: relative;
+    background-image: linear-gradient(200deg, #C33E47  0%, #ff757a 100%);
+    display: none;
+    width: 100%;
+}
+.dropdown-icon {
+    position: absolute;
+    margin-top: -80px;
+    margin-left: 70%;
+}
 
-body {
-    font-family: 'Josefin Sans', sans-serif;
-    background-color: lightgreen; /* Joshua's was black, just testing cause my text is black. Im sorry, Lucie*/
-
+#utb-links a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+#utb-links a:hover {
+    background-color: #54E97B;
 }
 
 .navbar {
@@ -23,65 +45,149 @@ body {
 .main-nav {
     display: none;
     margin-top: 50px;
+    padding: 0;
 }
 
 .nav-links  {
-    display: inline-block;
-    margin-left: 40%;
-    text-align: center;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     color: white;
+}
+.nav-links p {
+    color: white;
+    font-size: 20px;
+    float: right;
+    margin-right: 30%;
 
 }
 .nav-links :hover {
+    /*  transform: scale(1.2); */
+}
+.hover-nav-links :hover img{
     transform: scale(1.2);
 }
-.image-text {
-    color: white;
-    text-align: left;
-    margin-left: 41%;
-    font-family: 'Montserrat', sans-serif;
+.hover-nav-links :hover p {
+    transform: scale(1.2);
 }
-.image-text h3 {
-    color: white;
-    text-align: left;
-    font-family: 'Montserrat', sans-serif;
-}
-
 .main-nav li {
+    margin-left: 22px;
 }
 
-.logo {
-    display: inline-block;
-    margin-top: 10px;
-    margin-left: 70px;
+.logo1 {
+    display: block;
+    text-align: center;
+    margin-top: -30px;
 }
-
-.navbar-toggle {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    cursor: pointer;
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 40px;
-}
-
 .active {
     display: block;
 }
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
 
-@media screen and (min-width: 1128px) {
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+.opennav {
+    display: flex;
+    margin-right: 5vh;
+    justify-content: flex-end;
+    cursor: pointer;
+    font-size: 40px;
+
+}
+
+@media screen and (min-width: 1126px) {
+    #utb-linkspc {
+        position: absolute;
+        margin-top: 20px;
+        display: none;
+
+    }
+
+    #utb-linkspc a {
+        color: white;
+        background-color: #ff757a;
+        padding: 15px 50px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    #utb-linkspc a:hover {
+        background-color: #54E97B;
+    }
+
+    .opennav {
+
+        display: none;
+
+    }
+
+    .sidenav {
+        display: none;
+    }
+
+    #main {
+        display: none;
+    }
+
+    .nav-links {
+        margin-left: 20px;
+        margin-right: 0;
+        padding: 0px 40px;
+        justify-content: flex-end;
+
+    }
+
+    .utb-li {
+        z-index: 2;
+    }
+
     .image-text {
         display: none;
 
     }
+
     .navbar {
         display: flex;
         justify-content: space-between;
         padding-bottom: 0;
         height: 200px;
         align-items: center;
+        width: 100%;
     }
 
     .main-nav {
@@ -89,32 +195,53 @@ body {
         margin-right: 30px;
         flex-direction: row;
         justify-content: flex-end;
+
     }
 
     .main-nav li {
-        margin: 0;
+        margin-right: 22px
+    }
+
+    #utb-links {
+        position: absolute;
+        margin-top: 10%;
+        margin-left: -790px;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
     }
 
     .nav-links {
+        position: relative;
         padding: 40px;
         text-align: center;
         text-decoration: none;
         font-family: 'Montserrat', sans-serif;
         color: white;
+
+    }
+
+    .nav-links p {
+        font-size: 20px;
+        float: none;
+        margin-left: 35%;
+
     }
 
     .logo {
+        display: block;
         margin-top: 0;
+        margin-left: 50px;
+        margin-bottom: 10px;
+    }
+
+    .logo1 {
+        display: none;
     }
 
     .navbar-toggle {
         display: none;
     }
 
-    .logo:hover,
-    .nav-links:hover {
-        color: rgba(255, 255, 255, 1);
-    }
 }
 /* Joshua css navbar */
 
