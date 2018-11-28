@@ -442,7 +442,7 @@ body {
   }
 }
 
-.modal {
+#modal {
   display: none;
   position: fixed;
   z-index: 1;
@@ -453,19 +453,19 @@ body {
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.6);
 
-  .modal-content {
+  #modal-content {
     background-color: #f4f4f4;
     margin: 20% auto;
     padding: 20px;
     width: 80%;
     color: black;
   }
-  .closeBtn {
+  #closeBtn {
     color: black;
     float: right;
     font-size: 30px;
   }
-  .closeBtn:hover, .closeBtn:focus {
+  #closeBtn:hover, .closeBtn:focus {
     color: #790009;
     text-decoration: none;
     cursor: pointer;

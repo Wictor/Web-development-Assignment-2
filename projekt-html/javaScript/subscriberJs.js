@@ -1,21 +1,20 @@
-$(function () {
+$( document ).ready(function() {
     let form = $('#subscribeForm');
 
-    $(form).submit(function (e) {
+    $(document).on('submit', form, function(e) {
         e.preventDefault();
 
-        let formData = $(form).serialize();
+        let formData = $('#subscribeForm').serialize();
 
-            $.ajax({
-                type: "POST",
-                url: $(form).attr('action'),
-                data: formData
-            })
-                .done(function () {
+        $.ajax({
+            type: "POST",
+            url: "php/subscribe.php",
+            data: formData
+        }).done(function () {
+                $('#subscriberEmail').val('');
+                document.getElementById('submitedText').innerHTML = ('You have been added');
 
-                    $('#subscriberEmail').val('');
-                    $('#submitedText').innerHTML = ('You have been added');
 
-                })
-    })
+            });
+    });
 });

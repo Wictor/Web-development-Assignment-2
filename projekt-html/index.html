@@ -156,10 +156,9 @@
 
 
 <section id="grid-container-option">
+
     <article class="option" id="testOption">
-
-        <h1> <a href="#"> Gör testet! </a> </h1>
-
+        <button class="modalButton" id="test">Gör testet!</button>
     </article>
 
 
@@ -228,18 +227,14 @@
 
 </section>
 
-<!--- Modal for subscribe-->
-<button id="ModalButton">Subscribe</button>
-<div id="subscribeModal" class="modal">
-    <div class="modal-content">
-        <span class="closeBtn">&times;</span>
-        <form action="php/subscribe.php" method="post" id="subscribeForm">
-            <label>Email:</label>
-            <p><input required type="email" id="subscriberEmail" name="subscriberEmail" placeholder="Your email:"></p>
-            <input type="submit" value="Subscribe" id="subscribeSubmit">
-            <input type="submit" value="Close" id="subscribeClose">
-            <p id="submitedText"></p>
-        </form>
+<button class="modalButton" id="subscribe">Subscribe</button>
+
+<!--- Modal-->
+<div id="modal">
+    <div id="modal-content">
+        <span id="closeBtn">&times;</span>
+        <div id="modal-update">
+        </div>
     </div>
 </div>
 
@@ -280,7 +275,7 @@
 <script src="javaScript/reviewslide.js"></script>
 <script src="javaScript/jquery-3.3.1.min.js"></script>
 <script src="javaScript/subscriberJs.js"></script>
-<script src="javaScript/subscribeModal.js"></script>
+<script src="javaScript/modal.js"></script>
 <script src="javaScript/newsJs.js"></script>
 </body>
 </html>
