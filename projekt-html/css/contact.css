@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+#contact {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  position: center;
+  grid-gap: 15px 50px; }
+  #contact h2 {
+    margin-top: 0px; }
+
+@media screen and (min-width: 1025px) {
+  #contact {
+    grid-template-columns: 1fr 1fr; }
+
+  #contacthead {
+    margin: 30px;
+    text-align: center; } }
+
+/*# sourceMappingURL=contact.css.map */
