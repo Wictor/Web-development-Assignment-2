@@ -118,7 +118,7 @@ body {
 }
 /* Joshua css navbar */
 
-/* Janna slideshow */
+/* Janna slideshow              -- has been added to scss, no desktop settings available so far:
 
 .img-slide {
     width: 100%;
@@ -214,7 +214,7 @@ body {
 }
 /* janna slideshow */
 
-/* alez */
+/* alex -- has been added to scss:
 
 .footer_two{grid-column-start: 3;
     grid-column-end: 1;
@@ -228,9 +228,10 @@ body {
     margin-right: auto;
 
 
-}
+} */
 
-/* Lucie - style utbildning */
+/* Lucie - style welcome -- has been added to scss:
+
 #header-education {
     margin: 0 100px 0 100px;
 }
@@ -272,7 +273,7 @@ a {
 #it:hover {
     /*box-shadow: 0 0 50px 1px hsla(209, 53%, 16%, 0.7);*/
     /*transform: scale(1.05);*/
-    /*height: 110px;*/
+    /*height: 110px;
 }
 #language {
     background: linear-gradient(hsla(358, 100%, 73%, 0.5), hsla(358, 100%, 73%, 0.5)), url("../images/sprak.jpg") center no-repeat;
@@ -314,9 +315,9 @@ button:hover {
 }
 .square {
 
-}
+}*/
 
-/*@media screen and (min-width: 1024px) {
+/*@media screen and (min-width: 1024px) {   -- has been changed, therefore not added to scss:
     .grid-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -327,7 +328,7 @@ button:hover {
     }
 }*/
 
-/*Lucie - style recommendation and calendar*/
+/*Lucie - style recommendation and calendar -- have been added to scss:
 .myReview{display: none;}
 
 #grid-container-review {
@@ -341,9 +342,9 @@ button:hover {
     padding: 0 20px 20px 20px;
 }
 
-/*Lucie end!*/
+Lucie end!*/
 
-/*Wictor for now */
+/*Wictor for now -- has been added to scss:
 #news {
     display: grid;
     grid-template-columns: 1fr;
@@ -390,10 +391,10 @@ article p {
     cursor: pointer;
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1025px) { --has been added to scss MQ
     #news {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
-/* Wictor end, please someone fix this i'm sad trying to read all of this (this file) */
+/* Wictor end, please someone fix this i'm sad trying to read all of this (this file) -- I'm on it! Lucie*/
 

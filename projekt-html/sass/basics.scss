@@ -1,0 +1,278 @@
+//mobile first:
+
+@import "simplevariables";
+
+
+body {
+  background-color: $background-color;
+  margin: $margin;
+  p  {
+    font-family: $font-text;
+    font-size: $p-mobile;
+    color: $color-text;
+    text-align: justify;
+  }
+  h1 {
+    font-family: $font-headline;
+    font-size: $h-mobile;
+    color: $color-link
+  }
+
+
+}
+
+.navbar {} // haven't added as it still might be in progress
+
+
+.slideshow {
+  .img-slide {
+    width: 100%;
+  }
+
+  .slideshow-container {
+    max-width: 75%;
+    position: relative;
+    margin: auto ;
+    padding: 50px;
+  }
+
+  .mySlides {
+    display: none;
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 2s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  .text p {
+    font-family: sans-serif;
+    color: #6E6A6A;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 100%;
+    text-align: right;
+  }
+
+  .headtext {
+    font-family: sans-serif;
+    color: #6E6A6A;
+    font-size: 45px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 60px;
+    left: 60px;
+  }
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 2s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .7}
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .7}
+    to {opacity: 1}
+  }
+}
+
+
+#welcome {
+  margin: 0 10px 0 10px;
+
+  .centered {
+    text-align: center;
+  }
+  #grid-container-option {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    position: center;
+
+    .option {
+      margin: 10px;
+      padding: 10px;
+      max-width: 768px;
+      height: 100px;
+    }
+
+    #testOption {
+      background-image: url("../images/img2.jpg");
+    }
+
+    #contactOption {
+      background: linear-gradient(hsla(358, 100%, 73%, 0.0), hsla(358, 100%, 73%, 0.0)), url("../images/img4.jpg") center no-repeat;
+      height: 80%;
+      width: auto;
+    }
+    #contactOption:hover {
+      transition: width 3s;
+    }
+  }
+}
+
+#percentil {
+    padding: 10px;
+
+      p {
+        text-align: center;
+        }
+      h1 {
+        text-align: center;
+        font-size: 25px;
+        }
+    #mySquare1 {
+      background-color: hsla(358, 77%, 62%, 0.1); //random color for now
+    }
+
+    #mySquare2 {
+      background-color: hsla(136, 77%, 62%,0.1); //random color for now
+    }
+
+    #mySquare3 {
+      background-color: hsla(350, 95%, 52%, 0.1); //random color for now
+    }
+
+}
+
+
+#grid-container-review {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 1fr;
+    margin: 10px;
+    padding: 10px;
+
+  .myReview{
+    display: none;
+  }
+  .reviewPart {
+    padding: 0 20px 20px 20px;
+  }
+
+}
+
+
+#grid-container-calender {}
+
+
+#news {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  padding: 10px;
+
+  .newsImage {
+    max-width: 100%;
+  }
+  .newsText {
+    max-width: 100%;
+  }
+  article p {
+    display: inline;
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+
+  .modal-content {
+    background-color: #f4f4f4;
+    margin: 20% auto;
+    padding: 20px;
+    width: 80%;
+    color: black;
+  }
+  .closeBtn {
+    color: black;
+    float: right;
+    font-size: 30px;
+  }
+  .closeBtn:hover, .closeBtn:focus {
+    color: #790009;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+
+#footer {
+  .footer_two{
+    grid-column-start: 3;
+    grid-column-end: 1;
+  }
+  .start_img2{
+    max-width: 100%;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+//tablet 768px-1024px
+@media screen and (min-width: 768px) and (max-width: 1024px){}
+
+//desktop >1025px
+@media screen and (min-width: 1025px) {
+  #news {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+
+
+
+
+

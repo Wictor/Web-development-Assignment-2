@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="javaScript/jsnav.js"></script>
-    <script src="javaScript/scriptslide.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/basics.css">
+
 
 
     <meta charset="UTF-8">
@@ -34,7 +33,7 @@
                     <a href="#contact">Contact</a>
                     <a href="#about">About</a>
                 </div>
-                </a>
+
             </li>
             <li>
                 <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/school-filled.png"/><p>Studier</p></a>
@@ -54,9 +53,9 @@
             </li>
         </ul>
     </nav>
-    <script src="javaScript/jsnav.js"></script>
 
 </header>
+
     <section class="slideshow" id="slideshow">
         <div class="slideshow-container">
             <div class="mySlides fade">
@@ -107,62 +106,49 @@
     </section>
 
 
-</section>
 <!--- Lucie utbildningar-->
-<section id="header-education">
+<section id="welcome">
         <h1 class="centered"> Välkommen till Campus Mölndal</h1>
         <p> Campus Mölndal är en samlingsplats för all vuxenutbildning inom Mölndals stad.
             Hos oss kan du studera på alla nivåer - från kurser motsvarande grundskola, till
             eftergymnasial nivå i form av yrkeshögskola. Du kan också få råd, information och stöd
             i planering av dina studier av våra studie- och yrkesvägledare.</p>
-
-
-        <button onsubmit="">
-            <p>   Testa sina kunskaper </p>
-        </button>
-
-        <p> Vi har tre största utbildningsområden: </p>
     </section>
 
-    <section class="grid-container">
-        <article class="education" id="it">
-
-            <h1> <a href="#"> Data och IT </a> </h1>
-            <!---<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad hic ipsum praesentium qui suscipit! </p>--->
-
-        </article>
+<p> Nästa steg? </p>
 
 
-        <article class="education" id="language">
+<section id="grid-container-option">
+    <article class="option" id="testOption">
 
-            <h1> <a href="#"> Språk </a> </h1>
-            <!---<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa dolorum facere harum impedit.</p>--->
+        <h1> <a href="#"> Test! </a> </h1>
 
-        </article>
+    </article>
 
-        <article class="education" id="care">
 
-            <h1> <a href="#"> Vård och hälsa </a> </h1>
-            <!---<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium cumque dolorum ducimus.</p>--->
+    <article class="option" id="contactOption">
 
-        </article>
-    </section>
+        <h1> <a href="#"> Kontakta oss </a> </h1>
 
-    <section id="percentil">
-        <div class="square">
-            <h1> 84%</h1>
-            <p> Får jobb efter vo-examen </p>
-        </div>
+    </article>
 
-        <div class="square">
-            <h1> 81%</h1>
-            <p> Av SFI-eleverna rekommenderar oss </p>
-        </div>
+</section>
 
-        <div class="square">
-            <h1> 100%</h1>
-            <p> Behöriga lärare </p>
-        </div>
+<section id="percentil">
+    <div class="mySquare" id="mySquare1">
+        <h1> 84%</h1>
+        <p> Får jobb efter vo-examen </p>
+    </div>
+
+    <div class="mySquare" id="mySquare2">
+        <h1> 81%</h1>
+        <p> Av SFI-eleverna rekommenderar oss </p>
+    </div>
+
+    <div class="mySquare" id="mySquare3">
+        <h1> 100%</h1>
+        <p> Behöriga lärare </p>
+    </div>
 
 </section>
 
@@ -198,9 +184,9 @@
 
     <div id="grid-container-calender">
 
-        <section id="upcomingEvents">
+        <section id="upcomingEvents"> <!-- loads event data from json file through javascript -->
 
-        </section> <!-- loads event data from json file through javascript -->
+        </section>
 
         <button class="button"> Visa mer </button>
     </div>
@@ -209,8 +195,7 @@
 
 
 
-<script src="javaScript/calendarium.js"></script>
-<script src="javaScript/reviewslide.js"></script>
+
 <!--- end Lucie section recommendation and calendar-->
 
 <section id="news">
@@ -232,7 +217,7 @@
     </div>
 </div>
 
-<footer>
+<footer id="footer">
     <section>
         <p> CAMPUS MÖLNDAL <br>
             Vägledningsexpedition <br>
@@ -262,6 +247,11 @@
 
 </footer>
 
+
+<script src="javaScript/jsnav.js"></script>
+<script src="javaScript/scriptslide.js"></script>
+<script src="javaScript/calendarium.js"></script>
+<script src="javaScript/reviewslide.js"></script>
 <script src="javaScript/jquery-3.3.1.min.js"></script>
 <script src="javaScript/subscriberJs.js"></script>
 <script src="javaScript/subscribeModal.js"></script>

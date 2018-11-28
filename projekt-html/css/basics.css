@@ -1,3 +1,185 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+body {
+  background-color: #ffffff;
+  margin: 30px; }
+  body p {
+    font-family: "Open sans", sans-serif;
+    font-size: 18px;
+    color: #000000;
+    text-align: justify; }
+  body h1 {
+    font-family: "Palatino", serif;
+    font-size: 30px;
+    color: #E85459; }
 
+.slideshow .img-slide {
+  width: 100%; }
+.slideshow .slideshow-container {
+  max-width: 75%;
+  position: relative;
+  margin: auto;
+  padding: 50px; }
+.slideshow .mySlides {
+  display: none; }
+.slideshow .prev, .slideshow .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 2s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none; }
+.slideshow .next {
+  right: 0;
+  border-radius: 3px 0 0 3px; }
+.slideshow .prev:hover, .slideshow .next:hover {
+  background-color: rgba(0, 0, 0, 0.8); }
+.slideshow .text p {
+  font-family: sans-serif;
+  color: #6E6A6A;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 100%;
+  text-align: right; }
+.slideshow .headtext {
+  font-family: sans-serif;
+  color: #6E6A6A;
+  font-size: 45px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 60px;
+  left: 60px; }
+.slideshow .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 2s ease; }
+.slideshow .active, .slideshow .dot:hover {
+  background-color: #717171; }
+.slideshow .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s; }
+@-webkit-keyframes fade {
+  from {
+    opacity: .7; }
+  to {
+    opacity: 1; } }
+@keyframes fade {
+  from {
+    opacity: .7; }
+  to {
+    opacity: 1; } }
+#welcome {
+  margin: 0 10px 0 10px; }
+  #welcome .centered {
+    text-align: center; }
+  #welcome #grid-container-option {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    position: center; }
+    #welcome #grid-container-option .option {
+      margin: 10px;
+      padding: 10px;
+      max-width: 768px;
+      height: 100px; }
+    #welcome #grid-container-option #testOption {
+      background-image: url("../images/img2.jpg"); }
+    #welcome #grid-container-option #contactOption {
+      background: linear-gradient(rgba(255, 117, 122, 0), rgba(255, 117, 122, 0)), url("../images/img4.jpg") center no-repeat;
+      height: 80%;
+      width: auto; }
+    #welcome #grid-container-option #contactOption:hover {
+      transition: width 3s; }
+
+#percentil {
+  padding: 10px; }
+  #percentil p {
+    text-align: center; }
+  #percentil h1 {
+    text-align: center;
+    font-size: 25px; }
+  #percentil #mySquare1 {
+    background-color: rgba(233, 83, 88, 0.1); }
+  #percentil #mySquare2 {
+    background-color: rgba(83, 233, 123, 0.1); }
+  #percentil #mySquare3 {
+    background-color: rgba(249, 16, 55, 0.1); }
+
+#grid-container-review {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 1fr;
+  margin: 10px;
+  padding: 10px; }
+  #grid-container-review .myReview {
+    display: none; }
+  #grid-container-review .reviewPart {
+    padding: 0 20px 20px 20px; }
+
+#news {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  padding: 10px; }
+  #news .newsImage {
+    max-width: 100%; }
+  #news .newsText {
+    max-width: 100%; }
+  #news article p {
+    display: inline; }
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6); }
+  .modal .modal-content {
+    background-color: #f4f4f4;
+    margin: 20% auto;
+    padding: 20px;
+    width: 80%;
+    color: black; }
+  .modal .closeBtn {
+    color: black;
+    float: right;
+    font-size: 30px; }
+  .modal .closeBtn:hover, .modal .closeBtn:focus {
+    color: #790009;
+    text-decoration: none;
+    cursor: pointer; }
+
+#footer .footer_two {
+  grid-column-start: 3;
+  grid-column-end: 1; }
+#footer .start_img2 {
+  max-width: 100%;
+  height: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+@media screen and (min-width: 1025px) {
+  #news {
+    grid-template-columns: 1fr 1fr 1fr; } }
 
 /*# sourceMappingURL=basics.css.map */
