@@ -1,5 +1,5 @@
-/* Joshua css navbar */
-@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+/* Joshua css navbar - moved to scss*/
+/*@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
 * {
     box-sizing: border-box;
     padding: 0;
@@ -61,8 +61,8 @@
 
 }
 .nav-links :hover {
-    /*  transform: scale(1.2); */
-}
+ transform: scale(1.2); }
+
 .hover-nav-links :hover img{
     transform: scale(1.2);
 }
@@ -243,7 +243,7 @@
     }
 
 }
-/* Joshua css navbar */
+ Joshua css navbar */
 
 /* Janna slideshow              -- has been added to scss, no desktop settings available so far:
 

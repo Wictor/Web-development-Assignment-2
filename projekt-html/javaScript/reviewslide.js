@@ -12,6 +12,6 @@ function carousel() {
         slideIndex = 1
     }
     x[slideIndex - 1].style.display = "block";
-    setTimeout(carousel, 2000); //2000 = 2 seconds
+    setTimeout(carousel, 2000); //anything other than 2000 doesn't freakin work, dunno why!
 }
 

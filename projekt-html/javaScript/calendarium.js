@@ -11,7 +11,7 @@ xhr.onload = function() {
             newContent += '<p id="jsdate"><b>' + myObject.events[i].calDate + '</b>';
             newContent += '<p id="jstext">' + myObject.events[i].text + '<br>';
             newContent += '<p id="jstime">' + myObject.events[i].time + '<br>';
-            newContent += '</div>';
+            newContent += '</div><hr id="separator">';
 
         }
 
