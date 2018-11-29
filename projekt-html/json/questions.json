@@ -1,0 +1,28 @@
+{
+  "questions" : [
+    {
+      "question" : "IT?",
+      "option 1" : "Mycket",
+      "option 2" : "Lite",
+      "option 3" : "Inte alls"
+    },
+    {
+      "question" : "Jobba med människor?",
+      "option 1" : "Mycket",
+      "option 2" : "Lite",
+      "option 3" : "Inte alls"
+    },
+    {
+      "question" : "Design?",
+      "option 1" : "Mycket",
+      "option 2" : "Lite",
+      "option 3" : "Inte alls"
+    },
+    {
+      "question" : "Intresse för språk",
+      "option 1" : "Mycket",
+      "option 2" : "Lite",
+      "option 3" : "Inte alls"
+    }
+  ]
+}

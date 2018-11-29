@@ -23,12 +23,10 @@ xmlhttp.onreadystatechange = function()
             if(data[x].ArticleText.length > 50) {
 
                 let articleText = data[x].ArticleText.substr(0,50);
-                articleText = articleText.substr(0, Math.min(articleText.length, articleText.lastIndexOf(" ")));
-
-                let readMore = data[x].ArticleText.substr(articleText.lastIndexOf(""));
+                articleText = articleText.substr(0, Math.min(articleText.length, articleText.lastIndexOf(" "))) + '...';
 
                 newContent += '<p class="newsText">' + articleText +'</p>';
-                newContent += '<p class="readMoreText">' + readMore +'</p>';
+                newContent += '<button class="readMore">Read More</button>';
 
             }
             else{
