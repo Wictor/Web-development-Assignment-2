@@ -140,8 +140,7 @@ body {
     background-color: rgba(0, 0, 0, 0.6);
     color: white; }
   .slideshow .text p {
-    font-family: sans-serif;
-    color: #6E6A6A;
+    color: #000000;
     font-size: 15px;
     padding: 8px 12px;
     position: absolute;
@@ -150,8 +149,7 @@ body {
     width: 100%;
     text-align: right; }
   .slideshow .headtext {
-    font-family: sans-serif;
-    color: #6E6A6A;
+    color: #000000;
     font-size: 45px;
     padding: 8px 12px;
     position: absolute;
