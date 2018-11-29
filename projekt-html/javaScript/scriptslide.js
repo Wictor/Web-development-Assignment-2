@@ -1,4 +1,5 @@
 var slideIndex = 1;
+var timer = null;
 showSlides(slideIndex);
 
 function plusSlides(n) {
