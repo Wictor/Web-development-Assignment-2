@@ -136,7 +136,6 @@ body {
 .slideshow .prev:hover, .slideshow .next:hover {
   background-color: rgba(0, 0, 0, 0.8); }
 .slideshow .text p {
-  font-family: sans-serif;
   color: #6E6A6A;
   font-size: 15px;
   padding: 8px 12px;
@@ -146,8 +145,7 @@ body {
   width: 100%;
   text-align: right; }
 .slideshow .headtext {
-  font-family: sans-serif;
-  color: #6E6A6A;
+  color: #000000;
   font-size: 45px;
   padding: 8px 12px;
   position: absolute;
