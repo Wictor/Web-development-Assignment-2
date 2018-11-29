@@ -235,6 +235,25 @@ body {
     animation-duration: 2s;
   }
 
+  .slideshow-container .btn {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #000000;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .slideshow-container .btn:hover {
+    background-color: #9C292D
+  }
+
   @-webkit-keyframes fade {
     from {opacity: .7}
     to {opacity: 1}
