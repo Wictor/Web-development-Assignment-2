@@ -6,12 +6,10 @@ xhr.onload = function() {
 
         var newContent = '';
         for (var i = 0; i < myObject.events.length; i++) {
-
-            newContent += '<div class="something">';
-            newContent += '<p id="jsdate"><b>' + myObject.events[i].calDate + '</b>';
-            newContent += '<p id="jstext">' + myObject.events[i].text + '<br>';
-            newContent += '<p id="jstime">' + myObject.events[i].time + '<br>';
-            newContent += '</div><hr id="separator">';
+            newContent += '<div class="something"><hr id="separator">';
+            newContent += '<p id="jsdate"><b>' + myObject.events[i].calDate + '</b> </p>';
+            newContent += '<p id="jstime">' + myObject.events[i].time + '</p><br>';
+            newContent += '<p id="jstext">' + myObject.events[i].text + '</p> </div>';
 
         }
 

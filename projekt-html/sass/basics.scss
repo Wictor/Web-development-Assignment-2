@@ -5,7 +5,7 @@
 
 body {
   background-color: $background-color;
-  margin: $margin;
+  margin: 0;
   p  {
     font-family: $font-text;
     font-size: $p-mobile;
@@ -15,7 +15,7 @@ body {
   h1 {
     font-family: $font-headline;
     font-size: $h-mobile;
-    color: $color-link
+    color: $color-link;
   }
 
 
@@ -38,24 +38,25 @@ body {
     background-image: linear-gradient(200deg, #C33E47  0%, #ff757a 100%);
     display: none;
     width: 100%;
+
+    a {
+      color: white;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      display: block;
+      text-align: center;
+      width: 100%;
+    }
+    a:hover {
+      background-color: #54E97B;
+    }
+
   }
   .dropdown-icon {
     position: absolute;
     margin-top: -80px;
     margin-left: 70%;
-  }
-
-  #utb-links a {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-    text-align: center;
-    width: 100%;
-  }
-  #utb-links a:hover {
-    background-color: #54E97B;
   }
 
   .navbar {
@@ -70,32 +71,40 @@ body {
     display: none;
     margin-top: 50px;
     padding: 0;
+
+    li {
+      margin-left: 22px;
+    }
+
   }
 
-  .nav-links  {
+  .nav-links {
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     color: white;
-  }
-  .nav-links p {
-    color: white;
-    font-size: $p-mobile;
-    float: right;
-    margin-right: 30%;
+
+    p {
+      color: white;
+      font-size: $p-mobile;
+      float: right;
+      margin-right: 30%;
+
+    }
+
+    .nav-links :hover {
+      /*  transform: scale(1.2); */
+      img {
+        transform: scale(1.2);
+      }
+      p {
+        transform: scale(1.2);
+      }
+    }
+
 
   }
-  .nav-links :hover {
-    /*  transform: scale(1.2); */
-  }
-  .hover-nav-links :hover img{
-    transform: scale(1.2);
-  }
-  .hover-nav-links :hover p {
-    transform: scale(1.2);
-  }
-  .main-nav li {
-    margin-left: 22px;
-  }
+
+
 
   .logo1 {
     display: block;
@@ -116,26 +125,27 @@ body {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-  }
 
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
+    a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
 
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
+    a:hover {
+      color: #f1f1f1;
+    }
 
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    font-size: 30px;
-    margin-left: 10px;
+    .closebtn {
+      position: absolute;
+      top: 0;
+      font-size: 30px;
+      margin-left: 10px;
+    }
+
   }
 
   #main {
@@ -148,18 +158,17 @@ body {
     justify-content: flex-end;
     cursor: pointer;
     font-size: 40px;
-
   }
 
-} // nav section hasn't been updated till sass structure yet, need more time. --Lucie
+}
 
+//Janna: Slideshow
 
 .slideshow {
-  margin: 0 -$margin;
+  margin: 0;
 
   .img-slide {
     width: 100%;
-
   }
 
   .slideshow-container {
@@ -200,8 +209,8 @@ body {
   }
 
   .text p {
-    color: #000000;
-    font-size: 15px;
+    color: $color-text;
+    font-family: $font-headline;
     padding: 8px 12px;
     position: absolute;
     right: 20px;
@@ -211,35 +220,39 @@ body {
   }
 
   .headtext {
-    color: #000000;
-    font-size: 45px;
+    color: $color-text;
+    font-family: $font-headline;
+    font-size: 30px;
     padding: 8px 12px;
     position: absolute;
-    top: 60px;
-    left: 60px;
+    top: 10px;
+    left: 30px;
     max-width: 40%;
+
+    p{
+      text-align: left;
+    }
   }
 
   .slideshow-container .btn {
     position: absolute;
     bottom: 10%;
-    right: 5%;
+    right: 1%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     background-color: #000000;
     color: white;
     font-size: 16px;
-    padding: 12px 24px;
+    padding: 8px 18px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
   }
   .slideshow-container .btn:hover {
-    background-color: #9C292D
+    background-color: $color-link;
   }
 
   .dot {
-
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -272,9 +285,9 @@ body {
   }
 }
 
-//Lucie updated 28112018
+//Lucie
 #welcome {
-  margin: 0 10px 0 10px;
+  margin: $margin*5 $margin*4 $margin*2 $margin*4;
 
 
   .centered {
@@ -282,10 +295,10 @@ body {
   }
   .special {
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     color: $color-text;
-    margin: 0 $margin*2 0 $margin*2;
+    margin: $margin*2 $margin*3 0 $margin*3;
   }
 }
 
@@ -293,6 +306,7 @@ body {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: 1fr 1fr;
+  margin: $margin*2 $margin*2 0 $margin*2;
 
   h1 {
     text-align: left;
@@ -307,15 +321,52 @@ body {
   }
 
   #testOption {
-    margin: $margin $margin/2 $margin $margin/2;
-    background: url("../images/img2.jpg") 50% 76% no-repeat;
+    margin-bottom: $margin*2;
+    background: url("../images/img2.jpg") center no-repeat;
     height: 100px;
+    border-radius: 3px;
+
+    .modalButton {
+      border: none;
+      background-color: rgba(white,0);
+      display: block;
+      height: 100%;
+      width: 100%;
+      font-family: $font-headline;
+      font-size: $h-mobile;
+      font-weight: bold;
+      text-align: left;
+      color: $color-link;
+      margin-top: 0;
+      outline: none;
+      padding-left: 20px;
+      cursor: pointer;
+    }
   }
 
   #contactOption {
-    margin: 0 $margin/2 0 $margin/2;
-    background: url("../images/img4.jpg") 50% 100% no-repeat;
+    //margin: $margin $margin/2 $margin $margin/2;
+    background: url("../images/img4.jpg") 56% 1% no-repeat;
     height: 100px;
+    border-radius: 3px;
+
+    a{
+      display: block;
+      height: 100%;
+      text-decoration: none;
+      p {
+        font-family: $font-headline;
+        font-size: $h-mobile;
+        font-weight: bold;
+        color: $color-link;
+        margin-top: $margin;
+
+        padding-left: 20px;
+        max-width: 36%;
+      }
+
+
+    }
   }
 }
 
@@ -323,9 +374,10 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
-  margin: -20px $margin/2 $margin/2 $margin/2;
-  background-color: hsla(358, 76%, 62%, 0.1);
-  padding: 3px 10px 0 10px;
+  margin: 0 $margin*2 0 $margin*2;
+  background-color: $secondary-background;
+  border-radius: 3px;
+  padding: 10px 10px 10px 10px;
 
 
   p {
@@ -341,7 +393,6 @@ body {
   }
 
   #mySquare1 {
-    //background-color: hsla(358, 76%, 62%,0.3);
     img {
       width: 20%;
       height: auto;
@@ -350,7 +401,7 @@ body {
     }
 
     .special-headline {
-      font-size: 30px;
+      font-size: $h-mobile;
       font-weight: bold;
       color: $color-link;
     }
@@ -358,7 +409,6 @@ body {
   }
 
   #mySquare2 {
-    //background-color: hsla(358, 76%, 62%,0.2);
     img {
       width: 20%;
       height: auto;
@@ -373,7 +423,6 @@ body {
   }
 
   #mySquare3 {
-    //background-color: hsla(358, 76%, 62%, 0.1);
     img {
       width: 20%;
       height: auto;
@@ -395,17 +444,13 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
 
-  #separator {
-    width: 300px;
-  }
-
 
   .myReview{
     display: none;
   }
   .reviewPart {
-    margin-left: $margin/2;
-    margin-right: $margin/2;
+    margin: $margin*2;
+    border-radius: 3px;
 
     img {
       object-fit: cover;
@@ -418,20 +463,42 @@ body {
 
 //calendar
 #grid-container-calender {
-  margin: 0 $margin/2 0 $margin/2;
+  margin: 0 $margin*2 0 $margin*2;
   text-align: center;
+  background: $secondary-background;
+  border-radius: 3px;
 
 
   #upcomingEvents {
-    text-align: center;
-    padding: 10px 0 10px 0;
-    /*object-fit: cover;
-    width: 100%;
-    max-height: 100%;*/
-    background: linear-gradient(hsla(358, 76%, 62%, 0.2),hsla(358, 76%, 62%, 0.0));
+    #separator {
+      border: 0;
+      height: 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
+    }
+    .something {
+      height: 70px;
+    }
+    #jsdate {
+      max-height: 50px;
+      text-align: left;
+      padding-left: 20px;
+    }
+    div {
+      #jstime {
+       // text-align: left;
+        padding-left: 20px;
 
-
+      #jstext{
+        text-decoration: none;
+        text-align: right;
+        color: $font-text;
+        font-family: $font-text;
+        padding-left: 80px;
+        }
+      }
+    }
     b {
       text-align: center;
       font-size: 17px;
@@ -440,9 +507,9 @@ body {
       padding: 5px;
       color: $color-link;
     }
-    p {
+    /*p {
       text-align: center;
-    }
+    }*/
 
 
   }
@@ -498,16 +565,24 @@ body {
 
 
 #footer {
+  background-color: #9C292D;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  position: center;
-  p {text-align: center}
+  margin: 0;
+  p {
+    text-align: center;
+    color: white;
+  }
+  a {
+    color: $color-link;
+  }
+
 
   text-align: center;
   .start_img2{
     max-width: 100%;
-    height: 150px;
+    height: 90px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -515,50 +590,100 @@ body {
 }
 
 //tablet 768px-1024px   -- note: why 1126 specifically? --Lucie
-@media screen and (min-width: 768px) and (max-width: 1126px){
+@media screen and (min-width: 768px) and (max-width: 1126px) {
+  body {
+    h1{
+      font-size: $h-desktop;
+    }
+  }
+
+  .slideshow {
+    .headtext {
+      font-size: $h-desktop*1.5;
+      padding-top: 40px;
+      padding-left: 30px;
+    }
+  }
+  #welcome {
+    margin: $margin*5 $margin*5 $margin*2 $margin*5;
+
+    .special {
+      margin: 0;
+    }
+  }
+
   #grid-container-option {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    margin-bottom: $margin*2;
+    margin: $margin;
 
     #testOption {
-      margin: $margin $margin/2 $margin $margin/2;
-      background: url("../images/img2.jpg") 50% 70% no-repeat;
-      height: 100px;
+      margin: $margin*2;
+      background: url("../images/img2.jpg") 58% 10% no-repeat;
+      height: 120px;
     }
 
     #contactOption {
-      margin: $margin $margin/2 $margin $margin/2;
-      background: url("../images/img4.jpg") 50% 50% no-repeat;
-      height: 100px;
+      margin: $margin*2;
+      background: url("../images/img4.jpg") 58% 1% no-repeat;
+      height: 120px;
     }
 
   }
 
   #grid-container-review {
     display: grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 66% 30%;
     grid-template-rows: 1fr;
-
-    #separator {
-      width: 40px;
-    }
+    margin: $margin *2;
+    grid-gap: 4%;
 
     .reviewPart {
-      margin-left: $margin/2;
-      margin-right: $margin/2;
+      width: 100%;
+      margin: 0;
+      padding: 0;
     }
   }
   #grid-container-calender {
-    background: linear-gradient(hsla(358, 76%, 62%, 0.2), hsla(358, 76%, 62%, 0.0));
+    background: $secondary-background;
+    margin: 0;
+
+    h1{
+      margin: 0 5px;
+    }
 
     #upcomingEvents {
-      background: none;
+      height: 100%;
+
+      .something {
+        height: 100%;
+        margin: $margin;
+
+        #separator {
+          width: 100%;
+        }
+
+        b {
+          font-size: 16px;
+        }
+        #jstime {
+          font-size: 16px;
+          text-align: left;
+          font-weight: bold;
+          margin-left: 12px;
+          padding-left: 10px;
+          padding-top: 10px;
+        }
+        p {
+          text-align: center;
+          margin: 0;
+
+        }
+      }
 
     }
   }
-
 }
 
 //desktop >1025px
@@ -677,51 +802,134 @@ body {
       }
 
     }
+  //end navbar
+
+  .slideshow {
+    .headtext {
+      font-size: $h-desktop*2;
+      padding-top: 70px;
+      padding-left: 60px;
+    }
+  }
+  #welcome {
+    margin: $margin;
+
+    p{
+      margin: 0 150px;
+      text-align: justify;
+    }
+    .special {
+      margin: 20px;
+    }
+    h1 {
+      font-size: $h-desktop*1.5;
+    }
+  }
 
   #grid-container-option {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    margin-bottom: 20px;
+    //margin-bottom: 20px;
+    grid-gap: $margin;
+    margin: 0 $margin 0 $margin;
 
     #testOption {
-      margin: $margin $margin/2 $margin $margin/2;
-      background: url("../images/img2.jpg") /*50% 70%*/ center top no-repeat;
+      //margin: $margin $margin/2 $margin $margin/2;
+      background: url("../images/img2.jpg") /*50% 70%*/ center no-repeat;
       height: 200px;
+      width: 100%;
     }
 
     #contactOption {
-      margin: $margin $margin/2 $margin $margin/2;
+      //margin: $margin $margin/2 $margin $margin/2;
       background: url("../images/img4.jpg") center top no-repeat;
       height: 200px;
+
+      a {
+        p {
+          margin-top: 60px;
+        }
+      }
     }
   }
   #grid-container-review {
     display: grid;
     grid-template-columns: 70% 30%;
     grid-template-rows: 1fr;
-    #separator {
-      width: 50px;
-    }
+    //grid-
+    margin: $margin;
 
     .reviewPart {
-      margin-top: 84px;
+      margin:0;
+      padding: 0;
+
+      img {
+        object-fit: cover;
+        width: 100%;
+        max-height: 100%;
+      }
+    }
+  }
+  #grid-container-calender {
+    margin: 0;
+  }
+
+  #percentil {
+    margin: 0 $margin $margin $margin;
+
+    #mySquare1, #mySquare2, #mySquare3 {
+      img {
+        max-width: 10%;
+      }
     }
   }
 
+  #grid-container-calender {
+    #upcomingEvents {
+      height: 100%;
 
-  #news {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  #footer {
-    grid-template-columns: 1fr 1fr;
-    .footer_two{
-      grid-column-start: 3;
-      grid-column-end: 1;
+      .something {
+        height: 30%;
+        margin: $margin;
+
+        #separator {
+          width: 100%;
+        }
+
+        b {
+          font-size: 16px;
+        }
+        #jstime {
+          font-size: 16px;
+          text-align: left;
+          font-weight: bold;
+          margin-left: 12px;
+          padding-left: 10px;
+          padding-top: 10px;
+        }
+        p {
+          text-align: center;
+          margin: 0;
+
+        }
+      }
+
     }
-
   }
-}
+
+    #news {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    #footer {
+      grid-template-columns: 1fr 1fr;
+      .footer_two {
+        grid-column-start: 3;
+        grid-column-end: 1;
+      }
+
+    }
+  }
 
 
 
