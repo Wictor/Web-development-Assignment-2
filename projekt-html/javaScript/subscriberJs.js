@@ -1,8 +1,5 @@
-$( document ).ready(function() {
-    let form = $('#subscribeForm');
-
-    $(document).on('submit', form, function(e) {
-        e.preventDefault();
+    $('#subscribeForm').submit(function(event) {
+        event.preventDefault();
 
         let formData = $('#subscribeForm').serialize();
 
@@ -17,4 +14,3 @@ $( document ).ready(function() {
 
             });
     });
-});

@@ -374,13 +374,18 @@ body {
 
     }
   }
+#news {
+  margin: $margin;
+  padding: 0;
 
-  #news {
+  #newsSection {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 10px;
-    padding: 10px;
+    grid-gap: $margin;
 
+    .readMoreText {
+      display: none;
+    }
     .newsImage {
       max-width: 100%;
     }
@@ -390,7 +395,11 @@ body {
     article p {
       display: inline;
     }
+    .readMoreBtn {
+      border: none;
+    }
   }
+}
 
   #modal {
     display: none;
@@ -447,7 +456,7 @@ body {
   }
 
   //tablet 768px-1024px   -- note: why 1126 specifically? --Lucie
-  @media screen and (min-width: 768px) and (max-width: 1126px) {
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
     body {
       h1 {
         font-size: $h-desktop;
@@ -544,7 +553,7 @@ body {
   }
 
   //desktop >1025px
-  @media screen and (min-width: 1127px) {
+  @media screen and (min-width: 1025px) {
 
     .slideshow {
       .headtext {
@@ -662,8 +671,16 @@ body {
     }
 
     #news {
-      grid-template-columns: 1fr 1fr 1fr;
+
+      #newsSection {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      #moreNews {
+        display: block;
+        margin: 0 10% 0 auto;
+      }
     }
+
     #footer {
       grid-template-columns: 1fr 1fr;
       .footer_two {

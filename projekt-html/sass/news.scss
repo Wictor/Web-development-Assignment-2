@@ -1,0 +1,76 @@
+@import "simplevariables";
+
+//Index News
+#mainNews{
+  background-color: #dddddd;
+  margin: 0 0 0 0;
+  padding: 30px 0 0 0;
+}
+
+#newsSite {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  max-width: 80%;
+  background-color: #dddddd;
+  margin: 0 auto;
+  padding: 20px 0;
+
+  .newsArticle {
+    justify-content: center;
+    margin: 0 auto;
+    border: black 1px solid;
+    border-radius: 3%;
+    max-height: 200px;
+    width: 80%;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 1fr 20%;
+    background: $background-color;
+
+    .newsImage {
+      display: none;
+    }
+
+    .newsTitle {
+      grid-row: 1;
+      grid-column: 1;
+      margin: 5px 0 0 10px;
+    }
+
+    .newsText {
+      grid-row: 2/-1;
+      grid-column: 1;
+      margin: 10px 10px 0 10px;
+      background: -webkit-linear-gradient(black 30%, #eee);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      overflow: hidden;
+    }
+    .readMore {
+      grid-row: 3;
+      grid-column: 1;
+      z-index: 10;
+      width: 100%;
+      height: 25px;
+      margin: 0 auto;
+      padding: 0;
+      border: none;
+      font-weight: bold;
+      background-color: rgba(0,0,0,0.2);
+    }
+    .readMoreText {
+      display: none;
+      grid-row: 2;
+      margin-left: 20px;
+    }
+  }
+}
+
+
+
+@media screen and (min-width: 1025px) {
+  //Index news section
+
+}
