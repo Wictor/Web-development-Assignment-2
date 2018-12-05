@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+.start_img3 {
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+#utbildningar {
+  /* The "show" class is added to the filtered elements */
+  /* Style the buttons */
+  /* Add a light grey background on mouse-over */
+  /* Add a dark background to the active button */ }
+  #utbildningar h1 {
+    text-align: center; }
+  #utbildningar p {
+    text-align: center; }
+  #utbildningar a {
+    text-decoration: none; }
+  #utbildningar .container {
+    display: grid; }
+  #utbildningar .filterDiv {
+    background-color: rgba(249, 16, 55, 0.1);
+    color: black;
+    width: auto;
+    height: 80px;
+    text-align: center;
+    margin: 3px;
+    display: none;
+    /* Hidden by default */
+    padding: 12px 16px;
+    border-radius: 3px; }
+  #utbildningar .show {
+    display: block; }
+  #utbildningar .hide {
+    display: none; }
+  #utbildningar #myBtnContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 3%;
+    grid-gap: 1%; }
+  #utbildningar .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: rgba(84, 233, 123, 0.3);
+    cursor: pointer;
+    border-radius: 3px; }
+  #utbildningar .btn:hover {
+    background-color: #ddd; }
+  #utbildningar .btn.active {
+    background-color: rgba(84, 233, 123, 0.6);
+    color: white;
+    padding: 12px 16px;
+    margin: 3px; }
+  @media screen and (min-width: 768px) {
+    #utbildningar #myBtnContainer {
+      grid-template-columns: repeat(5, 1fr); }
+    #utbildningar .container {
+      overflow: hidden;
+      display: flex;
+      flex-wrap: wrap; }
+    #utbildningar .filterDiv {
+      line-height: 110%; }
+    #utbildningar .btn {
+      border: none;
+      outline: none;
+      padding: 12px 16px;
+      background-color: rgba(84, 233, 123, 0.3);
+      cursor: pointer;
+      margin: 3px; } }
+
+/*# sourceMappingURL=Utbildningar.css.map */

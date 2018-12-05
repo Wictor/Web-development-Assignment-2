@@ -3,16 +3,13 @@
 <head>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/basics.css">
+    <link rel="stylesheet" type="text/css" href="css/Utbildningar.css">
     <link rel="stylesheet" type="text/css" href="css/contact.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/nav.css">
-    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
-    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+
+
+
 
 
     <meta charset="UTF-8">
@@ -24,6 +21,7 @@
 </head>
 <body>
 <header>
+
     <nav class="navbar">
         <span class="opennav" onclick="openNav()">&#9776;</span>
         <a class="logo1" href="#"><img src="images/campuslogo2.png"></a>
@@ -128,79 +126,42 @@
 
 </header>
 
-    <h1 id="contacthead">Kontaktinformation</h1>
-
-
-<section id="contact">
-
-    <article>
-        <h2>Vägledningsexpedition</h2>
-        <p>
-            Vägledningsexpeditionen kontaktar du om du har frågor eller funderingar kring ditt studie- eller yrkesval - oavsett hur gammal du är. <br>
-            Hit kan du också vända dig om du vill göra en anmälan till någon av våra utbildningar. <br> <br>
-
-            <strong>Telefon: </strong> 031-315 10 14<br>
-            <a href="mailto:vagledning.campus@molndal.se">vagledning.campus@molndal.se</a> <br>
-            <br>
-            <strong> Öppetider:</strong> <br>
-            Måndag & onsdag 13:00-15:00 <br>
-            Tisdag, torsdag & fredag 10:00-12:00 <br>
-            <br>
-        </p>
-    </article>
-    <article class="article_2">
-        <div style="width: 100%">
-            <iframe
-                    width="100%"
-                    height="280"
-                    src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=G%C3%B6teborgsv%C3%A4gen%2097%2C%20ing%C3%A5ng%201%20+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
-                    frameborder="0"
-                    scrolling="no"
-                    marginheight="0"
-                    marginwidth="0">
-                <a href="https://www.maps.ie/create-google-map/">Embed Google Map</a>
-
-            </iframe></div><br />
-        <p> <i>Krokslätts fabriker 12a, 431 37 Mölndal </i> </p>
-    </article>
-
-    <article>
-
-        <h2>Skolexpeditionen</h2>
-        <p>
-            På skolexpeditionen hanteras det mesta som rör dig som redan är studerande inom Campus Mölndal. <br>
-            <br>
-            <strong> Telefon </strong> 031-315 31 30 <br>
-            <a href="mailto:skolexp.campus@molndal.se">skolexp.campus@molndal.se</a> <br>
-
-            <br>
-            <strong>  Öppetider: </strong> <br>
-            Måndag - fredag 09:00-12:00 <br>
-            Måndag, tisdag & torsdag 13:00-15:00 <br>
+<section id="utbildningar">
+    <div><h1>Utbildningar</h1>
+        <p> På Möldals Campus har vi ett stort sortiment av vuxenutbildningar. <br>
+            Oavsett om du är privatperson eller företagare så finns det utbilningar för just dig.
+            För dig som vill läsa upp dina betyg finns det Grundläggande och Gymnasium utbildningar. Om du är ny nyanländ och vill lära dig det Svenska språket så har vi
+            SFI utbildningarna som ger dig grundläggande kunskaper.
 
         </p>
-        <p>
-            <a href="https://www.facebook.com/campusmolndal/" target="_blank">
-                <img src="images/faceloga.png" width="50" height="50" alt=""  />
-            </a>
-        </p>
-    </article>
+    </div>
 
-    <article class="article_2">
-        <div style="width: 100%"><iframe
-                width="100%"
-                height="280px"
-                src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=m%C3%B6lndal%20campus+(M%C3%B6ndal%20campus)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
-                frameborder="0"
-                scrolling="no"
-                marginheight="0"
-                marginwidth="0">
-            <a href="https://www.maps.ie/create-google-map/">Create Google Map</a></iframe></div>
-        <p><i>Göteborgsvägen 97, 431 37 Mölndal</i></p>
-    </article>
+    <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"><p>Alla utbildningar </p></button>
+        <button class="btn" onclick="filterSelection('YH')"> <p>Yrkesutbildningar </p></button>
+        <button class="btn" onclick="filterSelection('VU')"><p> Grundläggande och Gymnasial Vuxenutbildningar </p> </button>
+        <button class="btn" onclick="filterSelection('SFI')"> <p> SFI- Svenska för invarndrare </p></button>
+        <button class="btn" onclick="filterSelection('FU')"> <p> Företagsutbildningar </p></button>
+    </div>
+
+    <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+     <div class="container">
+         <a href="yh.html"> <div class="filterDiv YH"><br><p>IT-projektledare </p></div> </a>
+         <a href="yh.html"> <div class="filterDiv YH"><br><p>Java- och webbutvecklare</p></div></a>
+         <a href="yh.html"> <div class="filterDiv YH"><br><p>Moln- och virtualiseringsspecialist</p></div> </a>
+         <a href="yh.html"> <div class="filterDiv YH"><br><p>Specialiserad studiehandledare</p></div> </a>
+         <a href="yh.html"> <div class="filterDiv YH"><br><p>Aktiveringspedagog inom LSS</p></div> </a>
+         <a href="#"> <div class="filterDiv FU"><br><p>Uppdragsutbildningar</p></div> </a>
+         <a href="#"> <div class="filterDiv FU"> <br><p>Yrkeshögskoleutbildningar</p> </div> </a>
+         <a href="#"> <div class="filterDiv VU"><br><p>Grundläggande kurser </p></div> </a>
+         <a href="#"> <div class="filterDiv VU"><br><p>Gymnasiala kurser</p></div> </a>
+         <a href="#"> <div class="filterDiv SFI"><br><p>Svenska för invandrare</p></div> </a>
+     </div>
 
 
 </section>
+
+<section> <img src="images/book2.jpeg" alt="" class="start_img3"/> </section>
 
 
 <footer id="footer">
@@ -226,7 +187,7 @@
     </div>
 
     <section class="footer_two">
-        <a href="https://www.molndal.se/" target="_blank">
+        <a href="https://www.molndal.se/">
 
             <img src="images/loga.png" alt="" class="start_img2" />
         </a>
@@ -243,5 +204,6 @@
 <script src="javaScript/subscriberJs.js"></script>
 <script src="javaScript/subscribeModal.js"></script>
 <script src="javaScript/newsJs.js"></script>
+<script src="javaScript/jsutbildningar.js"></script>
 </body>
 </html>

@@ -1,0 +1,105 @@
+@import "simplevariables";
+.start_img3 {
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#utbildningar {
+  h1{ text-align: center}
+
+  p{
+    text-align: center;
+  };
+  a {text-decoration: none;}
+
+  .container {
+    display: grid;
+
+  }
+  .filterDiv {
+
+    background-color: hsla(350, 95%, 52%, 0.1);
+    color: black;
+    width: auto;
+    height: 80px;
+    text-align: center;
+    margin: 3px;
+    display: none; /* Hidden by default */
+    padding: 12px 16px;
+    border-radius: 3px;
+
+
+
+
+
+
+  }
+
+
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  .hide{
+    display: none;
+  }
+  /* Style the buttons */
+  #myBtnContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 3%;
+    grid-gap: 1%;
+
+  }
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: rgba(84, 233, 123, 0.3);
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  /* Add a light grey background on mouse-over */
+  .btn:hover {
+    background-color: #ddd;
+  }
+  /* Add a dark background to the active button */
+  .btn.active {
+   // background-color: #199c3b;
+    background-color: rgba(84, 233, 123, 0.6);
+    color: white;
+    padding: 12px 16px;
+    margin: 3px;
+  }
+  @media screen and (min-width: 768px) {
+    #myBtnContainer {
+      grid-template-columns: repeat(5, 1fr);
+    }
+    .container {
+      overflow: hidden;
+      display: flex;
+      flex-wrap: wrap;
+
+    }
+
+    .filterDiv {
+
+      line-height: 110%;
+
+    }
+    .btn {
+      border: none;
+      outline: none;
+      padding: 12px 16px;
+      background-color: rgba(84, 233, 123, 0.3);
+      cursor: pointer;
+      margin: 3px;
+    }
+
+  }
+
+
+
+}
