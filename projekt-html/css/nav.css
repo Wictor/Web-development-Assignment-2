@@ -9,7 +9,7 @@
     list-style-type: none; }
   .navbar #myInput1 {
     font-size: 16px;
-    width: 100%;
+    width: 148px;
     padding: 14px 5px 12px 5px;
     border: none;
     border-bottom: 1px solid #ddd;
@@ -23,13 +23,15 @@
     position: absolute;
     min-width: 100px;
     border: 1px solid #ddd;
-    z-index: 1;
+    z-index: 2;
     margin: 0; }
   .navbar .dropdown-search-content1 a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block; }
+  .navbar .dropdown-search1 a:hover {
+    background-color: #ddd; }
   .navbar .logo {
     display: none; }
   .navbar #utb-links {
@@ -57,10 +59,10 @@
     background-image: linear-gradient(200deg, #54E97B 0%, #ff757a 100%);
     border: 1px solid black;
     padding-bottom: 40px;
-    height: 150px; }
+    height: 10px; }
   .navbar .main-nav {
     display: none;
-    margin-top: 50px;
+    margin: 0;
     padding: 0 0 0 0; }
   .navbar .nav-links {
     text-decoration: none;
@@ -89,7 +91,7 @@
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     top: 0;
     right: 0;
     background-color: #3c3c3c;
@@ -121,10 +123,38 @@
     cursor: pointer;
     font-size: 40px; }
 
+#Topbtn {
+  display: none;
+  opacity: 0.0;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 40px;
+  /* Place the button 30px from the right */
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: #f2f2f4;
+  /* Set a background color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 10px;
+  /* Some padding */
+  border-radius: 10px;
+  /* Rounded corners */
+  font-size: 18px;
+  /* Increase font size */
+  -webkit-transform: rotate(180deg);
+  -webkit-animation: fadein 2s; }
+
 @media screen and (min-width: 1024px) {
   .navbar #myInput {
     font-size: 16px;
-    width: 100px;
+    width: 144px;
     padding: 14px 5px 12px 5px;
     border: none;
     border-bottom: 1px solid #ddd; }
@@ -133,21 +163,24 @@
   .navbar .my-search-Dropdown a:hover {
     background-color: #ddd; }
   .navbar .dropdown-search {
-    margin-right: 120px; }
+    margin-right: 100px; }
   .navbar .dropdown-search-content {
-    width: 20px;
+    text-align: center;
+    justify-content: center;
+    width: 150px;
     display: none;
     position: absolute;
     background-color: #f6f6f6;
-    min-width: 100px;
     border: 1px solid #ddd;
-    z-index: 1;
+    z-index: 2;
     margin-right: 200px; }
   .navbar .dropdown-search-content a {
     color: black;
-    padding: 12px 16px;
+    padding: 12px 20px;
     text-decoration: none;
     display: block; }
+  .navbar .dropdown-search-content a:hover {
+    background-color: #ddd; }
   .navbar #utb-linkspc {
     position: absolute;
     margin-top: 20px;
@@ -185,9 +218,10 @@
     flex-direction: row;
     justify-content: flex-end;
     width: 100%;
-    margin: 0; }
-  .navbar .main-nav li {
-    margin-right: 20px; }
+    margin: 0;
+    z-index: 2; }
+    .navbar .main-nav li {
+      margin-right: 20px; }
   .navbar #utb-links {
     position: absolute;
     margin-top: 10%;
@@ -200,9 +234,8 @@
     text-align: center;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
-    margin-left: 0;
-    margin-right: 0;
-    padding: auto 30px auto 0;
+    margin: 0;
+    padding: 0 30px 0 0;
     justify-content: flex-end; }
   .navbar .icon_text {
     display: block;
@@ -216,8 +249,10 @@
   .navbar .logo {
     display: block;
     justify-content: flex-start;
-    margin-top: 0;
-    margin-bottom: 10px; }
+    margin-top: 0; }
+    .navbar .logo img {
+      width: 100px;
+      height: auto; }
   .navbar #logoid {
     justify-content: space-between; }
   .navbar .logo1 {
@@ -226,6 +261,44 @@
     display: flex;
     justify-content: space-between; }
   .navbar .navbar-toggle {
-    display: none; } }
+    display: none; }
+
+  #Topbtn {
+    opacity: 1.0;
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 40px;
+    /* Place the button 30px from the right */
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: #f2f2f4;
+    /* Set a background color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 10px;
+    /* Some padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    font-size: 18px;
+    /* Increase font size */
+    -webkit-transform: rotate(180deg);
+    -webkit-animation: fadein 2s; }
+
+  @-webkit-keyframes fadein {
+    /* Safari and Chrome */
+    from {
+      opacity: 0; }
+    to {
+      opacity: 1; } }
+  #Topbtn:hover {
+    background-color: #555;
+    /* Add a dark-grey background on hover */ } }
 
 /*# sourceMappingURL=nav.css.map */

@@ -11,7 +11,7 @@
   #myInput1 {
 
     font-size: 16px;
-    width: 100%;
+    width: 148px;
     padding: 14px 5px 12px 5px;
     border: none;
     border-bottom: 1px solid #ddd;
@@ -33,7 +33,7 @@
     position: absolute;
     min-width: 100px;
     border: 1px solid #ddd;
-    z-index: 1;
+    z-index: 2;
     margin: 0;
 
   }
@@ -44,6 +44,8 @@
     text-decoration: none;
     display: block;
   }
+  .dropdown-search1 a:hover {background-color: #ddd;}
+
 
   .logo {
     display: none;
@@ -79,12 +81,12 @@
     background-image: linear-gradient(200deg, #54E97B 0%, #ff757a 100%);
     border: 1px solid black;
     padding-bottom: 40px;
-    height: 150px;
+    height: 10px;
   }
 
   .main-nav {
     display: none;
-    margin-top: 50px;
+    margin: 0;
     padding: 0 0 0 0;
   }
 
@@ -127,7 +129,7 @@
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     top: 0;
     right: 0;
     background-color: rgb(60, 60, 60);
@@ -169,15 +171,36 @@
     font-size: 40px;
 
   }
+
+
+}
+#Topbtn {
+
+    display: none;
+    opacity: 0.0;
+    /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 40px; /* Place the button 30px from the right *//* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #f2f2f4; /* Set a background color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 10px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    -webkit-transform: rotate(180deg);
+    -webkit-animation: fadein 2s;
+
+
 }
 
 @media screen and (min-width: 1024px) {
 
   .navbar {
     #myInput {
-
       font-size: 16px;
-      width: 100px;
+      width: 144px;
       padding: 14px 5px 12px 5px;
       border: none;
       border-bottom: 1px solid #ddd;
@@ -192,26 +215,30 @@
     }
 
     .dropdown-search {
-      margin-right: 120px;
+      margin-right: 100px;
     }
 
     .dropdown-search-content {
-      width: 20px;
+      text-align: center;
+      justify-content: center;
+      width: 150px;
       display: none;
       position: absolute;
       background-color: #f6f6f6;
-      min-width: 100px;
       border: 1px solid #ddd;
-      z-index: 1;
+      z-index: 2;
       margin-right: 200px;
     }
 
     .dropdown-search-content a {
       color: black;
-      padding: 12px 16px;
+      padding: 12px 20px;
       text-decoration: none;
       display: block;
     }
+
+    .dropdown-search-content a:hover {background-color: #ddd;}
+
     #utb-linkspc {
       position: absolute;
       margin-top: 20px;
@@ -272,10 +299,11 @@
       justify-content: flex-end;
       width: 100%;
       margin: 0;
-    }
+      z-index: 2;
 
-    .main-nav li {
-      margin-right: 20px
+      li {
+        margin-right: 20px
+      }
     }
 
     #utb-links {
@@ -292,9 +320,8 @@
       text-align: center;
       text-decoration: none;
       font-family: 'Montserrat', sans-serif;
-      margin-left: 0;
-      margin-right: 0;
-      padding: auto 30px auto 0;
+      margin: 0;
+      padding: 0 30px 0 0;
       justify-content: flex-end;
 
     }
@@ -313,11 +340,15 @@
     }
 
     .logo {
+
       display: block;
       justify-content: flex-start;
       margin-top: 0;
-      margin-bottom: 10px;
 
+      img {
+        width: 100px;
+        height: auto;
+      }
     }
     #logoid {
       justify-content: space-between;
@@ -334,6 +365,34 @@
     .navbar-toggle {
       display: none;
     }
+  }
+  #Topbtn {
+    opacity: 1.0;
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 40px; /* Place the button 30px from the right *//* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #f2f2f4; /* Set a background color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 10px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    -webkit-transform: rotate(180deg);
+    -webkit-animation: fadein 2s;
+  }
 
+  @-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+      opacity:0;
+    }
+    to {
+      opacity:1;
+    }
+  }
+
+  #Topbtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
   }
 }
