@@ -12,128 +12,6 @@ body {
     font-size: 28px;
     color: #E85459; }
 
-.navbar {
-  @import url("https://fonts.googleapis.com/css?family=Slabo+27px");
-  /*  transform: scale(1.2); */ }
-  .navbar * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 1% 2% 0 2%;
-    list-style-type: none; }
-  .navbar #myInput1 {
-    font-size: 16px;
-    width: 100%;
-    padding: 14px 5px 12px 5px;
-    border: none;
-    border-bottom: 1px solid #ddd;
-    margin: 0; }
-  .navbar #myInput1:focus {
-    outline: 3px solid #ddd; }
-  .navbar .dropdown-search-content1 {
-    background-color: #3c3c3c;
-    width: 350px;
-    display: none;
-    position: absolute;
-    min-width: 100px;
-    border: 1px solid #ddd;
-    z-index: 1;
-    margin: 0; }
-  .navbar .dropdown-search-content1 a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block; }
-  .navbar .logo {
-    display: none; }
-  .navbar #utb-links {
-    position: relative;
-    background-image: linear-gradient(200deg, #C33E47 0%, #ff757a 100%);
-    display: none;
-    width: 100%; }
-  .navbar .dropdown-icon {
-    display: block;
-    position: absolute;
-    margin-top: -80px;
-    margin-left: 70%; }
-  .navbar #utb-links a {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-    text-align: center;
-    width: 100%; }
-  .navbar #utb-links a:hover {
-    background-color: #54E97B; }
-  .navbar .navbar {
-    font-size: 18px;
-    background-image: linear-gradient(200deg, #54E97B 0%, #ff757a 100%);
-    border: 1px solid black;
-    padding-bottom: 40px;
-    height: 150px; }
-  .navbar .main-nav {
-    display: none;
-    margin-top: 50px;
-    padding: 0 0 0 0; }
-  .navbar .nav-links {
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    color: white; }
-  .navbar .nav-links p {
-    color: white;
-    font-size: 18px;
-    float: right;
-    margin-right: 30%; }
-  .navbar .hover-nav-links :hover img {
-    transform: scale(1.2); }
-  .navbar .hover-nav-links :hover p {
-    transform: scale(1.2); }
-  .navbar .hover-nav-links {
-    justify-content: space-between; }
-  .navbar .main-nav li {
-    margin-left: 22px; }
-  .navbar .logo1 {
-    display: block;
-    text-align: center;
-    margin-top: -30px; }
-  .navbar .active {
-    display: block; }
-  .navbar .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    background-color: #3c3c3c;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-    margin: 0; }
-  .navbar .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s; }
-  .navbar .sidenav a:hover {
-    color: #f1f1f1; }
-  .navbar .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    font-size: 30px;
-    margin-left: 10px; }
-  .navbar #main {
-    transition: margin-left .5s;
-    padding: 16px; }
-  .navbar .opennav {
-    display: flex;
-    margin-right: 5vh;
-    justify-content: flex-end;
-    cursor: pointer;
-    font-size: 40px; }
-
 .slideshow {
   margin: 0; }
   .slideshow .img-slide {
@@ -499,190 +377,85 @@ body {
           text-align: center;
           margin: 0; } }
 @media screen and (min-width: 1127px) {
-  .navbar #myInput {
-    font-size: 16px;
-    width: 100px;
-    padding: 14px 5px 12px 5px;
-    border: none;
-    border-bottom: 1px solid #ddd; }
-  .navbar #myInput:focus {
-    outline: 3px solid #ddd; }
-  .navbar .my-search-Dropdown a:hover {
-    background-color: #ddd; }
-  .navbar .dropdown-search {
-    margin-right: 120px; }
-  .navbar .dropdown-search-content {
-    width: 20px;
-    display: none;
-    position: absolute;
-    background-color: #f6f6f6;
-    min-width: 100px;
-    border: 1px solid #ddd;
-    z-index: 1;
-    margin-right: 200px; }
-  .navbar .dropdown-search-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block; }
-  .navbar #utb-linkspc {
-    position: absolute;
-    margin-top: 20px;
-    display: none; }
-  .navbar #utb-linkspc a {
-    color: white;
-    background-color: #ff757a;
-    padding: 15px 50px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-    text-align: center;
-    width: 100%; }
-  .navbar #utb-linkspc a:hover {
-    background-color: #54E97B; }
-  .navbar .opennav {
-    display: none; }
-  .navbar .sidenav {
-    display: none; }
-  .navbar #main {
-    display: none; }
-  .navbar .utb-li {
-    z-index: 2; }
-  .navbar .image-text {
-    display: none; }
-  .navbar .navbar {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 0;
-    height: 200px;
-    align-items: center;
-    width: 100%; }
-  .navbar .main-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    width: 100%;
-    margin: 0; }
-  .navbar .main-nav li {
-    margin-right: 20px; }
-  .navbar #utb-links {
-    position: absolute;
-    margin-top: 10%;
-    margin-left: -790px;
-    flex-direction: column-reverse;
-    justify-content: flex-end; }
-  .navbar .nav-links {
-    display: block;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    margin-left: 0;
-    margin-right: 0;
-    padding: auto 30px auto 0;
-    justify-content: flex-end; }
-  .navbar .icon_text {
-    display: block;
-    color: black;
-    font-size: 20px; }
-  .navbar .nav-links p {
-    font-size: 20px;
-    float: none;
-    margin-left: 38%;
-    color: black; }
-  .navbar .logo {
-    display: block;
-    justify-content: flex-start;
-    margin-top: 0;
-    margin-bottom: 10px; }
-  .navbar #logoid {
-    justify-content: space-between; }
-  .navbar .logo1 {
-    display: none; }
-  .navbar .logonav {
-    display: flex;
-    justify-content: space-between; }
-  .navbar .navbar-toggle {
-    display: none; } }
-.slideshow .headtext {
-  font-size: 54px;
-  padding-top: 70px;
-  padding-left: 60px; }
+  .slideshow .headtext {
+    font-size: 54px;
+    padding-top: 70px;
+    padding-left: 60px; }
 
-#welcome {
-  margin: 2%; }
-  #welcome p {
-    margin: 0 150px;
-    text-align: justify; }
-  #welcome .special {
-    margin: 20px; }
-  #welcome h1 {
-    font-size: 40.5px; }
-
-#grid-container-option {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  grid-gap: 2%;
-  margin: 0 2% 0 2%; }
-  #grid-container-option #testOption {
-    background: url("../images/img2.jpg") center no-repeat;
-    height: 200px;
-    width: 100%; }
-  #grid-container-option #contactOption {
-    background: url("../images/img4.jpg") center top no-repeat;
-    height: 200px; }
-    #grid-container-option #contactOption a p {
-      margin-top: 60px; }
-
-#grid-container-review {
-  display: grid;
-  grid-template-columns: 70% 30%;
-  grid-template-rows: 1fr;
-  margin: 2%; }
-  #grid-container-review .reviewPart {
-    margin: 0;
-    padding: 0; }
-    #grid-container-review .reviewPart img {
-      object-fit: cover;
-      width: 100%;
-      max-height: 100%; }
-
-#grid-container-calender {
-  margin: 0; }
-
-#percentil {
-  margin: 0 2% 2% 2%; }
-  #percentil #mySquare1 img, #percentil #mySquare2 img, #percentil #mySquare3 img {
-    max-width: 10%; }
-
-#grid-container-calender #upcomingEvents {
-  height: 100%; }
-  #grid-container-calender #upcomingEvents .something {
-    height: 30%;
+  #welcome {
     margin: 2%; }
-    #grid-container-calender #upcomingEvents .something #separator {
+    #welcome p {
+      margin: 0 150px;
+      text-align: justify; }
+    #welcome .special {
+      margin: 20px; }
+    #welcome h1 {
+      font-size: 40.5px; }
+
+  #grid-container-option {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 2%;
+    margin: 0 2% 0 2%; }
+    #grid-container-option #testOption {
+      background: url("../images/img2.jpg") center no-repeat;
+      height: 200px;
       width: 100%; }
-    #grid-container-calender #upcomingEvents .something b {
-      font-size: 16px; }
-    #grid-container-calender #upcomingEvents .something #jstime {
-      font-size: 16px;
-      text-align: left;
-      font-weight: bold;
-      margin-left: 12px;
-      padding-left: 10px;
-      padding-top: 10px; }
-    #grid-container-calender #upcomingEvents .something p {
-      text-align: center;
-      margin: 0; }
+    #grid-container-option #contactOption {
+      background: url("../images/img4.jpg") center top no-repeat;
+      height: 200px; }
+      #grid-container-option #contactOption a p {
+        margin-top: 60px; }
 
-#news {
-  grid-template-columns: 1fr 1fr 1fr; }
+  #grid-container-review {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 1fr;
+    margin: 2%; }
+    #grid-container-review .reviewPart {
+      margin: 0;
+      padding: 0; }
+      #grid-container-review .reviewPart img {
+        object-fit: cover;
+        width: 100%;
+        max-height: 100%; }
 
-#footer {
-  grid-template-columns: 1fr 1fr; }
-  #footer .footer_two {
-    grid-column-start: 3;
-    grid-column-end: 1; }
+  #grid-container-calender {
+    margin: 0; }
+
+  #percentil {
+    margin: 0 2% 2% 2%; }
+    #percentil #mySquare1 img, #percentil #mySquare2 img, #percentil #mySquare3 img {
+      max-width: 10%; }
+
+  #grid-container-calender #upcomingEvents {
+    height: 100%; }
+    #grid-container-calender #upcomingEvents .something {
+      height: 30%;
+      margin: 2%; }
+      #grid-container-calender #upcomingEvents .something #separator {
+        width: 100%; }
+      #grid-container-calender #upcomingEvents .something b {
+        font-size: 16px; }
+      #grid-container-calender #upcomingEvents .something #jstime {
+        font-size: 16px;
+        text-align: left;
+        font-weight: bold;
+        margin-left: 12px;
+        padding-left: 10px;
+        padding-top: 10px; }
+      #grid-container-calender #upcomingEvents .something p {
+        text-align: center;
+        margin: 0; }
+
+  #news {
+    grid-template-columns: 1fr 1fr 1fr; }
+
+  #footer {
+    grid-template-columns: 1fr 1fr; }
+    #footer .footer_two {
+      grid-column-start: 3;
+      grid-column-end: 1; } }
 
 /*# sourceMappingURL=basics.css.map */
