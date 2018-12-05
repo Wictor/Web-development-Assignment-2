@@ -18,14 +18,15 @@ body {
   .navbar * {
     box-sizing: border-box;
     padding: 0;
-    margin: 0;
+    margin: 1% 2% 0 2%;
     list-style-type: none; }
   .navbar #myInput1 {
     font-size: 16px;
-    width: 335px;
+    width: 100%;
     padding: 14px 5px 12px 5px;
     border: none;
-    border-bottom: 1px solid #ddd; }
+    border-bottom: 1px solid #ddd;
+    margin: 0; }
   .navbar #myInput1:focus {
     outline: 3px solid #ddd; }
   .navbar .dropdown-search-content1 {
@@ -35,7 +36,8 @@ body {
     position: absolute;
     min-width: 100px;
     border: 1px solid #ddd;
-    z-index: 1; }
+    z-index: 1;
+    margin: 0; }
   .navbar .dropdown-search-content1 a {
     color: black;
     padding: 12px 16px;
@@ -106,7 +108,8 @@ body {
     background-color: #3c3c3c;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px; }
+    padding-top: 60px;
+    margin: 0; }
   .navbar .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -130,534 +133,556 @@ body {
     justify-content: flex-end;
     cursor: pointer;
     font-size: 40px; }
-  .navbar .slideshow {
-    margin: 0; }
-    .navbar .slideshow .img-slide {
-      width: 100%; }
-    .navbar .slideshow .slideshow-container {
-      max-width: 100%;
-      position: relative;
-      margin: 3% 0 0 0;
-      padding: 0px; }
-    .navbar .slideshow .mySlides {
-      display: none; }
-    .navbar .slideshow .prev, .navbar .slideshow .next {
-      cursor: pointer;
-      position: absolute;
-      top: 50%;
-      width: auto;
-      margin-top: -22px;
-      padding: 16px;
-      color: black;
-      background-color: rgba(0, 0, 0, 0.1);
-      font-weight: bold;
-      font-size: 18px;
-      transition: 2s ease;
-      border-radius: 0 3px 3px 0;
-      user-select: none; }
-    .navbar .slideshow .next {
-      right: 0;
-      border-radius: 3px 0 0 3px; }
-    .navbar .slideshow .prev:hover, .navbar .slideshow .next:hover {
-      background-color: rgba(0, 0, 0, 0.6);
-      color: white; }
-    .navbar .slideshow .text p {
-      color: #000000;
-      font-family: "Cardo", serif;
-      padding: 8px 12px;
-      position: absolute;
-      right: 20px;
-      top: 20px;
-      width: 100%;
-      text-align: right; }
-    .navbar .slideshow .headtext {
-      color: #000000;
-      font-family: "Cardo", serif;
-      font-size: 30px;
-      padding: 8px 12px;
-      position: absolute;
-      top: 10px;
-      left: 30px;
-      max-width: 40%; }
-      .navbar .slideshow .headtext p {
-        text-align: left; }
-    .navbar .slideshow .slideshow-container .btn {
-      position: absolute;
-      bottom: 10%;
-      right: 1%;
-      transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      background-color: #000000;
-      color: white;
-      font-size: 16px;
-      padding: 8px 18px;
-      border: none;
-      cursor: pointer;
-      border-radius: 5px; }
-    .navbar .slideshow .slideshow-container .btn:hover {
-      background-color: #E85459; }
-    .navbar .slideshow .dot {
-      cursor: pointer;
-      height: 15px;
-      width: 15px;
-      margin: 0 2px;
-      background-color: #bbbbbb;
-      border-radius: 50%;
-      display: inline-block;
-      transition: background-color 2s ease; }
-    .navbar .slideshow .active, .navbar .slideshow .dot:hover {
-      background-color: #717171; }
-    .navbar .slideshow .fade {
-      -webkit-animation-name: fade;
-      -webkit-animation-duration: 2s;
-      animation-name: fade;
-      animation-duration: 2s; }
+
+.slideshow {
+  margin: 0; }
+  .slideshow .img-slide {
+    width: 100%; }
+  .slideshow .slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: 3% 0 0 0;
+    padding: 0px; }
+  .slideshow .mySlides {
+    display: none; }
+  .slideshow .prev, .slideshow .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    background-color: rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 2s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none; }
+  .slideshow .next {
+    right: 0;
+    border-radius: 3px 0 0 3px; }
+  .slideshow .prev:hover, .slideshow .next:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white; }
+  .slideshow .text p {
+    color: #000000;
+    font-family: "Cardo", serif;
+    padding: 8px 12px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 100%;
+    text-align: right; }
+  .slideshow .headtext {
+    color: #000000;
+    font-family: "Cardo", serif;
+    font-size: 30px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    max-width: 40%; }
+    .slideshow .headtext p {
+      text-align: left; }
+  .slideshow .slideshow-container .btn {
+    position: absolute;
+    bottom: 10%;
+    right: 1%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #000000;
+    color: white;
+    font-size: 16px;
+    padding: 8px 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; }
+  .slideshow .slideshow-container .btn:hover {
+    background-color: #E85459; }
+  .slideshow .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 2s ease; }
+  .slideshow .active, .slideshow .dot:hover {
+    background-color: #717171; }
+  .slideshow .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s; }
 @-webkit-keyframes fade {
   from {
-    opacity: .7; }
+    opacity: 0.7; }
   to {
     opacity: 1; } }
 @keyframes fade {
   from {
-    opacity: .7; }
+    opacity: 0.7; }
   to {
     opacity: 1; } }
-  .navbar #welcome {
-    margin: 10% 8% 4% 8%; }
-    .navbar #welcome .centered {
-      text-align: center; }
-    .navbar #welcome .special {
-      text-align: center;
-      font-size: 18px;
+#welcome {
+  margin: 10% 8% 4% 8%; }
+  #welcome .centered {
+    text-align: center; }
+  #welcome .special {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    margin: 4% 6% 0 6%; }
+
+#grid-container-option {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr 1fr;
+  margin: 4% 4% 0 4%; }
+  #grid-container-option h1 {
+    text-align: left; }
+    #grid-container-option h1 a, #grid-container-option h1 br {
+      text-decoration: none;
+      font-size: 25px;
+      font-family: "Cardo", serif;
+      color: #E85459;
+      padding: 10px 0 10px 4%; }
+  #grid-container-option #testOption {
+    margin-bottom: 4%;
+    background: url("../images/img2.jpg") center no-repeat;
+    height: 100px;
+    border-radius: 3px; }
+    #grid-container-option #testOption .modalButton {
+      border: none;
+      background-color: rgba(255, 255, 255, 0);
+      display: block;
+      height: 100%;
+      width: 100%;
+      font-family: "Cardo", serif;
+      font-size: 28px;
       font-weight: bold;
-      color: #000000;
-      margin: 4% 6% 0 6%; }
-  .navbar #grid-container-option {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 1fr 1fr;
-    margin: 4% 4% 0 4%; }
-    .navbar #grid-container-option h1 {
-      text-align: left; }
-      .navbar #grid-container-option h1 a, .navbar #grid-container-option h1 br {
-        text-decoration: none;
-        font-size: 25px;
-        font-family: "Cardo", serif;
-        color: #E85459;
-        padding: 10px 0 10px 4%; }
-    .navbar #grid-container-option #testOption {
-      margin-bottom: 4%;
-      background: url("../images/img2.jpg") center no-repeat;
-      height: 100px;
-      border-radius: 3px; }
-      .navbar #grid-container-option #testOption .modalButton {
-        border: none;
-        background-color: rgba(255, 255, 255, 0);
-        display: block;
-        height: 100%;
-        width: 100%;
+      text-align: left;
+      color: #E85459;
+      margin-top: 0;
+      outline: none;
+      padding-left: 20px;
+      cursor: pointer; }
+  #grid-container-option #contactOption {
+    background: url("../images/img4.jpg") 56% 1% no-repeat;
+    height: 100px;
+    border-radius: 3px; }
+    #grid-container-option #contactOption a {
+      display: block;
+      height: 100%;
+      text-decoration: none; }
+      #grid-container-option #contactOption a p {
         font-family: "Cardo", serif;
         font-size: 28px;
         font-weight: bold;
-        text-align: left;
         color: #E85459;
-        margin-top: 0;
-        outline: none;
+        margin-top: 2%;
         padding-left: 20px;
-        cursor: pointer; }
-    .navbar #grid-container-option #contactOption {
-      background: url("../images/img4.jpg") 56% 1% no-repeat;
-      height: 100px;
-      border-radius: 3px; }
-      .navbar #grid-container-option #contactOption a {
-        display: block;
-        height: 100%;
-        text-decoration: none; }
-        .navbar #grid-container-option #contactOption a p {
-          font-family: "Cardo", serif;
-          font-size: 28px;
-          font-weight: bold;
-          color: #E85459;
-          margin-top: 2%;
-          padding-left: 20px;
-          max-width: 36%; }
-  .navbar #percentil {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    margin: 0 4% 0 4%;
-    background-color: white;
-    border-radius: 3px;
-    padding: 10px 10px 10px 10px; }
-    .navbar #percentil p {
-      text-align: center;
-      font-weight: lighter; }
-      .navbar #percentil p b {
-        text-align: center;
-        font-family: "Cardo", serif; }
-    .navbar #percentil #mySquare1 img {
-      width: 20%;
-      height: auto;
-      display: block;
-      margin: 10px auto 0 auto; }
-    .navbar #percentil #mySquare1 .special-headline {
-      font-size: 28px;
-      font-weight: bold;
-      color: #E85459; }
-    .navbar #percentil #mySquare2 img {
-      width: 20%;
-      height: auto;
-      display: block;
-      margin: 10px auto 0 auto; }
-    .navbar #percentil #mySquare2 .special-headline {
-      font-size: 30px;
-      font-weight: bold;
-      color: #E85459; }
-    .navbar #percentil #mySquare3 img {
-      width: 20%;
-      height: auto;
-      display: block;
-      margin: 10px auto 0 auto; }
-    .navbar #percentil #mySquare3 .special-headline {
-      font-size: 30px;
-      font-weight: bold;
-      color: #E85459; }
-  .navbar #grid-container-review {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto; }
-    .navbar #grid-container-review .myReview {
-      display: none; }
-    .navbar #grid-container-review .reviewPart {
-      margin: 4%;
-      border-radius: 3px; }
-      .navbar #grid-container-review .reviewPart img {
-        object-fit: cover;
-        width: 100%;
-        max-height: 100%; }
-  .navbar #grid-container-calender {
-    margin: 0 4% 0 4%;
+        max-width: 36%; }
+
+#percentil {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  margin: 0 4% 0 4%;
+  background-color: white;
+  border-radius: 3px;
+  padding: 10px 10px 10px 10px; }
+  #percentil p {
     text-align: center;
-    background: white;
+    font-weight: lighter; }
+    #percentil p b {
+      text-align: center;
+      font-family: "Cardo", serif; }
+  #percentil #mySquare1 img {
+    width: 20%;
+    height: auto;
+    display: block;
+    margin: 10px auto 0 auto; }
+  #percentil #mySquare1 .special-headline {
+    font-size: 28px;
+    font-weight: bold;
+    color: #E85459; }
+  #percentil #mySquare2 img {
+    width: 20%;
+    height: auto;
+    display: block;
+    margin: 10px auto 0 auto; }
+  #percentil #mySquare2 .special-headline {
+    font-size: 30px;
+    font-weight: bold;
+    color: #E85459; }
+  #percentil #mySquare3 img {
+    width: 20%;
+    height: auto;
+    display: block;
+    margin: 10px auto 0 auto; }
+  #percentil #mySquare3 .special-headline {
+    font-size: 30px;
+    font-weight: bold;
+    color: #E85459; }
+
+#grid-container-review {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto; }
+  #grid-container-review .myReview {
+    display: none; }
+  #grid-container-review .reviewPart {
+    margin: 4%;
     border-radius: 3px; }
-    .navbar #grid-container-calender #upcomingEvents {
-      /*p {
-        text-align: center;
-      }*/ }
-      .navbar #grid-container-calender #upcomingEvents #separator {
-        border: 0;
-        height: 0;
-        border-top: 1px solid rgba(255, 255, 255, 0.3);
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
-      .navbar #grid-container-calender #upcomingEvents .something {
-        height: 70px; }
-      .navbar #grid-container-calender #upcomingEvents #jsdate {
-        max-height: 50px;
-        text-align: left;
-        padding-left: 20px; }
-      .navbar #grid-container-calender #upcomingEvents div #jstime {
-        padding-left: 20px; }
-        .navbar #grid-container-calender #upcomingEvents div #jstime #jstext {
-          text-decoration: none;
-          text-align: right;
-          color: "Open sans", sans-serif;
-          font-family: "Open sans", sans-serif;
-          padding-left: 80px; }
-      .navbar #grid-container-calender #upcomingEvents b {
-        text-align: center;
-        font-size: 17px;
-        border: 1px solid #eeeeee;
-        width: 100px;
-        padding: 5px;
-        color: #E85459; }
-  .navbar #news {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
-    padding: 10px; }
-    .navbar #news .newsImage {
-      max-width: 100%; }
-    .navbar #news .newsText {
-      max-width: 100%; }
-    .navbar #news article p {
-      display: inline; }
-  .navbar #modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.6); }
-    .navbar #modal #modal-content {
-      background-color: #f4f4f4;
-      margin: 20% auto;
-      padding: 20px;
-      width: 80%;
-      color: black; }
-    .navbar #modal #closeBtn {
-      color: black;
-      float: right;
-      font-size: 30px; }
-    .navbar #modal #closeBtn:hover, .navbar #modal .closeBtn:focus {
-      color: #790009;
-      text-decoration: none;
-      cursor: pointer; }
-  .navbar #footer {
-    background-color: #9C292D;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    margin: 0;
-    text-align: center; }
-    .navbar #footer p {
-      text-align: center;
-      color: white; }
-    .navbar #footer a {
-      color: #E85459; }
-    .navbar #footer .start_img2 {
-      max-width: 100%;
-      height: 90px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto; }
-  @media screen and (min-width: 768px) and (max-width: 1126px) {
-    .navbar body h1 {
-      font-size: 27px; }
-    .navbar .slideshow .headtext {
-      font-size: 40.5px;
-      padding-top: 40px;
-      padding-left: 30px; }
-    .navbar #welcome {
-      margin: 10% 10% 4% 10%; }
-      .navbar #welcome .special {
-        margin: 0; }
-    .navbar #grid-container-option {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto;
-      margin: 2%; }
-      .navbar #grid-container-option #testOption {
-        margin: 4%;
-        background: url("../images/img2.jpg") 58% 10% no-repeat;
-        height: 120px; }
-      .navbar #grid-container-option #contactOption {
-        margin: 4%;
-        background: url("../images/img4.jpg") 58% 1% no-repeat;
-        height: 120px; }
-    .navbar #grid-container-review {
-      display: grid;
-      grid-template-columns: 66% 30%;
-      grid-template-rows: 1fr;
-      margin: 4%;
-      grid-gap: 4%; }
-      .navbar #grid-container-review .reviewPart {
-        width: 100%;
-        margin: 0;
-        padding: 0; }
-    .navbar #grid-container-calender {
-      background: white;
-      margin: 0; }
-      .navbar #grid-container-calender h1 {
-        margin: 0 5px; }
-      .navbar #grid-container-calender #upcomingEvents {
-        height: 100%; }
-        .navbar #grid-container-calender #upcomingEvents .something {
-          height: 100%;
-          margin: 2%; }
-          .navbar #grid-container-calender #upcomingEvents .something #separator {
-            width: 100%; }
-          .navbar #grid-container-calender #upcomingEvents .something b {
-            font-size: 16px; }
-          .navbar #grid-container-calender #upcomingEvents .something #jstime {
-            font-size: 16px;
-            text-align: left;
-            font-weight: bold;
-            margin-left: 12px;
-            padding-left: 10px;
-            padding-top: 10px; }
-          .navbar #grid-container-calender #upcomingEvents .something p {
-            text-align: center;
-            margin: 0; } }
-  @media screen and (min-width: 1127px) {
-    .navbar .navbar #myInput {
-      font-size: 16px;
-      width: 100px;
-      padding: 14px 5px 12px 5px;
-      border: none;
-      border-bottom: 1px solid #ddd; }
-    .navbar .navbar #myInput:focus {
-      outline: 3px solid #ddd; }
-    .navbar .navbar .my-search-Dropdown a:hover {
-      background-color: #ddd; }
-    .navbar .navbar .dropdown-search {
-      margin-right: 120px; }
-    .navbar .navbar .dropdown-search-content {
-      width: 20px;
-      display: none;
-      position: absolute;
-      background-color: #f6f6f6;
-      min-width: 100px;
-      border: 1px solid #ddd;
-      z-index: 1;
-      margin-right: 200px; }
-    .navbar .navbar .dropdown-search-content a {
-      color: black;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block; }
-    .navbar .navbar #utb-linkspc {
-      position: absolute;
-      margin-top: 20px;
-      display: none; }
-    .navbar .navbar #utb-linkspc a {
-      color: white;
-      background-color: #ff757a;
-      padding: 15px 50px;
-      text-decoration: none;
-      font-size: 17px;
-      display: block;
-      text-align: center;
-      width: 100%; }
-    .navbar .navbar #utb-linkspc a:hover {
-      background-color: #54E97B; }
-    .navbar .navbar .opennav {
-      display: none; }
-    .navbar .navbar .sidenav {
-      display: none; }
-    .navbar .navbar #main {
-      display: none; }
-    .navbar .navbar .utb-li {
-      z-index: 2; }
-    .navbar .navbar .image-text {
-      display: none; }
-    .navbar .navbar .navbar {
-      display: flex;
-      justify-content: space-between;
-      padding-bottom: 0;
-      height: 200px;
-      align-items: center;
-      width: 100%; }
-    .navbar .navbar .main-nav {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
+    #grid-container-review .reviewPart img {
+      object-fit: cover;
       width: 100%;
-      margin: 0; }
-    .navbar .navbar .main-nav li {
-      margin-right: 20px; }
-    .navbar .navbar #utb-links {
-      position: absolute;
-      margin-top: 10%;
-      margin-left: -790px;
-      flex-direction: column-reverse;
-      justify-content: flex-end; }
-    .navbar .navbar .nav-links {
-      display: block;
-      position: relative;
+      max-height: 100%; }
+
+#grid-container-calender {
+  margin: 0 4% 0 4%;
+  text-align: center;
+  background: white;
+  border-radius: 3px; }
+  #grid-container-calender #upcomingEvents {
+    /*p {
       text-align: center;
-      text-decoration: none;
-      font-family: 'Montserrat', sans-serif;
-      margin-left: 0;
-      margin-right: 0;
-      padding: auto 30px auto 0;
-      justify-content: flex-end; }
-    .navbar .navbar .icon_text {
-      display: block;
-      color: black;
-      font-size: 20px; }
-    .navbar .navbar .nav-links p {
-      font-size: 20px;
-      float: none;
-      margin-left: 38%;
-      color: black; }
-    .navbar .navbar .logo {
-      display: block;
-      justify-content: flex-start;
-      margin-top: 0;
-      margin-bottom: 10px; }
-    .navbar .navbar #logoid {
-      justify-content: space-between; }
-    .navbar .navbar .logo1 {
-      display: none; }
-    .navbar .navbar .logonav {
-      display: flex;
-      justify-content: space-between; }
-    .navbar .navbar .navbar-toggle {
-      display: none; }
-    .navbar .slideshow .headtext {
-      font-size: 54px;
-      padding-top: 70px;
-      padding-left: 60px; }
-    .navbar #welcome {
-      margin: 2%; }
-      .navbar #welcome p {
-        margin: 0 150px;
-        text-align: justify; }
-      .navbar #welcome .special {
-        margin: 20px; }
-      .navbar #welcome h1 {
-        font-size: 40.5px; }
-    .navbar #grid-container-option {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto;
-      grid-gap: 2%;
-      margin: 0 2% 0 2%; }
-      .navbar #grid-container-option #testOption {
-        background: url("../images/img2.jpg") center no-repeat;
-        height: 200px;
-        width: 100%; }
-      .navbar #grid-container-option #contactOption {
-        background: url("../images/img4.jpg") center top no-repeat;
-        height: 200px; }
-        .navbar #grid-container-option #contactOption a p {
-          margin-top: 60px; }
-    .navbar #grid-container-review {
-      display: grid;
-      grid-template-columns: 70% 30%;
-      grid-template-rows: 1fr;
-      margin: 2%; }
-      .navbar #grid-container-review .reviewPart {
-        margin: 0;
-        padding: 0; }
-        .navbar #grid-container-review .reviewPart img {
-          object-fit: cover;
-          width: 100%;
-          max-height: 100%; }
-    .navbar #grid-container-calender {
+    }*/ }
+    #grid-container-calender #upcomingEvents #separator {
+      border: 0;
+      height: 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+    #grid-container-calender #upcomingEvents .something {
+      height: 70px; }
+    #grid-container-calender #upcomingEvents #jsdate {
+      max-height: 50px;
+      text-align: left;
+      padding-left: 20px; }
+    #grid-container-calender #upcomingEvents div #jstime {
+      padding-left: 20px; }
+      #grid-container-calender #upcomingEvents div #jstime #jstext {
+        text-decoration: none;
+        text-align: right;
+        color: "Open sans", sans-serif;
+        font-family: "Open sans", sans-serif;
+        padding-left: 80px; }
+    #grid-container-calender #upcomingEvents b {
+      text-align: center;
+      font-size: 17px;
+      border: 1px solid #eeeeee;
+      width: 100px;
+      padding: 5px;
+      color: #E85459; }
+
+#news {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  padding: 10px; }
+  #news .newsImage {
+    max-width: 100%; }
+  #news .newsText {
+    max-width: 100%; }
+  #news article p {
+    display: inline; }
+
+#modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6); }
+  #modal #modal-content {
+    background-color: #f4f4f4;
+    margin: 20% auto;
+    padding: 20px;
+    width: 80%;
+    color: black; }
+  #modal #closeBtn {
+    color: black;
+    float: right;
+    font-size: 30px; }
+  #modal #closeBtn:hover, #modal .closeBtn:focus {
+    color: #790009;
+    text-decoration: none;
+    cursor: pointer; }
+
+#footer {
+  background-color: #9C292D;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  margin: 0;
+  text-align: center; }
+  #footer p {
+    text-align: center;
+    color: white; }
+  #footer a {
+    color: #E85459; }
+  #footer .start_img2 {
+    max-width: 100%;
+    height: 90px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+
+@media screen and (min-width: 768px) and (max-width: 1126px) {
+  body h1 {
+    font-size: 27px; }
+
+  .slideshow .headtext {
+    font-size: 40.5px;
+    padding-top: 40px;
+    padding-left: 30px; }
+
+  #welcome {
+    margin: 10% 10% 4% 10%; }
+    #welcome .special {
       margin: 0; }
-    .navbar #percentil {
-      margin: 0 2% 2% 2%; }
-      .navbar #percentil #mySquare1 img, .navbar #percentil #mySquare2 img, .navbar #percentil #mySquare3 img {
-        max-width: 10%; }
-    .navbar #grid-container-calender #upcomingEvents {
+
+  #grid-container-option {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    margin: 2%; }
+    #grid-container-option #testOption {
+      margin: 4%;
+      background: url("../images/img2.jpg") 58% 10% no-repeat;
+      height: 120px; }
+    #grid-container-option #contactOption {
+      margin: 4%;
+      background: url("../images/img4.jpg") 58% 1% no-repeat;
+      height: 120px; }
+
+  #grid-container-review {
+    display: grid;
+    grid-template-columns: 66% 30%;
+    grid-template-rows: 1fr;
+    margin: 4%;
+    grid-gap: 4%; }
+    #grid-container-review .reviewPart {
+      width: 100%;
+      margin: 0;
+      padding: 0; }
+
+  #grid-container-calender {
+    background: white;
+    margin: 0; }
+    #grid-container-calender h1 {
+      margin: 0 5px; }
+    #grid-container-calender #upcomingEvents {
       height: 100%; }
-      .navbar #grid-container-calender #upcomingEvents .something {
-        height: 30%;
+      #grid-container-calender #upcomingEvents .something {
+        height: 100%;
         margin: 2%; }
-        .navbar #grid-container-calender #upcomingEvents .something #separator {
+        #grid-container-calender #upcomingEvents .something #separator {
           width: 100%; }
-        .navbar #grid-container-calender #upcomingEvents .something b {
+        #grid-container-calender #upcomingEvents .something b {
           font-size: 16px; }
-        .navbar #grid-container-calender #upcomingEvents .something #jstime {
+        #grid-container-calender #upcomingEvents .something #jstime {
           font-size: 16px;
           text-align: left;
           font-weight: bold;
           margin-left: 12px;
           padding-left: 10px;
           padding-top: 10px; }
-        .navbar #grid-container-calender #upcomingEvents .something p {
+        #grid-container-calender #upcomingEvents .something p {
           text-align: center;
-          margin: 0; }
-    .navbar #news {
-      grid-template-columns: 1fr 1fr 1fr; }
-    .navbar #footer {
-      grid-template-columns: 1fr 1fr; }
-      .navbar #footer .footer_two {
-        grid-column-start: 3;
-        grid-column-end: 1; } }
+          margin: 0; } }
+@media screen and (min-width: 1127px) {
+  .navbar #myInput {
+    font-size: 16px;
+    width: 100px;
+    padding: 14px 5px 12px 5px;
+    border: none;
+    border-bottom: 1px solid #ddd; }
+  .navbar #myInput:focus {
+    outline: 3px solid #ddd; }
+  .navbar .my-search-Dropdown a:hover {
+    background-color: #ddd; }
+  .navbar .dropdown-search {
+    margin-right: 120px; }
+  .navbar .dropdown-search-content {
+    width: 20px;
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 100px;
+    border: 1px solid #ddd;
+    z-index: 1;
+    margin-right: 200px; }
+  .navbar .dropdown-search-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block; }
+  .navbar #utb-linkspc {
+    position: absolute;
+    margin-top: 20px;
+    display: none; }
+  .navbar #utb-linkspc a {
+    color: white;
+    background-color: #ff757a;
+    padding: 15px 50px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    text-align: center;
+    width: 100%; }
+  .navbar #utb-linkspc a:hover {
+    background-color: #54E97B; }
+  .navbar .opennav {
+    display: none; }
+  .navbar .sidenav {
+    display: none; }
+  .navbar #main {
+    display: none; }
+  .navbar .utb-li {
+    z-index: 2; }
+  .navbar .image-text {
+    display: none; }
+  .navbar .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 200px;
+    align-items: center;
+    width: 100%; }
+  .navbar .main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    margin: 0; }
+  .navbar .main-nav li {
+    margin-right: 20px; }
+  .navbar #utb-links {
+    position: absolute;
+    margin-top: 10%;
+    margin-left: -790px;
+    flex-direction: column-reverse;
+    justify-content: flex-end; }
+  .navbar .nav-links {
+    display: block;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 0;
+    margin-right: 0;
+    padding: auto 30px auto 0;
+    justify-content: flex-end; }
+  .navbar .icon_text {
+    display: block;
+    color: black;
+    font-size: 20px; }
+  .navbar .nav-links p {
+    font-size: 20px;
+    float: none;
+    margin-left: 38%;
+    color: black; }
+  .navbar .logo {
+    display: block;
+    justify-content: flex-start;
+    margin-top: 0;
+    margin-bottom: 10px; }
+  .navbar #logoid {
+    justify-content: space-between; }
+  .navbar .logo1 {
+    display: none; }
+  .navbar .logonav {
+    display: flex;
+    justify-content: space-between; }
+  .navbar .navbar-toggle {
+    display: none; } }
+.slideshow .headtext {
+  font-size: 54px;
+  padding-top: 70px;
+  padding-left: 60px; }
+
+#welcome {
+  margin: 2%; }
+  #welcome p {
+    margin: 0 150px;
+    text-align: justify; }
+  #welcome .special {
+    margin: 20px; }
+  #welcome h1 {
+    font-size: 40.5px; }
+
+#grid-container-option {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 2%;
+  margin: 0 2% 0 2%; }
+  #grid-container-option #testOption {
+    background: url("../images/img2.jpg") center no-repeat;
+    height: 200px;
+    width: 100%; }
+  #grid-container-option #contactOption {
+    background: url("../images/img4.jpg") center top no-repeat;
+    height: 200px; }
+    #grid-container-option #contactOption a p {
+      margin-top: 60px; }
+
+#grid-container-review {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 1fr;
+  margin: 2%; }
+  #grid-container-review .reviewPart {
+    margin: 0;
+    padding: 0; }
+    #grid-container-review .reviewPart img {
+      object-fit: cover;
+      width: 100%;
+      max-height: 100%; }
+
+#grid-container-calender {
+  margin: 0; }
+
+#percentil {
+  margin: 0 2% 2% 2%; }
+  #percentil #mySquare1 img, #percentil #mySquare2 img, #percentil #mySquare3 img {
+    max-width: 10%; }
+
+#grid-container-calender #upcomingEvents {
+  height: 100%; }
+  #grid-container-calender #upcomingEvents .something {
+    height: 30%;
+    margin: 2%; }
+    #grid-container-calender #upcomingEvents .something #separator {
+      width: 100%; }
+    #grid-container-calender #upcomingEvents .something b {
+      font-size: 16px; }
+    #grid-container-calender #upcomingEvents .something #jstime {
+      font-size: 16px;
+      text-align: left;
+      font-weight: bold;
+      margin-left: 12px;
+      padding-left: 10px;
+      padding-top: 10px; }
+    #grid-container-calender #upcomingEvents .something p {
+      text-align: center;
+      margin: 0; }
+
+#news {
+  grid-template-columns: 1fr 1fr 1fr; }
+
+#footer {
+  grid-template-columns: 1fr 1fr; }
+  #footer .footer_two {
+    grid-column-start: 3;
+    grid-column-end: 1; }
 
 /*# sourceMappingURL=basics.css.map */
