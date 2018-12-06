@@ -61,6 +61,7 @@
     background-image: linear-gradient(200deg, #C33E47 0%, #ff757a 100%);
     display: none;
     width: 100%;
+    margin: 0;
   }
   .dropdown-icon {
     display: block;
@@ -79,7 +80,7 @@
     width: 100%;
   }
   #utb-links a:hover {
-    background-color: #54E97B;
+    background-color: #9c292d
   }
 
   .navbar {
@@ -178,6 +179,11 @@
 
   }
 }
+#Topbtn {
+  display: none; /* Hidden by default */
+  opacity: 0.0;
+  position: absolute;
+}
 
 @media screen and (min-width: 1024px) {
 
@@ -202,6 +208,7 @@
       padding: 0;
     }
 
+
     .dropdown-search-content {
       text-align: center;
       width: 150px;
@@ -211,7 +218,7 @@
       background-color: #f6f6f6;
       border: 1px solid #ddd;
       z-index: 2;
-      margin-left: 110px;
+      margin-left: 60px;
     }
 
     .dropdown-search-content a {
@@ -228,7 +235,6 @@
       position: absolute;
       margin-top: 20px;
       display: none;
-
     }
 
     #utb-linkspc a {
@@ -243,7 +249,7 @@
     }
 
     #utb-linkspc a:hover {
-      background-color: #54E97B;
+      background-color: #9c292d;
     }
 
     .opennav {
@@ -306,7 +312,7 @@
       text-decoration: none;
       font-family: 'Montserrat', sans-serif;
       margin: 0;
-      padding: 0 30px 0 0;
+      padding: 0 20px 0 0;
       justify-content: flex-end;
 
     }
@@ -321,7 +327,13 @@
       float: none;
       margin-left: 38%;
       color: black;
-
+    }
+    .nav-links span {
+      font-size: 15px;
+    }
+    .nav-links img {
+      height: 30px;
+      width: auto;
     }
 
     .logo {
