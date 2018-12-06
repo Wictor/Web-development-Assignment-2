@@ -1,16 +1,18 @@
-    $('#subscribeForm').submit(function(event) {
-        event.preventDefault();
+$('#subscribeForm').submit(function(event) {
+    //Testa med eventistener
 
-        let formData = $('#subscribeForm').serialize();
+    event.preventDefault();
 
-        $.ajax({
-            type: "POST",
-            url: "php/subscribe.php",
-            data: formData
-        }).done(function () {
-                $('#subscriberEmail').val('');
-                document.getElementById('submitedText').innerHTML = ('You have been added');
+    let formData = $('#subscribeForm').serialize();
+
+    $.ajax({
+        type: "POST",
+        url: "php/subscribe.php",
+        data: formData
+    }).done(function () {
+        $('#subscriberEmail').val('');
+        document.getElementById('submitedText').innerHTML = ('You have been added');
 
 
-            });
     });
+});

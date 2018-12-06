@@ -17,77 +17,72 @@ xmlhttp.onreadystatechange = function()
         data = JSON.parse(this.responseText);
 
         //News site
-        if(newsSite){
+        if(newsSite) {
 
-        for (let y in data) {
-            if (y < 2) {
+            for (let y in data) {
 
                 newContent += '<article class="newsArticle">';
+                newContent += '<div class="newsImageContainer">';
                 newContent += '<img src="' + data[y].ArticleImage + '" ';
                 newContent += 'alt="' + data[y].ArticleTitle + '" ';
                 newContent += 'class="newsImage"/>';
+                newContent += '</div>';
+                newContent += '<div class="newsContentContainer">';
+                newContent += '<h3 class="newsTitle">' + data[y].ArticleTitle + '</h3>';
 
-                newContent += '<h2 class="newsTitle">' + data[y].ArticleTitle + '</h2>';
+                if (data[y].ArticleText.length > 500) {
 
-                if (data[y].ArticleText.length > 200) {
-
-                    let articleText = data[y].ArticleText.substr(0, 200);
+                    let articleText = data[y].ArticleText.substr(0, 500);
                     articleText = articleText.substr(0, Math.min(articleText.length, articleText.lastIndexOf(" ")));
-                    let readMore = data[y].ArticleText.substr(articleText.lastIndexOf(""));
+                    let readMore = data[y].ArticleText;
 
                     articleText = articleText + '...';
-                    newContent += '<p class="newsText">' + articleText + '</p>';
-                    newContent += '<button class="readMore" id="'+y+'">Read More</button>';
+                    newContent += '<p class="newsText newsTextFade">' + articleText + '</p>';
+                    newContent += '<input type="button" value="Read more" class="readMoreBtn"></input>';
                     newContent += '<p class="readMoreText">' + readMore + '</p>';
-
                 }
                 else {
-                    newContent += '<p class="newsText">' + data[y].ArticleText + '</p>';
+                    let articleText = data[y].ArticleText;
+                    newContent += '<p class="newsText">' + articleText + '</p>';
                 }
-
+                newContent += '</div>';
                 newContent += '</article>';
-            }
 
-            else {
-
-                newContent += '<article class="newsArticle">';
-                newContent += '<h2 class="newsTitle">' + data[y].ArticleTitle+'</h2>';
-                newContent += '</article>';
             }
             document.getElementById("newsSite").innerHTML = newContent;
         }
-        }
-            //NewsSection
+
+        //NewsSection
         if(newsSection){
 
-        for (let x = 0; x < 3; x++)
-        {
-            newContent += '<article class="newsArticle">';
-            newContent += '<img src="' + data[x].ArticleImage + '" ';
-            newContent += 'alt="' + data[x].ArticleTitle + '" ';
-            newContent += 'class="newsImage"/>';
-            newContent += '<h2 class="newsTitle">' + data[x].ArticleTitle+'</h2>';
-            if(data[x].ArticleText.length > 100) {
+            for (let x = 0; x < 3; x++)
+            {
+                newContent += '<article class="newsArticle">';
+                newContent += '<img src="' + data[x].ArticleImage + '" ';
+                newContent += 'alt="' + data[x].ArticleTitle + '" ';
+                newContent += 'class="newsImage"/>';
+                newContent += '<h3 class="newsTitle">' + data[x].ArticleTitle+'</h3>';
+                if(data[x].ArticleText.length > 100) {
 
-                let articleText = data[x].ArticleText.substr(0,100);
-                articleText = articleText.substr(0, Math.min(articleText.length, articleText.lastIndexOf(" ")));
-                let readMore = data[x].ArticleText.substr(articleText.lastIndexOf(""));
+                    let articleText = data[x].ArticleText.substr(0,100);
+                    articleText = articleText.substr(0, Math.min(articleText.length, articleText.lastIndexOf(" ")));
+                    let readMore = data[x].ArticleText;
 
-                newContent += '<p class="newsText" id="newsText' + x + '" >' + articleText + '</p>';
-                newContent += '<p class="readMoreText" id="readMore' + x + '" >' + readMore + '</p>';
-                newContent += '<button class="readMoreBtn" id="newsBtn' + x + '">Read More</button>';
+                    newContent += '<p class="newsText newsTextFade" id="newsText' + x + '" >' + articleText + '</p>';
+                    newContent += '<p class="readMoreText" id="readMore' + x + '" >' + readMore + '</p>';
+                    newContent += '<input type="button" value="Read more" class="readMoreBtn" id="newsBtn' + x + '"></input>';
 
 
+                }
+                else{
+                    newContent += '<p class="newsText">' + data[x].ArticleText+'</p>';
+                }
+
+                newContent += '</article>';
+
+                document.getElementById("newsSection").innerHTML = newContent;
             }
-            else{
-                newContent += '<p class="newsText">' + data[x].ArticleText+'</p>';
-            }
-
-            newContent += '</article>';
-
-            document.getElementById("newsSection").innerHTML = newContent;
         }
-    }
 
     }
 
@@ -95,23 +90,31 @@ xmlhttp.onreadystatechange = function()
 
 setTimeout(function () {
     let readMore = document.getElementsByClassName("readMoreBtn");
-    for (let l = 0; l < readMore.length; l++) {
-        readMore[l].addEventListener("click", function() {
+    let text = document.getElementsByClassName("readMoreBtn");
 
-            let x = document.getElementById("readMore" +l);
-            console.log(x);
-            if(x.style.display === 'inline')
-            {
-               x.style.display = 'none';
+    for (let l = 0; l < readMore.length; l++) {
+        let x = document.getElementsByClassName("readMoreText");
+        let y = document.getElementsByClassName("newsText");
+
+        readMore[l].addEventListener("click", function () {
+
+
+            if (x[l].style.display === 'inline') {
+
+                text[l].value = "Read more";
+                x[l].style.display = 'none';
+                y[l].style.display = 'inline';
             }
             else {
-                x.style.display = 'inline';
+
+                text[l].value = "Close";
+                x[l].style.display = 'inline';
+                y[l].style.display = 'none';
             }
         });
 
     }
-}, 1000);
-
+},1000);
 
 
 
