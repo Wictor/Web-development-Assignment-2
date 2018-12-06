@@ -1,0 +1,138 @@
+@import "simplevariables";
+#ansokan {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  position: center;
+  margin: 5%;
+
+  .app {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    position: center;
+
+
+  }
+  #app1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    position: center;
+    p {
+      margin-left: 12%;
+    }
+    #position{
+      text-align: center;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      margin: auto;
+      input {
+        margin: auto;
+        position: center;
+    }
+  }
+
+
+
+
+  }
+  .separator {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+  }
+  h2 {
+    font-family: $h-desktop;
+    font-size: 24px;
+
+  }
+  .forms {
+    width: 100%;
+    height: 35px;
+    border-radius: 3px;
+    font-size: 20px;
+    font-family: $font-text;
+    border-style: none;
+
+  }
+  .forms:focus {
+    outline: 3px solid #ddd;
+  }
+  #text{
+    height: 60px;
+  }
+
+
+  #knapp {
+    width: 200px;
+    height: 50px;
+    border-radius: 3px;
+    background-color: black;
+    color: white;
+    border-style: none;
+    font-family: $font-text;
+    outline: none;
+
+  }
+  #knapp:hover {
+    background-color: #9C292D;
+  }
+  #myDate {
+    height: 50px;
+    font-size: 25px;
+    border-radius: 3px;
+
+  }
+
+  .app_img {
+    width: 100%;
+    height: auto;
+  }
+  @media screen and (min-width: 1025px) {
+
+
+      grid-template-columns: 1fr 1fr;
+
+
+  }
+  .form-radio {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    position: relative;
+    background-color: white;
+    color: #666;
+    top: 10px;
+    height: 30px;
+    width: 30px;
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-right: 7px;
+    outline: none;
+  }
+  .form-radio:checked::before {
+    position: absolute;
+    font: 13px/1 'Open Sans', sans-serif;
+    left: 11px;
+    top: 7px;
+    content: '\02143';
+    transform: rotate(40deg);
+  }
+  .form-radio:hover {
+    background-color: #ddd;
+  }
+  .form-radio:checked {
+    background-color: white;
+  }
+  label {
+    font: 300 16px/1.7 'Open Sans', sans-serif;
+    color: #666;
+    cursor: pointer;
+  }
+}

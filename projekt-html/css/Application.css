@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+#ansokan {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  position: center;
+  margin: 5%; }
+  #ansokan .app {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    position: center; }
+  #ansokan #app1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    position: center; }
+    #ansokan #app1 p {
+      margin-left: 12%; }
+    #ansokan #app1 #position {
+      text-align: center;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      margin: auto; }
+      #ansokan #app1 #position input {
+        margin: auto;
+        position: center; }
+  #ansokan .separator {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+  #ansokan h2 {
+    font-family: 27px;
+    font-size: 24px; }
+  #ansokan .forms {
+    width: 100%;
+    height: 35px;
+    border-radius: 3px;
+    font-size: 20px;
+    font-family: "Open sans", sans-serif;
+    border-style: none; }
+  #ansokan .forms:focus {
+    outline: 3px solid #ddd; }
+  #ansokan #text {
+    height: 60px; }
+  #ansokan #knapp {
+    width: 200px;
+    height: 50px;
+    border-radius: 3px;
+    background-color: black;
+    color: white;
+    border-style: none;
+    font-family: "Open sans", sans-serif;
+    outline: none; }
+  #ansokan #knapp:hover {
+    background-color: #9C292D; }
+  #ansokan #myDate {
+    height: 50px;
+    font-size: 25px;
+    border-radius: 3px; }
+  #ansokan .app_img {
+    width: 100%;
+    height: auto; }
+  @media screen and (min-width: 1025px) {
+    #ansokan {
+      grid-template-columns: 1fr 1fr; } }
+  #ansokan .form-radio {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    position: relative;
+    background-color: white;
+    color: #666;
+    top: 10px;
+    height: 30px;
+    width: 30px;
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-right: 7px;
+    outline: none; }
+  #ansokan .form-radio:checked::before {
+    position: absolute;
+    font: 13px/1 'Open Sans', sans-serif;
+    left: 11px;
+    top: 7px;
+    content: '\02143';
+    transform: rotate(40deg); }
+  #ansokan .form-radio:hover {
+    background-color: #ddd; }
+  #ansokan .form-radio:checked {
+    background-color: white; }
+  #ansokan label {
+    font: 300 16px/1.7 'Open Sans', sans-serif;
+    color: #666;
+    cursor: pointer; }
+
+/*# sourceMappingURL=Application.css.map */
