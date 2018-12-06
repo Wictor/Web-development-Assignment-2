@@ -16,12 +16,12 @@ body {
   margin: 0; }
   .slideshow .img-slide {
     width: 100%;
-    max-height: 79vh; }
+    max-height: 73vh; }
   .slideshow .slideshow-container {
     max-width: 100%;
     position: relative;
     margin: 1% 0 0 0;
-    padding: 0px; }
+    padding: 0; }
   .slideshow .mySlides {
     display: none; }
   .slideshow .prev, .slideshow .next {
@@ -44,41 +44,22 @@ body {
   .slideshow .prev:hover, .slideshow .next:hover {
     background-color: rgba(0, 0, 0, 0.6);
     color: white; }
-  .slideshow .text p {
+  .slideshow .slide-text {
     color: #000000;
     font-family: "Cardo", serif;
     padding: 8px 12px;
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    width: 100%;
-    text-align: right; }
-  .slideshow .headtext {
-    color: #000000;
-    font-family: "Cardo", serif;
-    font-size: 30px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 10px;
-    left: 30px;
-    max-width: 40%; }
-    .slideshow .headtext p {
-      text-align: left; }
-  .slideshow .slideshow-container .btn {
-    position: absolute;
-    bottom: 10%;
-    right: 1%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: #000000;
-    color: white;
-    font-size: 16px;
-    padding: 8px 18px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px; }
-  .slideshow .slideshow-container .btn:hover {
-    background-color: #E85459; }
+    position: relative;
+    margin-left: 7%; }
+    .slideshow .slide-text h1 {
+      text-align: left;
+      margin-top: -35%;
+      color: #E85459;
+      font-size: 40px;
+      font-family: "Cardo", serif; }
+    .slideshow .slide-text p {
+      width: 40%;
+      text-align: left;
+      font-size: 15px; }
   .slideshow .dot {
     cursor: pointer;
     height: 15px;

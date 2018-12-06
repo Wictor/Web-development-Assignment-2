@@ -30,14 +30,14 @@ body {
 
   .img-slide {
     width: 100%;
-    max-height: 79vh;
+    max-height: 73vh;
   }
 
   .slideshow-container {
     max-width: 100%;
     position: relative;
     margin: $margin/2 0 0 0;
-    padding: 0px;
+    padding: 0;
   }
 
   .mySlides {
@@ -71,48 +71,25 @@ body {
     color: white;
   }
 
-  .text p {
+  .slide-text {
     color: $color-text;
     font-family: $font-headline;
     padding: 8px 12px;
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    width: 100%;
-    text-align: right;
-  }
-
-  .headtext {
-    color: $color-text;
-    font-family: $font-headline;
-    font-size: 30px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 10px;
-    left: 30px;
-    max-width: 40%;
-
-    p {
+    position: relative;
+    margin-left: 7%;
+    h1 {
       text-align: left;
+      margin-top: -35%;
+      color: $color-link;
+      font-size: 40px;
+      font-family: $font-headline;
     }
-  }
+    p {
+      width: 40%;
+      text-align: left;
+      font-size: 15px;
 
-  .slideshow-container .btn {
-    position: absolute;
-    bottom: 10%;
-    right: 1%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: #000000;
-    color: white;
-    font-size: 16px;
-    padding: 8px 18px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  .slideshow-container .btn:hover {
-    background-color: $color-link;
+    }
   }
 
   .dot {
