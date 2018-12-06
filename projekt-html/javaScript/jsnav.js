@@ -19,13 +19,13 @@ function openNav() {
 
     document.getElementById("mySidenav").style.width = "350px";
     document.getElementById("main").style.marginRight = "350px";
-    document.getElementsByClassName("dropdown-icon")[0].transform.rotate = ("-45deg");
 }
 
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginRight= "0";
 }
+
 function mysearchFunction() {
     var y = document.getElementById("my-search-Dropdown");
     if (y.style.display === "block") {
@@ -34,6 +34,25 @@ function mysearchFunction() {
         y.style.display = "block";
     }
 }
+
+/*
+function mysearchFunction() {
+    document.getElementById("my-search-Dropdown").classList.toggle("show");
+}
+window.onclick = function(event) {
+    if (!event.target.matches('#myInput1' || '.dropdown-search-content1')) {
+
+        var dropdowns = document.getElementsByClassName(".dropdown-search-content1");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
+*/
 
 
 function filterFunction() {
@@ -59,6 +78,7 @@ function mysearchFunction1() {
         z.style.display = "block";
     }
 }
+
 
 
 function filterFunction1() {
@@ -90,4 +110,3 @@ function scrollFunction() {
 function topFunction() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
-

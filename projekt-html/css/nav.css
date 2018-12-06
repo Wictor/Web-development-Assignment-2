@@ -9,20 +9,27 @@
     list-style-type: none; }
   .navbar #myInput1 {
     font-size: 16px;
-    width: 148px;
+    width: 300px;
     padding: 14px 5px 12px 5px;
     border: none;
     border-bottom: 1px solid #ddd;
-    margin: 0; }
+    margin-top: 10px; }
   .navbar #myInput1:focus {
     outline: 3px solid #ddd; }
+  .navbar .dropdown-search1 {
+    font-size: 5px; }
   .navbar .dropdown-search-content1 {
     background-color: #3c3c3c;
-    width: 350px;
+    font-family: "Open sans", sans-serif;
+    font-size: 5px;
+    width: 310px;
     display: none;
+    text-align: center;
     position: absolute;
     min-width: 100px;
     border: 1px solid #ddd;
+    border-left: none;
+    border-right: none;
     z-index: 2;
     margin: 0; }
   .navbar .dropdown-search-content1 a {
@@ -30,7 +37,7 @@
     padding: 12px 16px;
     text-decoration: none;
     display: block; }
-  .navbar .dropdown-search1 a:hover {
+  .navbar .my-search-Dropdown1 a:hover {
     background-color: #ddd; }
   .navbar .logo {
     display: none; }
@@ -75,7 +82,7 @@
     margin-right: 30%; }
   .navbar .hover-nav-links :hover img {
     transform: scale(1.2); }
-  .navbar .hover-nav-links :hover p {
+  .navbar .hover-nav-links :hover span {
     transform: scale(1.2); }
   .navbar .hover-nav-links {
     justify-content: space-between; }
@@ -102,7 +109,7 @@
   .navbar .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     color: #818181;
     display: block;
     transition: 0.3s; }
@@ -123,34 +130,6 @@
     cursor: pointer;
     font-size: 40px; }
 
-#Topbtn {
-  display: none;
-  opacity: 0.0;
-  /* Hidden by default */
-  position: fixed;
-  /* Fixed/sticky position */
-  bottom: 20px;
-  /* Place the button at the bottom of the page */
-  right: 40px;
-  /* Place the button 30px from the right */
-  /* Make sure it does not overlap */
-  border: none;
-  /* Remove borders */
-  outline: none;
-  /* Remove outline */
-  background-color: #f2f2f4;
-  /* Set a background color */
-  cursor: pointer;
-  /* Add a mouse pointer on hover */
-  padding: 10px;
-  /* Some padding */
-  border-radius: 10px;
-  /* Rounded corners */
-  font-size: 18px;
-  /* Increase font size */
-  -webkit-transform: rotate(180deg);
-  -webkit-animation: fadein 2s; }
-
 @media screen and (min-width: 1024px) {
   .navbar #myInput {
     font-size: 16px;
@@ -163,22 +142,23 @@
   .navbar .my-search-Dropdown a:hover {
     background-color: #ddd; }
   .navbar .dropdown-search {
-    margin-right: 100px; }
+    padding: 0; }
   .navbar .dropdown-search-content {
     text-align: center;
-    justify-content: center;
     width: 150px;
+    padding: 0;
     display: none;
     position: absolute;
     background-color: #f6f6f6;
     border: 1px solid #ddd;
     z-index: 2;
-    margin-right: 200px; }
+    margin-left: 110px; }
   .navbar .dropdown-search-content a {
     color: black;
     padding: 12px 20px;
     text-decoration: none;
-    display: block; }
+    display: block;
+    position: relative; }
   .navbar .dropdown-search-content a:hover {
     background-color: #ddd; }
   .navbar #utb-linkspc {
@@ -264,7 +244,6 @@
     display: none; }
 
   #Topbtn {
-    opacity: 1.0;
     display: none;
     /* Hidden by default */
     position: fixed;
