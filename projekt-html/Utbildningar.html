@@ -126,42 +126,49 @@
 
 </header>
 
+<!-- Image section with the headline and basic info-->
+<section id="image-section">
+    <div id="utb-container">
+        <img src="images/img2.jpg" alt="" class="start_img3"/>
+        <div id="over-image-txt">
+            <h1>Utbildningar</h1>
+            <p> På Möldals Campus har vi ett stort sortiment av vuxenutbildningar. </p>
+            <p id="txt-hide"> Oavsett om du är privatperson eller företagare så finns det utbilningar för just dig. <br>
+                För dig som vill läsa upp dina betyg finns det Grundläggande och Gymnasium utbildningar. <br>
+                Om du är ny nyanländ och vill lära dig det Svenska språket så har vi
+                SFI utbildningarna som ger dig grundläggande kunskaper.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Filter for the existing programs -->
 <section id="utbildningar">
-    <div><h1>Utbildningar</h1>
-        <p> På Möldals Campus har vi ett stort sortiment av vuxenutbildningar. <br>
-            Oavsett om du är privatperson eller företagare så finns det utbilningar för just dig.
-            För dig som vill läsa upp dina betyg finns det Grundläggande och Gymnasium utbildningar. Om du är ny nyanländ och vill lära dig det Svenska språket så har vi
-            SFI utbildningarna som ger dig grundläggande kunskaper.
-
-        </p>
-    </div>
-
     <div id="myBtnContainer">
-        <button class="btn active" onclick="filterSelection('all')"><p>Alla utbildningar </p></button>
-        <button class="btn" onclick="filterSelection('YH')"> <p>Yrkesutbildningar </p></button>
-        <button class="btn" onclick="filterSelection('VU')"><p> Grundläggande och Gymnasial Vuxenutbildningar </p> </button>
-        <button class="btn" onclick="filterSelection('SFI')"> <p> SFI- Svenska för invarndrare </p></button>
-        <button class="btn" onclick="filterSelection('FU')"> <p> Företagsutbildningar </p></button>
+        <button class="btn active" onclick="filterSelection('all')">Alla utbildningar </button>
+        <button class="btn" onclick="filterSelection('YH')"> Yrkesutbildningar </button>
+        <button class="btn" onclick="filterSelection('VU')"> Grundläggande och Gymnasial Vuxenutbildningar </button>
+        <button class="btn" onclick="filterSelection('SFI')">  SFI- Svenska för invandrare </button>
+        <button class="btn" onclick="filterSelection('FU')"> Företagsutbildningar </button>
     </div>
 
-    <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
-     <div class="container">
-         <a href="yh.html"> <div class="filterDiv YH"><br><p>IT-projektledare </p></div> </a>
-         <a href="yh.html"> <div class="filterDiv YH"><br><p>Java- och webbutvecklare</p></div></a>
-         <a href="yh.html"> <div class="filterDiv YH"><br><p>Moln- och virtualiseringsspecialist</p></div> </a>
-         <a href="yh.html"> <div class="filterDiv YH"><br><p>Specialiserad studiehandledare</p></div> </a>
-         <a href="yh.html"> <div class="filterDiv YH"><br><p>Aktiveringspedagog inom LSS</p></div> </a>
-         <a href="#"> <div class="filterDiv FU"><br><p>Uppdragsutbildningar</p></div> </a>
-         <a href="#"> <div class="filterDiv FU"> <br><p>Yrkeshögskoleutbildningar</p> </div> </a>
-         <a href="#"> <div class="filterDiv VU"><br><p>Grundläggande kurser </p></div> </a>
-         <a href="#"> <div class="filterDiv VU"><br><p>Gymnasiala kurser</p></div> </a>
-         <a href="#"> <div class="filterDiv SFI"><br><p>Svenska för invandrare</p></div> </a>
-     </div>
+    <!-- The filterable elements -->
+    <div class="container">
+        <a href="#"> <div class="filterDiv YH">IT-projektledare</div> </a>
+        <a href="javaweb.html"> <div class="filterDiv YH">Java- och webbutvecklare</div></a>
+        <a href="#"> <div class="filterDiv YH">Moln- och virtualiseringsspecialist</div> </a>
+        <a href="#"> <div class="filterDiv YH">Specialiserad studiehandledare</div> </a>
+        <a href="#"> <div class="filterDiv YH">Aktiveringspedagog inom LSS</div> </a>
+        <a href="#"> <div class="filterDiv FU">Uppdragsutbildningar</div> </a>
+        <a href="#"> <div class="filterDiv FU">Yrkeshögskoleutbildningar </div> </a>
+        <a href="#"> <div class="filterDiv VU">Grundläggande kurser </div> </a>
+        <a href="#"> <div class="filterDiv VU">Gymnasiala kurser</div> </a>
+        <a href="#"> <div class="filterDiv SFI">Svenska för invandrare</div> </a>
+    </div>
 
 
 </section>
-
-<section> <img src="images/book2.jpeg" alt="" class="start_img3"/> </section>
 
 
 <footer id="footer">
