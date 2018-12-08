@@ -1,0 +1,175 @@
+@import "simplevariables";
+
+
+.java-utb {
+  margin: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.snabbfakta-container {
+  max-width: 100%;
+  position: relative;
+  margin: $margin/2 0 0 0;
+  padding: 0;
+}
+.img-fakta {
+  width: 100%;
+  max-height: 79vh;
+}
+
+.snabbfakta {
+  max-width: 100%;
+  position: relative;
+  margin: $margin/2 0 0 0;
+  padding: 0;
+}
+
+.fakta-text {
+  color: $color-text;
+  font-family: $font-headline;
+  padding: 8px 12px;
+  position: relative;
+  margin-left: 7%;
+  h1 {
+    text-align: left;
+    margin-top: -35%;
+    font-size: 40px;
+    font-family: $font-headline;
+    color: $color-text;
+  }
+  h2 {
+    margin-left: 2%;
+    margin-bottom: -1%;
+  }
+  p {
+    width: 40%;
+    text-align: left;
+    font-size: 15px;
+
+  }
+
+  li {
+    font-family: $font-text;;
+  }
+}
+
+hr {
+  width: 95%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+.lista-kurser {
+  margin-left: 35%;
+}
+
+.img-7 {
+  position: relative;
+  width: 100%;
+  margin-left: 20%;
+}
+
+.img-it {
+  position: relative;
+  margin-right: 7%;
+  margin-bottom: 2%;
+}
+
+.section-java {
+  clear: both;
+  padding: 0;
+  margin: 5px;
+
+  h1 {
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+  h2 {
+    margin-left: 200px;
+    margin-top: 70px;
+    color: $color-link;
+  }
+  p {
+    font-size: 15px;
+    margin-left: 3px;
+  }
+  li {
+    font-family: $font-text;
+    font-size: 12px;
+    margin-left: 0;
+  }
+}
+
+.section-ansokan {
+  h1 {
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+  h2 {
+    margin-left: 180px;
+    margin-top: 20px;
+    color: $color-link;
+  }
+  p {
+    font-size: 15px;
+    margin-left: 3px;
+  }
+}
+.ansokan {
+  h1 {
+    text-align: center;
+    margin-top: 120px;
+    margin-left: 100px;
+  }
+
+  p {
+    text-align: center;
+    margin-left: 100px;
+  }
+}
+
+/*  COLUMN SETUP  */
+
+.utb-kontakt {
+  display: grid;
+  height: 100%;
+  width: 820px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.col {
+  display: block;
+  float: left;
+  margin: 1% 0 1% 1.6%;
+  &:first-child {
+    margin-left: 70px;
+  }
+}
+
+/*  GRID OF TWO  */
+
+.span_2_of_2 {
+  width: 80%;
+}
+
+.span_1_of_2 {
+  width: 40%;
+}
+
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+  .col {
+    margin: 1% 0 1% 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .span_2_of_2, .span_1_of_2 {
+    width: 100%;
+  }
+}

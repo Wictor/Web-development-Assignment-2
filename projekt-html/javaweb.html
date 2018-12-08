@@ -1,8 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/basics.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link rel="stylesheet" type="text/css" href="css/javaweb.css">
     <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
@@ -11,13 +13,15 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <title>Java- & webbutvecklare</title>
+    <title>Campus Mölndal</title>
 </head>
 <body>
 <header>
+
 
     <nav class="navbar">
         <span class="opennav" onclick="openNav()">&#9776;</span>
@@ -42,158 +46,182 @@
             <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/school-filled.png"/><p>Studier</p></a>
             <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/company-filled.png"/><p>Företag</p></a>
             <a href="Contact.html" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/phone-filled.png"/><p>Kontakt</p></a>
-            <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/search-filled.png"/><p>Sök</p></a>
+
+            <div onclick="mysearchFunction()">
+                <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/search-filled.png"><p>Sök</p></a>
+            </div>
+            <div class="dropdown-search1">
+                <div id="my-search-Dropdown1" class="dropdown-search-content1">
+                    <input type="text" placeholder="Search.." id="myInput1" onkeyup="filterFunction1()">
+                    <a href="#Studier">Studier</a>
+                    <a href="#Företag">Företag</a>
+                    <a href="#Utbildningar">Utbildningar</a>
+                    <a href="Contact.html">Kontakt</a>
+                    <a href="#Yrkeshögskola">Yrkeshögskola</a>
+                    <a href="#Java">Java- och webbutvecklare</a>
+                    <a href="#Sfi">Sfi</a>
+                </div>
+            </div>
         </div>
 
-        <div id="main">
 
-        </div>
 
-        <ul class="main-nav" id="js-menu">
-            <li>
+
+        <ul class="logonav">
+            <div id="logoid">
                 <a class="logo" href="index.html"><img src="images/campuslogo1.png"></a>
-            </li>
-            <li>
-                <div class="hover-nav-links">
-                    <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/reviewer-male-filled.png"/><p>Ansök</p></a>
-                </div>
-            </li>
-            <li class="utb-li">
-                <div class="hover-nav-links">
-                    <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/graduation-cap-filled.png" onclick="myFunction('utb-linkspc')"/> <p>Utbildningar</p></a>
-                </div>
-                <div id="utb-linkspc">
-                    <a href="#">Yrkeshögskola</a>
-                    <a href="#">Grundläggande Gymna...</a>
-                    <a href="#">SFI</a>
-                    <a href="#">Företags Utbildningar</a>
-                    <a href="#">Alla Utbildningar</a>
-                </div>
-            </li>
-            <li>
-                <div class="hover-nav-links">
-                    <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/school-filled.png"/><p>Studier</p></a>
-                </div>
-            </li>
-            <li>
-                <div class="hover-nav-links">
-                    <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/company-filled.png"/><p>Företag</p></a>
-                </div>
-            </li>
-            <li>
-                <div class="hover-nav-links">
+            </div>
+            <ul class="main-nav" id="js-menu">
+                <li>
+                <li class="utb-li">
+                    <div class="hover-nav-links">
+                        <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/reviewer-male-filled.png"/><span class="icon_text">Ansök</span></a>
+                    </div>
+                    <div id="utb-linkspc">
+                        <a href="#">Yrkeshögskola</a>
+                        <a href="#">Grundläggande Gymna...</a>
+                        <a href="#">SFI</a>
+                        <a href="#">Företags Utbildningar</a>
+                        <a href="#">Alla Utbildningar</a>
+                    </div>
+                </li>
+                </li>
 
-                    <a href="Contact.html" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/phone-filled.png"/><p>Kontakt</p></a>
-                </div>
-            </li>
-            <li>
                 <div class="hover-nav-links">
-                    <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/search-filled.png"/><p>Sök</p></a>
+                    <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/graduation-cap-filled.png" onclick="myFunction('utb-linkspc')"/><span class="icon_text">Utbildningar</span></a>
                 </div>
-            </li>
+
+
+                <li>
+                    <div class="hover-nav-links">
+                        <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/school-filled.png"/><span class="icon_text">Studier</span></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="hover-nav-links">
+                        <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/company-filled.png"/><span class="icon_text">Företag</span></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="hover-nav-links">
+                        <div class="dropdown-search">
+                            <a href="Contact.html" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/phone-filled.png"/><span class="icon_text">Kontakt</span></a>
+                            <div id="my-search-Dropdown" class="dropdown-search-content">
+                                <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                                <a href="#Studier">Studier</a>
+                                <a href="#Företag">Företag</a>
+                                <a href="#Utbildningar">Utbildningar</a>
+                                <a href="Contact.html">Kontakt</a>
+                                <a href="#Yrkeshögskola">Yrkeshögskola</a>
+                                <a href="javaweb.html">Java- och webbutvecklare</a>
+                                <a href="#Sfi">Sfi</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="hover-nav-links">
+                        <div onclick="mysearchFunction()">
+                            <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/search-filled.png"/><span class="icon_text">Sök</span></a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </ul>
     </nav>
 
 </header>
 
-
-<div class="utb-container">
-    <img src="images/img1.jpg" alt="java">
-
-        <div class="bottom-right">
-            <ul class=" normal">
-                <li>Examen</li>
-                <li>Heltid</li>
-                <li>LIA</li>
+<section class="java-utb">
+    <div class="snabbfakta-container">
+        <div class="snabbfakta">
+            <img src="images/img6.jpg" class="img-fakta">
+            <div class="fakta-text">
+                <h1>Java &amp; webbutveckling</h1>
+                <br>
+                <br>
+                <h2>Snabbfakta:</h2>
+                <ul>
+                    <li>Yrkesexamen</li>
+                    <li>2 år, Heltid</li>
+                    <li>LIA - 24 veckor</li>
                 </ul>
+            </div>
         </div>
-    <div class="top-left"><h2>Java & webbutveckling</h2></div>
-
-
-</div>
-
-<hr>
-
-<section id="program-grid-container">
-<div id="interest">
-<h1> Är du intresserad av IT och programmering? </h1>
-<p> Det här är utbildningen som ger dig kompetens inom både system- och webbutveckling,
-    vilket gör dig unik och mycket eftertraktad på arbetsmarknaden.</p></div>
-    <div><img src="images/peter.jpg" class="gubbe" alt="Du är efterlängtad!"></div>
-
-
-<div id="innehalet">
-<h1> Innehåll i utbildningen </h1>
-    <p> Du lär dig objektorienterad programmering i Java och webbutveckling, med HTML, CSS, JavaScript och PHP. Du lär dig att programmera i JavaScriptramverk som t ex. Jquery, Angular och Node. </p>
-    <p> Utbildningen har stort fokus på Java- och webbutveckling, men du kommer också lära dig databashantering, webbinnehållshanteringssystemen (CMS) och webbtjänster (web services). </p>
-
-    <p> Du kommer även att lära dig om versionshantering och verktyget Git som används i större systemutvecklingsprojekt. Du kommer också att få kunskaper om olika agila metoder med fokus på Scrum och Lean.
-    För att testa och kvalitetssäkra ditt arbete lär du dig dessutom om testdriven utveckling (TDD) och om att utveckla system med god kodstandard och struktur.
-    </p>
-
-    <p> Under utbildningen varvas praktiska och laborativa moment med teoretiska moment. Kurserna LIA 1 och LIA 2 är förlagda till företag, där du lär dig genom att arbeta med ”riktiga” projekt.
-    Samtidigt får du värdefulla branschkontakter.
-    </p>
-</div>
-
-<div id="kurser">
-
-    <ul class=" normal">
-        <li>Agil systemutveckling 15 p</li>
-        <li>Databasutveckling 25 p</li>
-        <li>Datalogi 20 p</li>
-        <li>Objektorienterad programmering i Java 50 p</li>
-        <li>Systemutveckling i Java Enterprise Edition 40 p</li>
-        <li>Test och kvalitetssäkring 20</li>
-        <li>Webbutveckling 50 p</li>
-        <li>Webbutveckling inriktning ramverk 30 p</li>
-        <li>Examensarbete 30 p</li>
-        <li>LIA 1 (lärande i arbete) 60 p</li>
-        <li>LIA 2 (lärande i arbete) 60 p<br></li></ul>
-</div>
-</section>
-
-
-<hr class="separator">
-
-<section>
-<h1> Är du behörig att söka? </h1>
-<p class="normal">För att söka denna utbildning behöver du uppfylla grundläggande behörighet
-    samt nedanstående särskilda förkunskaper.</p>
-<ul class=" normal">
-    <li>Engelska 6 eller motsvarande</li>
-    <li>Matematik 2a/c eller motsvarande</li></ul>
-<p class="normal">Saknas betyg i ovanstående erbjuds nivåtest</p>
-<ul class=" normal">
-    <li>Programmering 1 eller motsvarande*</li>
-    <li>Webbutveckling 1 eller motsvarande*</li>
-</ul>
-<p class="normal">Saknar du ett betyg eller har tidigare kunskaper med dig inom området? <br>
-    *Behörighetsgivande utbildning kan erbjudas för att få behörighet i kurserna programmering 1 och webbutveckling 1.</p>
-</section>
-
-<h1> ANSÖKAN: </h1>
-<p>Ansökan för start HT2018 är stängd. </p>
-
-<hr class="separator">
-
-<h1 class="centered"> Kontakta oss </h1>
-
-<section id="java-contact-grid">
-<div id="left-kontakt">
-    <p> Är du intresserad av mer information kring utbildningen kontakta Rickard Hagerberg på Campus Mölndal. </p>
-
-    <p> Rickard Hagerberg </p>
-    <p> Verksamhetsutvecklare </p>
-    <p> 0700-32 68 52 </p>
-    <p> rickard.hagerberg@molndal.se </p>
-</div>
-    <div id="right-kontakt">
-
-        <p> Vägledning </p>
-        <p> 031-315 10 14  </p>
-        <p> yh.campus@molndal.se </p>
     </div>
+    <hr>
+    <div class="section group">
+        <div class="col span_1_of_2">
+            <h1>Är du intresserad av IT och programmering?</h1>
+            <p>Det här är utbildningen som ger dig kompetens inom både system- och webbutveckling,
+                vilket gör dig unik och mycket eftertraktad på arbetsmarknaden.
+            </p>
+        </div>
+        <div class="col span_1_of_2">
+            <img src="images/img7.jpg" class="img-7">
+        </div>
+    </div>
+    <div class="section-java">
+        <div class="col span_1_of_2">
+            <h1> Innehåll i utbildningen </h1>
+            <p>Du lär dig objektorienterad programmering i Java och webbutveckling, med HTML, CSS, JavaScript och
+                PHP. Du lär dig att programmera i JavaScriptramverk som t ex. Jquery, Angular och Node.
+                Utbildningen har stort fokus på Java- och webbutveckling, men du kommer också lära dig databashantering,
+                webbinnehållshanteringssystemen (CMS) och webbtjänster (web services). Du kommer även att lära
+                dig om versionshantering och verktyget Git som används i större systemutvecklingsprojekt. Du kommer
+                också att få kunskaper om olika agila metoder med fokus på Scrum och Lean. För att testa och
+                kvalitetssäkra ditt arbete lär du dig dessutom om testdriven utveckling (TDD) och om att utveckla
+                system med god kodstandard och struktur.
+                Under utbildningen varvas praktiska och laborativa moment med teoretiska moment. Kurserna LIA 1 och LIA 2 är förlagda till företag, där du lär dig genom att arbeta med ”riktiga” projekt.
+                Samtidigt får du värdefulla branschkontakter.
+            </p>
+        </div>
+        <div class="col span_1_of_2">
+
+            <h2>Kurser som du läser:</h2>
+            <ul class="lista-kurser">
+                <li>Agil systemutveckling 15 p</li>
+                <li>Databasutveckling 25 p</li>
+                <li>Datalogi 20 p</li>
+                <li>Objektorienterad programmering i Java 50 p</li>
+                <li>Systemutveckling i Java Enterprise Edition 40 p</li>
+                <li>Test och kvalitetssäkring 20</li>
+                <li>Webbutveckling 50 p</li>
+                <li>Webbutveckling inriktning ramverk 30 p</li>
+                <li>Examensarbete 30 p</li>
+                <li>LIA 1 (lärande i arbete) 60 p</li>
+                <li>LIA 2 (lärande i arbete) 60 p<br></li>
+            </ul>
+
+        </div>
+    </div>
+    <hr>
+    <div class="section-ansokan">
+        <div class="col span_1_of_2">
+            <h1>Är du behörig att söka?</h1>
+            <p>För att söka denna utbildning behöver du uppfylla grundläggande behörighet
+                samt nedanstående särskilda förkunskaper.
+            </p>
+            <ul>
+                <li>Engelska 6 eller motsvarande</li>
+                <li>Matematik 2a/c eller motsvarande</li></ul>
+            <p>Saknas betyg i ovanstående erbjuds nivåtest</p>
+            <ul>
+                <li>Programmering 1 eller motsvarande*</li>
+                <li>Webbutveckling 1 eller motsvarande*</li>
+            </ul>
+            <p>Saknar du ett betyg eller har tidigare kunskaper med dig inom området? <br>
+            <p> *Behörighetsgivande utbildning kan erbjudas för att få behörighet i kurserna programmering
+                1 och webbutveckling 1.</p>
+        </div>
+        <div class="col span_1_of_2 ansokan">
+            <h1> ANSÖKAN: </h1>
+            <p>Ansökan för start HT 2018 är stängd! </p>
+        </div>
+    </div>
+    <hr>
+
+
 </section>
 </body>
 <footer id="footer">
@@ -232,9 +260,9 @@
 <script src="javaScript/calendarium.js"></script>
 <script src="javaScript/reviewslide.js"></script>
 <script src="javaScript/jquery-3.3.1.min.js"></script>
+<script src="javaScript/questionnaire.js"></script>
 <script src="javaScript/subscriberJs.js"></script>
+<script src="javaScript/news.js"></script>
 <script src="javaScript/modal.js"></script>
-<script src="javaScript/newsJs.js"></script>
-
 
 </html>
