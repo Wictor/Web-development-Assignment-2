@@ -111,6 +111,11 @@
       display: none; /* Hidden by default */
       padding: 2px;
       border-radius: 3px;
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
     }
 
     .filterDiv:hover {
@@ -287,7 +292,7 @@
         width: auto;
         margin: 5px;
       }
-
+    }
       .filterDiv {
         background-color: hsla(0, 0%, 24%, 0.6);
         color: white;
@@ -296,26 +301,31 @@
         display: none; /* Hidden by default */
         padding: 5px;
         border-radius: 3px;
+        margin: 5px;
+
+        a {
+          text-decoration: none;
+          color: white;
+        }
+        .filterDiv:hover {
+          background-color: white;
+          color: $color-link;
+
+        }
+        p {
+          padding: 5px;
+          margin: 0;
+        }
+
+        // show class
+        .show {
+          display: block;
+        }
+        .hide {
+          display: none;
+        }
       }
 
-      .filterDiv:hover {
-        background-color: white;
-        color: $color-link;
-
-      }
-      p {
-        padding: 5px;
-        margin: 0;
-      }
-
-      // show class
-      .show {
-        display: block;
-      }
-      .hide {
-        display: none;
-      }
     }
-
   }
-}
+

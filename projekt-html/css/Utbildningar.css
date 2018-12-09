@@ -76,6 +76,9 @@
       /* Hidden by default */
       padding: 2px;
       border-radius: 3px; }
+      #utbildningar .container .filterDiv a {
+        text-decoration: none;
+        color: white; }
     #utbildningar .container .filterDiv:hover {
       background-color: white;
       color: #E85459; }
@@ -179,24 +182,28 @@
         height: 100%;
         width: auto;
         margin: 5px; }
-      #utbildningar .container .filterDiv {
-        background-color: rgba(61, 61, 61, 0.6);
-        color: white;
-        font-family: "Open sans", sans-serif;
-        text-align: center;
-        display: none;
-        /* Hidden by default */
-        padding: 5px;
-        border-radius: 3px; }
-      #utbildningar .container .filterDiv:hover {
+    #utbildningar .filterDiv {
+      background-color: rgba(61, 61, 61, 0.6);
+      color: white;
+      font-family: "Open sans", sans-serif;
+      text-align: center;
+      display: none;
+      /* Hidden by default */
+      padding: 5px;
+      border-radius: 3px;
+      margin: 5px; }
+      #utbildningar .filterDiv a {
+        text-decoration: none;
+        color: white; }
+      #utbildningar .filterDiv .filterDiv:hover {
         background-color: white;
         color: #E85459; }
-      #utbildningar .container p {
+      #utbildningar .filterDiv p {
         padding: 5px;
         margin: 0; }
-      #utbildningar .container .show {
+      #utbildningar .filterDiv .show {
         display: block; }
-      #utbildningar .container .hide {
+      #utbildningar .filterDiv .hide {
         display: none; } }
 
 /*# sourceMappingURL=Utbildningar.css.map */
