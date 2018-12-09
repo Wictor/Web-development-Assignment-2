@@ -490,7 +490,11 @@ body {
   }
 
 
+#modal {
+  max-height: 100%;
+  overflow-y: auto;
 
+}
 #modal-update {
 
   margin: 0 auto;
@@ -617,6 +621,8 @@ body {
 
 
 #modal {
+  max-height: 100%;
+  overflow-y: auto;
   display: none;
   position: fixed;
   z-index: 1000;
@@ -625,7 +631,7 @@ body {
   width: 100%;
   padding-bottom: 500px;
   background-color: rgba(0, 0, 0, 0.6);
-  overflow: hidden;
+  //overflow: hidden;
 
 
 }
@@ -1035,7 +1041,9 @@ hr {
   }
 
   #modal {
-    top: -30%;
+    max-height: 100%;
+    overflow-y: auto;
+    //top: -30%;
   }
   #modal-content {
     width: 50%;

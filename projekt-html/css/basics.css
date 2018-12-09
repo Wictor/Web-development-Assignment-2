@@ -339,6 +339,10 @@ h2 {
 .newsHeader {
   text-align: center; }
 
+#modal {
+  max-height: 100%;
+  overflow-y: auto; }
+
 #modal-update {
   margin: 0 auto;
   max-width: 80%; }
@@ -443,6 +447,8 @@ h2 {
   background-color: #9C292D; }
 
 #modal {
+  max-height: 100%;
+  overflow-y: auto;
   display: none;
   position: fixed;
   z-index: 1000;
@@ -450,8 +456,7 @@ h2 {
   top: 0;
   width: 100%;
   padding-bottom: 500px;
-  background-color: rgba(0, 0, 0, 0.6);
-  overflow: hidden; }
+  background-color: rgba(0, 0, 0, 0.6); }
 
 #modal-content {
   background-color: #f4f4f4;
@@ -718,7 +723,8 @@ hr {
       text-align: center; }
 
   #modal {
-    top: -30%; }
+    max-height: 100%;
+    overflow-y: auto; }
 
   #modal-content {
     width: 50%; }
