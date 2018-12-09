@@ -21,7 +21,7 @@
         margin: 0; }
       #image-section #utb-container #over-image-txt p {
         max-width: 35%;
-        font-size: 16px;
+        font-size: 14px;
         text-align: left;
         margin: 0; }
       #image-section #utb-container #over-image-txt #txt-hide {
@@ -30,7 +30,7 @@
 #utbildningar {
   margin: 20px 2% 2% 2%; }
   #utbildningar h1 {
-    text-align: center; }
+    text-align: left; }
   #utbildningar p {
     margin: 6%;
     text-align: left; }
@@ -119,10 +119,9 @@
       flex-wrap: wrap;
       margin: 0 -5px; }
       #utbildningar .container a {
+        margin: 0;
         height: 100%;
-        width: auto;
-        margin: 5px;
-        flex-grow: 1; }
+        width: auto; }
       #utbildningar .container .filterDiv {
         background-color: rgba(61, 61, 61, 0.6);
         color: white;
@@ -179,8 +178,7 @@
       #utbildningar .container a {
         height: 100%;
         width: auto;
-        margin: 5px;
-        flex-grow: 1; }
+        margin: 5px; }
       #utbildningar .container .filterDiv {
         background-color: rgba(61, 61, 61, 0.6);
         color: white;
