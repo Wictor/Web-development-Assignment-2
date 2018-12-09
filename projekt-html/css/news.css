@@ -76,12 +76,10 @@ body {
     grid-template-columns: 30% 1fr;
     grid-gap: 2%;
     cursor: pointer; }
-    #mainNews .newsTitleContainer .newsOnlyTitle {
-      grid-row: 1;
-      grid-column: 2;
-      background: #f2f2f2;
-      padding: 10px;
-      border-radius: 5%; }
+  #mainNews .newsOnlyText {
+    grid-row: 2/-1;
+    grid-column: 1;
+    margin: 10px 10px 0 10px; }
 
 #footer {
   background-color: #9C292D;

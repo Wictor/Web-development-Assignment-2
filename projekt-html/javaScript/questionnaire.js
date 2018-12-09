@@ -1,53 +1,83 @@
-$( '#testForm').submit(function(e) {
-    //Testa med addeventlistener
-    e.preventDefault();
-
-    let question = document.getElementById("questionCount").innerHTML;
-
-    let answers = [];
-
+let testObserver = new MutationObserver(function () {
 
     let next = document.getElementById("testNext");
     let prev = document.getElementById("testPrev");
     let finish = document.getElementById("testFinish");
+    let closeQuestion = document.getElementById("closeQuestion");
+    let warning = document.getElementById('testWarning');
 
+    if (next) {
+        next.addEventListener("click", function (e) {
+            e.preventDefault();
 
-
-    if(next) {
-        next.addEventListener('click', nextQuestion);
+            warning.innerHTML = '';
+            if ($('input[name=answer]:checked').length > 0) {
+                nextQuestion();
+            }
+            else{
+                warning.innerHTML = "You have to select one of the options";
+            }
+        });
     }
+
     if (prev) {
-        prev.addEventListener('click', prevQuestion);
+        prev.addEventListener("click",  function (e) {
+            e.preventDefault();
+            prevQuestion();
+        });
     }
     if (finish) {
-        finish.addEventListener('click', finishQuestion);
+        finish.addEventListener("click",  function (e) {
+            e.preventDefault();
+
+            if ($('input[name=answer]:checked').length > 0) {
+                finishQuestion();
+            }
+            else{
+                warning.innerHTML = "You have to select one";
+            }
+        });
     }
-
-
-    function answer(question) {
-        answers[question] = document.querySelector('input[name="rate"]:checked').value;
+    if (closeQuestion) {
+        closeQuestion.addEventListener("click", function (e) {
+            e.preventDefault();
+            closeModal();
+        })
     }
-
-    function nextQuestion() {
-
-        let questionAnswer = answer();
-        answers.push(questionAnswer);
-
-
-        question++;
-
-        loadModal(question);
-
-    }
-
-    function prevQuestion(question) {
-        question--;
-        loadModal(question);
-        return question;
-    }
-
-    function finishQuestion() {
-
-    }
-
 });
+
+
+let answers = [];
+
+function answer(z) {
+    answers[z] = $("input[type='radio'][name='answer']:checked").val();
+
+    answers.push();
+}
+
+function nextQuestion() {
+    let z = document.getElementById("questionCount").value;
+    answer(z);
+
+    z++;
+    document.getElementById("questionCount").setAttribute('value', z);
+
+    testModal(z);
+    $('.testRadio').prop('checked', false);
+}
+
+function prevQuestion() {
+    let z = document.getElementById("questionCount").value;
+    z--;
+
+    document.getElementById("questionCount").setAttribute('value', z);
+
+    testModal(z);
+}
+
+function finishQuestion() {
+    let z = document.getElementById("questionCount").value;
+    answer(z);
+
+    resultModal(answers);
+}

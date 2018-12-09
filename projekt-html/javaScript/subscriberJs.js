@@ -1,8 +1,31 @@
-$('#subscribeForm').submit(function(event) {
-    //Testa med eventistener
+$(document).ready(function () {
 
-    event.preventDefault();
+    let target = document.getElementById('modal-update');
+    let config = {
+        childList: true,
+        subtree: true,
+        attributes: true,
+        characterData: true
+    };
 
+    observer.observe(target, config);
+    testObserver.observe(target, config);
+});
+
+let observer = new MutationObserver(function () {
+    let submit = document.getElementById("subscribeSubmit");
+
+    if(submit){
+        submit.addEventListener("click", function (e) {
+            e.preventDefault();
+            subscribe();
+        });
+    }
+});
+
+
+
+function subscribe() {
     let formData = $('#subscribeForm').serialize();
 
     $.ajax({
@@ -13,6 +36,5 @@ $('#subscribeForm').submit(function(event) {
         $('#subscriberEmail').val('');
         document.getElementById('submitedText').innerHTML = ('You have been added');
 
-
     });
-});
+}

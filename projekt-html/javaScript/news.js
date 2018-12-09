@@ -43,7 +43,7 @@ xmlhttp.onreadystatechange = function()
                 }
                 else {
                     let articleText = data[y].ArticleText;
-                    newContent += '<p class="newsText">' + articleText + '</p>';
+                    newContent += '<p class="newsOnlyText">' + articleText + '</p>';
                 }
                 newContent += '</div>';
                 newContent += '</article>';
@@ -115,8 +115,6 @@ setTimeout(function () {
 
     }
 },1000);
-
-
 
 
 

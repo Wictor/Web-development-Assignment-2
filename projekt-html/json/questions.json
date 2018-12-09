@@ -2,27 +2,31 @@
   "questions" : [
     {
       "question" : "IT?",
-      "option 1" : "Mycket",
-      "option 2" : "Lite",
-      "option 3" : "Inte alls"
-    },
-    {
-      "question" : "Jobba med människor?",
-      "option 1" : "Mycket",
-      "option 2" : "Lite",
-      "option 3" : "Inte alls"
+      "image": "images/testIT.png",
+      "option1" : "Mycket",
+      "option2" : "Lite",
+      "option3" : "Inte alls"
     },
     {
       "question" : "Design?",
-      "option 1" : "Mycket",
-      "option 2" : "Lite",
-      "option 3" : "Inte alls"
+      "image": "images/testDesign.jpeg",
+      "option1" : "Mycket",
+      "option2" : "Lite",
+      "option3" : "Inte alls"
     },
     {
-      "question" : "Intresse för språk",
-      "option 1" : "Mycket",
-      "option 2" : "Lite",
-      "option 3" : "Inte alls"
+      "question" : "Jobba med människor?",
+      "image": "images/testFolk.jpeg",
+      "option1" : "Mycket",
+      "option2" : "Lite",
+      "option3" : "Inte alls"
+    },
+    {
+      "question" : "Jobba inom LSS",
+      "image": "images/testLSS.jpeg",
+      "option1" : "Mycket",
+      "option2" : "Lite",
+      "option3" : "Inte alls"
     }
   ]
 }

@@ -107,17 +107,15 @@ body {
     grid-template-columns: 30% 1fr;
     grid-gap: $margin;
     cursor: pointer;
+  }
+  .newsOnlyText {
+    grid-row: 2/-1;
+    grid-column: 1;
+    margin: 10px 10px 0 10px;
 
-    .newsOnlyTitle {
-      grid-row: 1;
-      grid-column: 2;
-      background: $background-color;
-      padding: 10px;
-      border-radius: 5%;
-
-    }
   }
 }
+
 
 
 
