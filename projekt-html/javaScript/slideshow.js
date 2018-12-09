@@ -7,7 +7,8 @@ $(document).ready(function () {
     updateSlide += '<h1 id="slideTitle"></h1>';
     updateSlide += '<a class="prev" onclick="prevSlide()">&#10094;</a>'
     updateSlide += '<a class="next" onclick="nextSlide()">&#10095;</a>'
-    updateSlide += '<p id="slideText"></p>';
+    updateSlide += '<p id="slideText1"></p>';
+    updateSlide += '<p id="slideText2"></p>';
 
 
     document.getElementById('slideUpdate').innerHTML = updateSlide;
@@ -69,7 +70,8 @@ function changeSlide(y) {
 
             document.getElementById("slideImg").src = data.slides[y].image;
             document.getElementById('slideTitle').innerHTML = data.slides[y].title;
-            document.getElementById('slideText').innerHTML = data.slides[y].text;
+            document.getElementById('slideText1').innerHTML = data.slides[y].text1;
+            document.getElementById('slideText2').innerHTML = data.slides[y].text2;
         }
     };
     xhr.open('GET', 'json/slides.json', true);
