@@ -7,9 +7,10 @@ body {
 }
 #mainNews {
   margin: 0;
+  padding-top: 150px;
 
   #news {
-    background-color: #dddddd;
+    background-color: $background-color;
     margin: 0;
     padding: 0;
     font-family: $font-text;
@@ -143,39 +144,12 @@ body {
   }
 }
 
-#modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.6);
-
-  #modal-content {
-    background-color: #f4f4f4;
-    margin: 20% auto;
-    padding: 20px;
-    width: 80%;
-    color: black;
-  }
-  #closeBtn {
-    color: black;
-    float: right;
-    font-size: 30px;
-  }
-  #closeBtn:hover, .closeBtn:focus {
-    color: $footer-color;
-    text-decoration: none;
-    cursor: pointer;
-  }
-}
-
 @media screen and (min-width: 1025px) {
   //Index news section
-
+  #mainNews {
+    margin: 0;
+    padding-top: 100px;
+  }
   #footer {
     grid-template-columns: 1fr 1fr;
 

@@ -1,6 +1,7 @@
 @import "simplevariables";
 
 .java-utb {
+  padding-top: 150px;
 
   .snabbfakta-container {
     max-width: 100%;
@@ -153,6 +154,7 @@
 @media only screen and (min-width: 1025px) {
   .java-utb {
     margin-top: 15px;
+    padding-top: 100px;
 
     .fakta-text {
       top: 40px;

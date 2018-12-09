@@ -1,12 +1,22 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Slabo+27px");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  list-style-type: none; }
+
 .navbar {
-  @import url("https://fonts.googleapis.com/css?family=Slabo+27px");
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  background-color: #f2f2f2;
   /*  transform: scale(1.2); */ }
-  .navbar * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 1% 2% 0 2%;
-    list-style-type: none; }
+  .navbar .navFiller {
+    width: 100%;
+    padding: 0 4%;
+    margin: 0;
+    height: 150px; }
   .navbar #myInput1 {
     font-size: 16px;
     width: 300px;
@@ -131,12 +141,6 @@
     cursor: pointer;
     font-size: 40px; }
 
-#Topbtn {
-  display: none;
-  /* Hidden by default */
-  opacity: 0.0;
-  position: absolute; }
-
 @media screen and (min-width: 1024px) {
   .navbar #myInput {
     font-size: 16px;
@@ -144,6 +148,8 @@
     padding: 14px 5px 12px 5px;
     border: none;
     border-bottom: 1px solid #ddd; }
+  .navbar .navFiller {
+    height: 100px; }
   .navbar #myInput:focus {
     outline: 3px solid #ddd; }
   .navbar .my-search-Dropdown a:hover {
@@ -254,33 +260,6 @@
     justify-content: space-between; }
   .navbar .navbar-toggle {
     display: none; }
-
-  #Topbtn {
-    display: none;
-    /* Hidden by default */
-    position: fixed;
-    /* Fixed/sticky position */
-    bottom: 20px;
-    /* Place the button at the bottom of the page */
-    right: 40px;
-    /* Place the button 30px from the right */
-    /* Make sure it does not overlap */
-    border: none;
-    /* Remove borders */
-    outline: none;
-    /* Remove outline */
-    background-color: #f2f2f4;
-    /* Set a background color */
-    cursor: pointer;
-    /* Add a mouse pointer on hover */
-    padding: 10px;
-    /* Some padding */
-    border-radius: 10px;
-    /* Rounded corners */
-    font-size: 18px;
-    /* Increase font size */
-    -webkit-transform: rotate(180deg);
-    -webkit-animation: fadein 2s; }
 
   @-webkit-keyframes fadein {
     /* Safari and Chrome */

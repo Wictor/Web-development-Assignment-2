@@ -30,6 +30,7 @@ body {
 
 .slideshow {
   margin: 0;
+  padding-top: 150px;
 
   .img-slide {
     width: 100%;
@@ -548,28 +549,37 @@ body {
   margin: $margin;
 }
 .testRadio {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  display: inline-block;
-  background-color: white;
-  color: #666;
   top: 10px;
   height: 30px;
   width: 30px;
+  cursor: pointer;
+  margin: $margin;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  position: relative;
+  background-color: white;
   border: 0;
   border-radius: 50px;
-  cursor: pointer;
-  margin-right: 7px;
   outline: none;
-  margin: $margin;
+  box-shadow: 1px 1px #3c3c3c;
 }
-
 .testRadio:hover {
   background-color: #ddd;
 }
-.testRadio:checked {
-  background-color: black;
+.testRadio:checked::before {
+  position: absolute;
+  font: 13px/1 'Open Sans', sans-serif;
+  left: 11px;
+  top: 7px;
+  content: '\02143';
+  transform: rotate(40deg);
 }
+.form-radio:checked {
+  background-color: white;
+}
+
 #testQuestion {
   font-size: $h-mobile;
   text-align: center;
@@ -606,13 +616,14 @@ body {
 #modal {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 1000;
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
-  overflow: auto;
+  padding-bottom: 500px;
   background-color: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+
 
 }
 #modal-content {
@@ -624,6 +635,8 @@ body {
   border-radius: 1%;
   border: #aeaeae 5px solid;
   max-width: 100%;
+  height: auto;
+  min-height: 100%;
 }
 
 
@@ -841,6 +854,8 @@ hr {
 @media screen and (min-width: 1025px) {
 
   .slideshow {
+    padding-top: 100px;
+
     .slideshow-container {
       .prev, .next {
         padding: 16px;
@@ -1000,10 +1015,13 @@ hr {
 
     }
   }
+
+  #modal {
+    top: -30%;
+  }
   #modal-content {
     width: 50%;
   }
-
   #footer {
     grid-template-columns: 1fr 1fr;
     .footer_two {

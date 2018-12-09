@@ -1,13 +1,29 @@
 @import "simplevariables";
 
+
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  list-style-type: none;
+}
+
 .navbar {
-  @import url('https://fonts.googleapis.com/css?family=Slabo+27px');
-  * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: $margin / 2 $margin 0 $margin;
-    list-style-type: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  background-color: $background-color;
+
+  .navFiller {
+    width: 100%;
+    padding: 0 $margin*2;
+    margin: 0;
+    height: 150px;
+
   }
+
   #myInput1 {
 
     font-size: 16px;
@@ -179,11 +195,6 @@
 
   }
 }
-#Topbtn {
-  display: none; /* Hidden by default */
-  opacity: 0.0;
-  position: absolute;
-}
 
 @media screen and (min-width: 1024px) {
 
@@ -194,6 +205,12 @@
       padding: 14px 5px 12px 5px;
       border: none;
       border-bottom: 1px solid #ddd;
+    }
+
+
+    .navFiller {
+      height: 100px;
+
     }
 
     #myInput:focus {
@@ -362,21 +379,6 @@
     .navbar-toggle {
       display: none;
     }
-  }
-  #Topbtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 40px; /* Place the button 30px from the right *//* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: #f2f2f4; /* Set a background color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 10px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
-    -webkit-transform: rotate(180deg);
-    -webkit-animation: fadein 2s;
   }
 
   @-webkit-keyframes fadein { /* Safari and Chrome */
