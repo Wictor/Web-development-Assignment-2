@@ -19,15 +19,15 @@
 
     <nav class="navbar">
         <div class="navFiller">
-            <span class="opennav" onclick="openNav()">&#9776;</span>
+            <span class="opennav navChange" onclick="openNav()">&#9776;</span>
             <a class="logo1" href="index.html"><img src="images/campuslogo2.png"></a>
 
-            <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times; Close</a>
+            <div id="mySidenav" class="sidenav navChange">
+                <a href="javascript:void(0)" class="closebtn navChange" onclick="closeNav()">&times; Close</a>
                 <a href="apply.html" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/reviewer-male-filled.png"/><p>Ansök</p></a>
 
-                <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/graduation-cap-filled.png"/> <p>Utbildn..</p></a>
-                <a href="#" class="dropdown-icon"><img src="https://img.icons8.com/metro/30/ffffff/expand-arrow.png" onclick="myFunction('utb-links')"/></a>
+                <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/graduation-cap-filled.png" class="navChange"/> <p class="navChange">Utbildn..</p></a>
+                <a href="#" class="dropdown-icon navChange"><img src="https://img.icons8.com/metro/30/ffffff/expand-arrow.png" class="navChange" onclick="myFunction('utb-links')"/></a>
                 <div id="utb-links">
                     <a href="#">Yrkeshögskola</a>
                     <a href="#">Grundläggande Gymna...</a>
@@ -42,10 +42,10 @@
                 <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/company-filled.png"/><p>Företag</p></a>
                 <a href="Contact.html" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/phone-filled.png"/><p>Kontakt</p></a>
 
-                <div onclick="mysearchFunction()">
-                    <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/search-filled.png"><p>Sök</p></a>
+                <div onclick="mysearchFunction1()">
+                    <a href="#" class="nav-links navChange"><img src="https://img.icons8.com/ios/50/E75459/search-filled.png" class="searchOpen navChange"><p  class="searchOpen navChange">Sök</p></a>
                 </div>
-                <div class="dropdown-search1">
+                <div id="searchDropdown" class="dropdown-search1">
                     <div id="my-search-Dropdown1" class="dropdown-search-content1">
                         <input type="text" placeholder="Search.." id="myInput1" onkeyup="filterFunction1()">
                         <a href="#Studier">Studier</a>
@@ -83,7 +83,7 @@
                     </li>
 
                     <div class="hover-nav-links">
-                        <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/graduation-cap-filled.png" onclick="myFunction('utb-linkspc')"/><span class="icon_text">Utbildningar</span></a>
+                        <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/graduation-cap-filled.png" onclick="myFunction('utb-linkspc')"/><span onclick="myFunction('utb-linkspc')" class="icon_text">Utbildningar</span></a>
                     </div>
 
 
@@ -116,8 +116,8 @@
                     </li>
                     <li>
                         <div class="hover-nav-links">
-                            <div onclick="mysearchFunction()">
-                                <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/search-filled.png"/><span class="icon_text">Sök</span></a>
+                            <div class="searchOpen" onclick="mysearchFunction()">
+                                <a href="#" class="nav-links searchOpen"><img src="https://img.icons8.com/ios/50/E75459/search-filled.png"  class="searchOpen" /><span class="icon_text searchOpen">Sök</span></a>
                             </div>
                         </div>
                     </li>

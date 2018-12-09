@@ -448,6 +448,7 @@ h2 {
   z-index: 1000;
   left: 0;
   top: 0;
+  margin: auto;
   width: 100%;
   padding-bottom: 500px;
   background-color: rgba(0, 0, 0, 0.6);
@@ -718,7 +719,7 @@ hr {
       text-align: center; }
 
   #modal {
-    top: -30%; }
+    margin: auto; }
 
   #modal-content {
     width: 50%; }
