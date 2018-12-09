@@ -41,7 +41,6 @@ function openNav() {
 function closeNav() {
 
     document.getElementById("mySidenav").style.width = "0";
-    document.getElementsByTagName("body")[0].style.marginRight = "0";
     document.getElementsByClassName("logo1")[0].style.marginRight = "0";
 }
 
