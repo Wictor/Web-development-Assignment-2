@@ -8,6 +8,23 @@ window.onload=function() {
     });
 };
 
+
+$('body').on('click',function(event){
+    if(!$(event.target).is('.searchOpen')) {
+        var y = document.getElementById("my-search-Dropdown");
+        y.style.display = "none";
+    }
+});
+$('body').on('click',function(event){
+    if(!$(event.target).is('.navChange')) {
+
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementsByTagName("body")[0].style.marginRight = "0";
+        document.getElementsByClassName("logo1")[0].style.marginRight = "0";
+    }
+});
+
+
 function myFunction(id) {
     var x = document.getElementById(id);
     if (x.style.display === "block") {
@@ -19,12 +36,15 @@ function myFunction(id) {
 function openNav() {
 
     document.getElementById("mySidenav").style.width = "350px";
-    document.getElementById("main").style.marginRight = "350px";
+    document.getElementsByTagName("body")[0].style.marginRight = "350px";
+    document.getElementsByClassName("logo1")[0].style.marginRight = "350px";
 }
 
 function closeNav() {
+
     document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginRight= "0";
+    document.getElementsByTagName("body")[0].style.marginRight = "0";
+    document.getElementsByClassName("logo1")[0].style.marginRight = "0";
 }
 
 function mysearchFunction() {

@@ -24,11 +24,11 @@
 
     <nav class="navbar">
         <div class="navFiller">
-            <span class="opennav" onclick="openNav()">&#9776;</span>
+            <span class="opennav navChange" onclick="openNav()">&#9776;</span>
             <a class="logo1" href="index.html"><img src="images/campuslogo2.png"></a>
 
             <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times; Close</a>
+                <a href="javascript:void(0)" class="closebtn navChange" onclick="closeNav()">&times; Close</a>
                 <a href="apply.html" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/reviewer-male-filled.png"/><p>Ansök</p></a>
 
                 <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/graduation-cap-filled.png"/> <p>Utbildn..</p></a>
@@ -48,9 +48,9 @@
                 <a href="Contact.html" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/phone-filled.png"/><p>Kontakt</p></a>
 
                 <div onclick="mysearchFunction1()">
-                    <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/search-filled.png"><p>Sök</p></a>
+                    <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/search-filled.png" class="searchOpen"><p  class="searchOpen">Sök</p></a>
                 </div>
-                <div class="dropdown-search1">
+                <div id="searchDropdown" class="dropdown-search1">
                     <div id="my-search-Dropdown1" class="dropdown-search-content1">
                         <input type="text" placeholder="Search.." id="myInput1" onkeyup="filterFunction1()">
                         <a href="#Studier">Studier</a>
@@ -121,8 +121,8 @@
                     </li>
                     <li>
                         <div class="hover-nav-links">
-                            <div onclick="mysearchFunction()">
-                                <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/search-filled.png"/><span class="icon_text">Sök</span></a>
+                            <div class="searchOpen" onclick="mysearchFunction()">
+                                <a href="#" class="nav-links searchOpen"><img src="https://img.icons8.com/ios/50/E75459/search-filled.png"  class="searchOpen" /><span class="icon_text searchOpen">Sök</span></a>
                             </div>
                         </div>
                     </li>
@@ -132,130 +132,133 @@
     </nav>
 
 </header>
-
-<section class="slideshow" id="slideshow">
-    <div class="slideshow-container">
-        <div class="mySlides fade" id="slideUpdate">
-        </div>
-    </div>
-
-
-
-    <div id="activeDot" style="text-align:center">
-        <span class="dot active" onclick="changeSlide(0)"></span>
-        <span class="dot" onclick="changeSlide(1)"></span>
-        <span class="dot" onclick="changeSlide(2)"></span>
-        <span class="dot" onclick="changeSlide(3)"></span>
-        <span class="dot" onclick="changeSlide(4)"></span>
-    </div>
-</section>
-
-
-<!--- Lucie welcome section-->
-<section id="welcome">
-    <h1 class="centered"> Välkommen till Campus Mölndal</h1>
-    <p> Campus Mölndal är en samlingsplats för all vuxenutbildning inom Mölndals stad.
-        Hos oss kan du studera på alla nivåer - från kurser motsvarande grundskola, till
-        eftergymnasial nivå i form av yrkeshögskola. Du kan också få råd, information och stöd
-        i planering av dina studier av våra studie- och yrkesvägledare.</p>
-    <p> </p>
-    <p class="special"> Gör ett test för att veta vilken utbildning som passar dig! </p>
-    <p class="special"> Tveka inte att kontakta oss om du har fler frågor! </p>
-
-</section>
-
-
-
-
-<section id="grid-container-option">
-
-    <article class="option" id="testOption">
-        <button class="modalButton" id="test"> Gör testet!</button>
-    </article>
-
-
-    <div class="option" id="contactOption">
-        <a href="Contact.html" alt="kontakta oss"> <br> <p> Kontakta oss </p></a>
-    </div>
-
-</section>
-
-<section id="percentil">
-    <div class="mySquare" id="mySquare1">
-        <img src="images/getjob.png" alt="Get job" />
-        <p> <b class="special-headline">84%</b> <br> Får jobb efter vo-examen </p>
-    </div>
-
-    <div class="mySquare" id="mySquare2">
-        <img src="images/recommend.png" alt="Recommend us" />
-
-        <p> <b class="special-headline">81%</b> <br>  Av SFI-eleverna rekommenderar oss </p>
-    </div>
-
-    <div class="mySquare" id="mySquare3">
-        <img src="images/teacher.png" alt="Teachers" />
-        <p><b class="special-headline">100%</b> <br>  Behöriga lärare </p>
-    </div>
-
-</section>
-
-<!-- Lucie start recommendation + calender section-->
-<section id="grid-container-review">
-
-    <div class="reviewPart">
-
-
-        <div class="myReview">
-            <img src="images/maria.jpg" alt="Maria review" />
+<main>
+    <section class="slideshow" id="slideshow">
+        <div class="slideshow-container">
+            <div class="mySlides fade" id="slideUpdate">
+            </div>
         </div>
 
-        <div class="myReview">
-            <img src="images/peter.jpg" alt="Peter review" />
+
+
+        <div id="activeDot" style="text-align:center">
+            <span class="dot active" onclick="changeSlide(0)"></span>
+            <span class="dot" onclick="changeSlide(1)"></span>
+            <span class="dot" onclick="changeSlide(2)"></span>
+            <span class="dot" onclick="changeSlide(3)"></span>
+            <span class="dot" onclick="changeSlide(4)"></span>
+        </div>
+    </section>
+
+
+    <!--- Lucie welcome section-->
+    <section id="welcome">
+        <h1 class="centered"> Välkommen till Campus Mölndal</h1>
+        <p> Campus Mölndal är en samlingsplats för all vuxenutbildning inom Mölndals stad.
+            Hos oss kan du studera på alla nivåer - från kurser motsvarande grundskola, till
+            eftergymnasial nivå i form av yrkeshögskola. Du kan också få råd, information och stöd
+            i planering av dina studier av våra studie- och yrkesvägledare.</p>
+        <p> </p>
+        <p class="special"> Gör ett test för att veta vilken utbildning som passar dig! </p>
+        <p class="special"> Tveka inte att kontakta oss om du har fler frågor! </p>
+
+    </section>
+
+
+
+
+    <section id="grid-container-option">
+
+        <article class="option" id="testOption">
+            <button class="modalButton" id="test"> Gör testet!</button>
+        </article>
+
+
+        <div class="option" id="contactOption">
+            <a href="Contact.html" alt="kontakta oss"> <br> <p> Kontakta oss </p></a>
+        </div>
+
+    </section>
+
+    <section id="percentil">
+        <div class="mySquare" id="mySquare1">
+            <img src="images/getjob.png" alt="Get job" />
+            <p> <b class="special-headline">84%</b> <br> Får jobb efter vo-examen </p>
+        </div>
+
+        <div class="mySquare" id="mySquare2">
+            <img src="images/recommend.png" alt="Recommend us" />
+
+            <p> <b class="special-headline">81%</b> <br>  Av SFI-eleverna rekommenderar oss </p>
+        </div>
+
+        <div class="mySquare" id="mySquare3">
+            <img src="images/teacher.png" alt="Teachers" />
+            <p><b class="special-headline">100%</b> <br>  Behöriga lärare </p>
+        </div>
+
+    </section>
+
+    <!-- Lucie start recommendation + calender section-->
+    <section id="grid-container-review">
+
+        <div class="reviewPart">
+
+
+            <div class="myReview">
+                <img src="images/maria.jpg" alt="Maria review" />
+            </div>
+
+            <div class="myReview">
+                <img src="images/peter.jpg" alt="Peter review" />
+
+            </div>
+        </div>
+
+        <div id="grid-container-calender">
+
+            <h1> Kommande händelser </h1>
+            <section id="upcomingEvents"> <!-- loads event data from json file through javascript -->
+
+            </section>
+        </div>
+
+        <div id="subscribe-container">
+            <div id="subscribeText">
+            <h4> Prenumenera på vårt nyhetsbrev! </h4>
+            </div>
+            <button class="modalButton" id="subscribe">Prenumenera</button>
+        </div>
+
+
+    </section>
+
+
+
+
+    <!--- end Lucie section recommendation and calendar-->
+
+    <section id="news">
+        <div class="newsHeader">
+            <h2>Aktuellt</h2>
+        </div>
+        <div id="newsSection">
 
         </div>
-    </div>
+        <div id="moreNews">
+            <a id="moreNewsText" href="news.html">Fler Nyheter</a>
+        </div>
+    </section>
 
-    <div id="grid-container-calender">
-
-        <h1> Kommande händelser </h1>
-        <section id="upcomingEvents"> <!-- loads event data from json file through javascript -->
-
-        </section>
-    </div>
-
-    <div id="subscribe-container">
-        <h4> Prenumenera på vårt nyhetsbrev! </h4>
-        <button class="modalButton" id="subscribe">Prenumenera</button>
-    </div>
-
-
-</section>
-
-
-
-
-<!--- end Lucie section recommendation and calendar-->
-
-<section id="news">
-    <div class="newsHeader">
-        <h2>Aktuellt</h2>
-    </div>
-    <div id="newsSection">
-
-    </div>
-    <div id="moreNews">
-        <a id="moreNewsText" href="news.html">Fler Nyheter</a>
-    </div>
-</section>
-
-<!--- Modal-->
-<div id="modal">
-    <div id="modal-content">
-        <span id="closeBtn">&times;</span>
-        <div id="modal-update">
+    <!--- Modal-->
+    <div id="modal">
+        <div id="modal-content">
+            <span id="closeBtn">&times;</span>
+            <div id="modal-update">
+            </div>
         </div>
     </div>
-</div>
+</main>
 
 <footer id="footer">
     <section>

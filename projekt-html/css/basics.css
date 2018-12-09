@@ -243,19 +243,18 @@ body {
         padding: 5px;
         color: #E85459; }
   #grid-container-review #subscribe-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+    display: flex;
+    flex-direction: column;
     margin: 4%;
     background-color: white; }
+    #grid-container-review #subscribe-container #subscribeText {
+      margin: auto auto; }
     #grid-container-review #subscribe-container h4 {
       font-size: 28px;
       font-family: "Cardo", serif;
       color: #E85459;
       text-align: left;
-      display: inline;
-      margin-top: 40px;
-      margin-left: 30px; }
+      display: inline; }
     #grid-container-review #subscribe-container .modalButton {
       object-fit: none;
       border: none;
@@ -271,7 +270,7 @@ body {
       height: 40%;
       cursor: pointer;
       border-radius: 5px;
-      margin: auto 20px auto auto; }
+      margin: 2% auto 2% auto; }
     #grid-container-review #subscribe-container .modalButton:hover {
       background-color: rgba(0, 0, 0, 0.6);
       color: white; }
@@ -325,7 +324,7 @@ h2 {
     margin: 0 auto; }
 
 #moreNews {
-  margin: 20% 0 2% 0;
+  margin: 100px 0 2% 0;
   text-align: center; }
   #moreNews #moreNewsText {
     background-color: #000000;
@@ -392,7 +391,6 @@ h2 {
   margin: 2%;
   -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;
   display: inline-block;
   position: relative;
   background-color: white;
@@ -583,6 +581,7 @@ hr {
             margin: 0; }
     #grid-container-review #subscribe-container {
       background-color: white;
+      flex-direction: row;
       border-radius: 3px;
       grid-column: 1;
       grid-row: 2;
@@ -590,17 +589,21 @@ hr {
       width: 100%;
       max-height: 100%;
       margin: 0; }
+      #grid-container-review #subscribe-container #subscribeText {
+        margin: auto 2%;
+        padding: 15px; }
       #grid-container-review #subscribe-container h4 {
         color: #E85459;
-        font-family: "Cardo", serif;
-        margin: 30px 0 10px 30px; }
+        font-family: "Cardo", serif; }
       #grid-container-review #subscribe-container .modalButton {
         background-color: black;
         display: inline;
+        flex-direction: row;
         color: white;
         border: none;
         border-radius: 3px;
-        padding: 5px; }
+        padding: 5px;
+        margin: auto 2% auto auto; }
       #grid-container-review #subscribe-container .modalButton:hover {
         background-color: #9C292D;
         color: white; }
@@ -695,7 +698,14 @@ hr {
             text-align: center;
             margin: 0; }
     #grid-container-review #subscribe-container {
-      margin: 0; }
+      margin: 0;
+      flex-direction: row; }
+      #grid-container-review #subscribe-container #subscribeText {
+        margin: auto 2%;
+        padding: 20px; }
+      #grid-container-review #subscribe-container .modalButton {
+        margin: auto 2% auto auto;
+        width: 30%; }
 
   #news {
     margin: 2%; }

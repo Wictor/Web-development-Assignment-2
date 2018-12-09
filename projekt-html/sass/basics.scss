@@ -188,6 +188,7 @@ body {
       outline: none;
       padding-left: 20px;
       cursor: pointer;
+
     }
   }
 
@@ -356,11 +357,14 @@ body {
     }
   }
   #subscribe-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+    display: flex;
+    flex-direction: column;
     margin: $margin*2;
     background-color: $secondary-background;
+
+    #subscribeText {
+        margin: auto auto;
+      }
 
     h4 {
       font-size: $h-mobile;
@@ -368,8 +372,8 @@ body {
       color: $color-link;
       text-align: left;
       display: inline;
-      margin-top: 40px;
-      margin-left: 30px;
+      //margin-top: 40px;
+     // margin-left: 30px;
     }
 
     .modalButton {
@@ -387,7 +391,7 @@ body {
       height: 40%;
       cursor: pointer;
       border-radius: 5px;
-      margin: auto 20px auto auto;
+      margin: $margin auto $margin auto;
     }
     .modalButton:hover {
       background-color: rgba(0, 0, 0, 0.6);
@@ -465,7 +469,7 @@ body {
   }
 
   #moreNews {
-    margin: $margin*10 0 $margin 0;
+    margin: 100px 0 $margin 0;
     text-align: center;
 
     #moreNewsText {
@@ -556,7 +560,6 @@ body {
   margin: $margin;
   -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;
   display: inline-block;
   position: relative;
   background-color: white;
@@ -811,6 +814,7 @@ hr {
 
     #subscribe-container {
       background-color: $secondary-background;
+      flex-direction: row;
       border-radius: 3px;
       grid-column: 1;
       grid-row: 2;
@@ -819,21 +823,25 @@ hr {
       max-height: 100%;
       margin: 0;
 
-
+      #subscribeText {
+        margin: auto $margin;
+        padding: 15px;
+      }
       h4 {
         color: $color-link;
         font-family: $font-headline;
-        margin: 30px 0 10px 30px;
+
       }
 
       .modalButton {
         background-color: black;
         display: inline;
+        flex-direction: row;
         color: white;
         border: none;
         border-radius: 3px;
         padding: 5px;
-
+        margin: auto $margin auto auto;
       }
       .modalButton:hover {
         background-color: #9C292D;
@@ -997,6 +1005,16 @@ hr {
 
     #subscribe-container {
       margin: 0;
+      flex-direction: row;
+
+      #subscribeText {
+        margin: auto $margin;
+        padding: 20px;
+      }
+      .modalButton {
+        margin: auto $margin auto auto;
+        width: 30%;
+      }
     }
   }
 
