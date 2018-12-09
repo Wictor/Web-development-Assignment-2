@@ -5,6 +5,8 @@ $(document).ready(function () {
     updateSlide += '<img src="" class="img-slide" id="slideImg">';
     updateSlide += '<div class="slide-text">';
     updateSlide += '<h1 id="slideTitle"></h1>';
+    updateSlide += '<a class="prev" onclick="prevSlide()">&#10094;</a>'
+    updateSlide += '<a class="next" onclick="nextSlide()">&#10095;</a>'
     updateSlide += '<p id="slideText"></p>';
 
 
