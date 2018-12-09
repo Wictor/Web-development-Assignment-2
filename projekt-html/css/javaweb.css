@@ -1,131 +1,160 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
-.java-utb {
-  margin: 20px;
-  padding-bottom: 20px;
-  padding-top: 20px; }
-
-.snabbfakta-container {
+.java-utb .snabbfakta-container {
   max-width: 100%;
   position: relative;
-  margin: 1% 0 0 0;
   padding: 0; }
-
-.img-fakta {
-  width: 100%;
-  max-height: 79vh; }
-
-.snabbfakta {
+.java-utb .img-fakta {
+  width: 100%; }
+.java-utb .snabbfakta {
   max-width: 100%;
   position: relative;
-  margin: 1% 0 0 0;
+  margin: 0;
   padding: 0; }
-
-.fakta-text {
+.java-utb .fakta-text {
   color: #000000;
   font-family: "Cardo", serif;
-  padding: 8px 12px;
-  position: relative;
-  margin-left: 7%; }
-  .fakta-text h1 {
-    text-align: left;
-    margin-top: -35%;
-    font-size: 40px;
-    font-family: "Cardo", serif;
-    color: #000000; }
-  .fakta-text h2 {
-    margin-left: 2%;
-    margin-bottom: -1%; }
-  .fakta-text p {
-    width: 40%;
-    text-align: left;
-    font-size: 15px; }
-  .fakta-text li {
-    font-family: "Open sans", sans-serif; }
-
-hr {
-  width: 95%;
-  margin-top: 10px;
-  margin-bottom: 10px; }
-
-.lista-kurser {
-  margin-left: 35%; }
-
-.img-7 {
-  position: relative;
-  width: 100%;
-  margin-left: 20%; }
-
-.img-it {
-  position: relative;
-  margin-right: 7%;
-  margin-bottom: 2%; }
-
-.section-java {
-  clear: both;
   padding: 0;
-  margin: 5px; }
-  .section-java h1 {
-    margin-left: 10px;
-    margin-top: 20px; }
-  .section-java h2 {
-    margin-left: 200px;
-    margin-top: 70px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  margin-left: 4%; }
+  .java-utb .fakta-text h1 {
+    text-align: left;
+    margin: 2% 0 0 2%;
+    font-size: 25px;
+    font-family: "Cardo", serif;
     color: #E85459; }
-  .section-java p {
-    font-size: 15px;
-    margin-left: 3px; }
-  .section-java li {
-    font-family: "Open sans", sans-serif;
-    font-size: 12px;
-    margin-left: 0; }
+  .java-utb .fakta-text h2 {
+    font-size: 13px;
+    margin: 0 0 0 2%; }
+  .java-utb .fakta-text .hide {
+    display: none; }
+  .java-utb .fakta-text ul {
+    margin: 0; }
+    .java-utb .fakta-text ul li {
+      font-family: "Open sans", sans-serif;
+      max-width: 40%;
+      text-align: left;
+      font-size: 10px; }
 
-.section-ansokan h1 {
-  margin-left: 10px;
-  margin-top: 20px; }
-.section-ansokan h2 {
-  margin-left: 180px;
-  margin-top: 20px;
-  color: #E85459; }
-.section-ansokan p {
-  font-size: 15px;
-  margin-left: 3px; }
-
-.ansokan h1 {
-  text-align: center;
-  margin-top: 120px;
-  margin-left: 100px; }
-.ansokan p {
-  text-align: center;
-  margin-left: 100px; }
-
-/*  COLUMN SETUP  */
-.utb-kontakt {
+.group {
   display: grid;
-  height: 100%;
-  width: 820px;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr; }
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
+  margin: 0 4%; }
+  .group p {
+    text-align: left; }
+  .group #sec1 {
+    margin: 0 2%; }
+    .group #sec1 .hide {
+      display: none; }
+  .group #sec2 {
+    display: none; }
+  .group #sec3 {
+    margin: 0 2%; }
+  .group #sec4 {
+    margin: 0 2%; }
+    .group #sec4 li {
+      font-family: "Open sans", sans-serif; }
 
-.col {
-  display: block;
-  float: left;
-  margin: 1% 0 1% 1.6%; }
-  .col:first-child {
-    margin-left: 70px; }
+#section-ansokan {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  margin: 0 4%; }
+  #section-ansokan p {
+    text-align: left; }
+  #section-ansokan #ansok1 {
+    margin: 0 2%; }
+    #section-ansokan #ansok1 li {
+      font-family: "Open sans", sans-serif;
+      font-size: 18px; }
+  #section-ansokan #ansok2 {
+    margin: 0 2%; }
 
-/*  GRID OF TWO  */
-.span_2_of_2 {
-  width: 80%; }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .java-utb {
+    margin-top: 15px; }
+    .java-utb .fakta-text {
+      top: 20px;
+      left: 10px; }
+      .java-utb .fakta-text h1 {
+        font-size: 27px; }
+      .java-utb .fakta-text h2 {
+        font-size: 18px; }
+      .java-utb .fakta-text .hide {
+        margin-top: 20px;
+        display: block; }
+      .java-utb .fakta-text ul {
+        margin: 0; }
+        .java-utb .fakta-text ul li {
+          max-width: 100%;
+          margin: 0;
+          font-size: 16px; }
 
-.span_1_of_2 {
-  width: 40%; }
+  .group {
+    margin: 0 2%; }
 
-/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
-@media only screen and (max-width: 480px) {
-  .col {
-    margin: 1% 0 1% 0; } }
-@media only screen and (max-width: 480px) {
-  .span_2_of_2, .span_1_of_2 {
-    width: 100%; } }
+  #section-ansokan {
+    margin: 0 2%; } }
+@media only screen and (min-width: 1025px) {
+  .java-utb {
+    margin-top: 15px; }
+    .java-utb .fakta-text {
+      top: 40px;
+      left: 20px; }
+      .java-utb .fakta-text h1 {
+        font-size: 40px; }
+      .java-utb .fakta-text h2 {
+        font-size: 30px; }
+      .java-utb .fakta-text .hide {
+        margin-top: 30px;
+        display: block; }
+      .java-utb .fakta-text ul {
+        margin: 0; }
+        .java-utb .fakta-text ul li {
+          max-width: 100%;
+          margin: 0;
+          font-size: 16px; }
+
+  h1 {
+    margin-left: 4%; }
+
+  .group {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    margin: 50px 4% 2% 4%;
+    grid-gap: 2%; }
+    .group h1 {
+      margin-left: 0; }
+    .group p {
+      text-align: justify; }
+    .group #sec1 {
+      height: auto;
+      margin-left: 0; }
+      .group #sec1 #visible {
+        margin-top: 0; }
+    .group #sec2 {
+      display: block; }
+    .group #sec3 {
+      margin-left: 0; }
+    .group #sec4 {
+      padding-left: 50px; }
+      .group #sec4 h2 {
+        font-size: 27px;
+        color: #E85459; }
+      .group #sec4 ul {
+        padding-left: 17px; }
+
+  #section-ansokan {
+    margin: 0 4% 50px 4%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto; }
+    #section-ansokan h1 {
+      margin-left: 0; }
+    #section-ansokan #ansok1 {
+      margin: 0; }
+    #section-ansokan #ansok2 {
+      padding-left: 50px; } }
 
 /*# sourceMappingURL=javaweb.css.map */
