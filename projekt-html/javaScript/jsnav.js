@@ -19,7 +19,6 @@ $('body').on('click',function(event){
     if(!$(event.target).is('.navChange')) {
 
         document.getElementById("mySidenav").style.width = "0";
-        document.getElementsByTagName("body")[0].style.marginRight = "0";
         document.getElementsByClassName("logo1")[0].style.marginRight = "0";
     }
 });
@@ -36,7 +35,6 @@ function myFunction(id) {
 function openNav() {
 
     document.getElementById("mySidenav").style.width = "350px";
-    document.getElementsByTagName("body")[0].style.marginRight = "350px";
     document.getElementsByClassName("logo1")[0].style.marginRight = "350px";
 }
 
