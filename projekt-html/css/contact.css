@@ -4,7 +4,9 @@
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   position: center;
-  grid-gap: 15px 50px; }
+  grid-gap: 15px 50px;
+  max-width: 90%;
+  margin: 0 auto; }
   #contact h2 {
     margin-top: 0px; }
 
