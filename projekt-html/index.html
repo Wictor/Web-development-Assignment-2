@@ -133,96 +133,20 @@
 
 <section class="slideshow" id="slideshow">
     <div class="slideshow-container">
-        <div class="mySlides fade">
-            <img src="images/img1.jpg" class="img-slide">
-            <div class="slide-text">
-                <h1>SFI</h1>
-                <br>
-                <br>
-                <br>
-                <p>Du lär dig tala, läsa, skriva och förstå svenska. Du tränar på att använda svenska i vardagslivet,
-                    arbetslivet och i samhället. Du som studerar SFI på Campus Mölndal har 15 timmar schemalagda studier
-                    per vecka. Du kan också studera på kvällstid - 3 timmar per vecka. Utbildningen är gratis och efter
-                    avslutad kurs får du betyg.
-                </p>
-            </div>
-        </div>
-
-        <div class="mySlides fade">
-            <img src="images/img2.jpg" class="img-slide">
-            <div class="slide-text">
-                <h1>Gymnasial utbildning</h1>
-                <br>
-                <br>
-                <br>
-                <p>Utbildning på gymnasienivå har samma läroplan och följer samma kursplaner som på gymnasiet,
-                    men innehåll och studieupplägg är anpassat för vuxna. Till exempel är studierna mer koncentrerade
-                    och antalet undervisningstimmar färre.
-                </p>
-            </div>
-        </div>
-
-        <div class="mySlides fade">
-            <img src="images/img3.jpg" class="img-slide">
-            <div class="slide-text">
-                <h1>Gymnasial vuxenutbildning</h1>
-                <br>
-                <br>
-                <br>
-                <p>En yrkesutbildning ger dig de kunskaper och färdigheter du behöver för att arbeta inom ett visst
-                    yrke. Praktik ingår och utbildningstiden kan vara olika lång beroende på utbildning.
-                    En yrkesutbildning passar dig som har behov av att byta yrkesbana, saknar gymnasieutbildning
-                    eller vill komplettera din yrkesutbildning.
-                </p>
-            </div>
-        </div>
-
-
-        <div class="mySlides fade">
-            <img src="images/img4.jpg" class="img-slide">
-            <div class="slide-text">
-                <h1>Yrkeshögskola</h1>
-                <br>
-                <br>
-                <br>
-                <p>Yrkeshögskoleutbildning i Sverige är en eftergymnasial utbildningsform som kombinerar teoretiska
-                    studier med stark arbetslivsanknytning. Utbildningarna är avgiftsfria och CSN-berättigande.
-                    9/10 har jobb efter avslutad utbildning.
-                </p>
-            </div>
-        </div>
-
-
-        <div class="mySlides fade">
-            <img src="images/img5.jpg" class="img-slide">
-            <div class="slide-text">
-                <h1>IT-projektledare</h1>
-                <h2>- ansök senast 15/12!</h2>
-                <br>
-                <br>
-                <br>
-                <p>Som IT-projektledare arbetar du med att ta fram kundanpassade systemlösningar tillsammans med din
-                    kund och ditt team. Du ansvarar för att driva förstudier och projekt enligt relevant projektmodell
-                    och kvalitetskrav. Efter utbildningen kommer du kunna arbeta med resurs- och tidsplanering,
-                    kostnadsuppföljning och rapportering.
-                </p>
-            </div>
-        </div>
-
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-            <span class="dot" onclick="currentSlide(5)"></span>
+        <div class="mySlides fade" id="slideUpdate">
         </div>
     </div>
-    <br>
 
+        <a class="prev" onclick="prevSlide()">&#10094;</a>
+        <a class="next" onclick="nextSlide()">&#10095;</a>
 
+        <div id="activeDot" style="text-align:center">
+            <span class="dot active" onclick="changeSlide(0)"></span>
+            <span class="dot" onclick="changeSlide(1)"></span>
+            <span class="dot" onclick="changeSlide(2)"></span>
+            <span class="dot" onclick="changeSlide(3)"></span>
+            <span class="dot" onclick="changeSlide(4)"></span>
+        </div>
 </section>
 
 
@@ -365,11 +289,10 @@
 </footer>
 
 
+<script src="javaScript/jquery-3.3.1.min.js"></script>
 <script src="javaScript/jsnav.js"></script>
-<script src="javaScript/scriptslide.js"></script>
 <script src="javaScript/calendarium.js"></script>
 <script src="javaScript/reviewslide.js"></script>
-<script src="javaScript/jquery-3.3.1.min.js"></script>
 <script src="javaScript/questionnaire.js"></script>
 <script src="javaScript/subscriberJs.js"></script>
 <script src="javaScript/news.js"></script>

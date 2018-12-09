@@ -125,7 +125,7 @@ function resultModal(answers) {
 
             newContent += '<h2 id="resultTitle">' +  data.result[z].title  + '</h2>';
             newContent += '<p id="resultText">' +  data.result[z].text  + '</p>';
-            newContent += '<input type="submit" value="Stäng" id="testClose" onclick="closeModal()">';
+            newContent += '<input type="submit" value="Stäng" id="testClose">';
             newContent += '</form>';
 
 

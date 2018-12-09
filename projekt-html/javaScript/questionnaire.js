@@ -3,7 +3,7 @@ let testObserver = new MutationObserver(function () {
     let next = document.getElementById("testNext");
     let prev = document.getElementById("testPrev");
     let finish = document.getElementById("testFinish");
-    let closeQuestion = document.getElementById("closeQuestion");
+    let closeQuestion = document.getElementById("testClose");
     let warning = document.getElementById('testWarning');
 
     if (next) {
@@ -42,7 +42,7 @@ let testObserver = new MutationObserver(function () {
         closeQuestion.addEventListener("click", function (e) {
             e.preventDefault();
             closeModal();
-        })
+        });
     }
 });
 
