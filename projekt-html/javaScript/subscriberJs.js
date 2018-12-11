@@ -34,7 +34,7 @@ function subscribe() {
         data: formData
     }).done(function () {
         $('#subscriberEmail').val('');
-        document.getElementById('submitedText').innerHTML = ('You have been added');
+        document.getElementById('submitedText').innerHTML = ('Du har blivit tillagd');
 
     });
 }

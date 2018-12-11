@@ -19,8 +19,8 @@ function loadModal() {
         newContent += '<p id="subscribeText">Få de senaste nyheterna från oss på Campus mölndal och missa inget av det roliga</p>';
         newContent += '<hr/>';
         newContent += '<form method="post" id="subscribeForm">';
-        newContent += '<input required type="email" id="subscriberEmail" name="subscriberEmail" placeholder="Your email:" />';
-        newContent += '<p id="submitedText">Please enter your email</p>';
+        newContent += '<input required type="email" id="subscriberEmail" name="subscriberEmail" placeholder="Din email:" />';
+        newContent += '<p id="submitedText">Ange din email</p>';
         newContent += '<input type="submit" value="Send" id="subscribeSubmit" />';
         newContent += '</form>';
 
