@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
+a {
+  text-decoration: none;
+  color: #E85459; }
+
 .java-utb {
   padding-top: 150px; }
   .java-utb .snabbfakta-container {
