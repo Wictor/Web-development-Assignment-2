@@ -1,0 +1,50 @@
+{
+  "games": [
+    {
+      "title": "Call of Duty: Black Ops 4",
+      "tag1": "multiplayer",
+      "tag2": "action",
+      "image": "images/cod.jpg",
+      "text": "Lorem ipsum ut sollicitudin volutpat felis consectetur luctus conubia lobortis."
+    },
+    {
+      "title": "Fifa 19",
+      "tag1": "multiplayer",
+      "tag2": "singleplayer",
+      "image": "images/fifa.jpg",
+      "text": "Viverra ac neque porttitor condimentum convallis integer fusce donec eros."
+    },
+    {
+      "title": "Rocket League",
+      "tag1": "multiplayer",
+      "tag2": "singleplayer",
+      "image": "images/rl.jpg",
+      "text": "Duis dictumst pulvinar metus laoreet euismod risus volutpat id vivamus."
+    },
+    {
+      "title": "PlayerUnkown's Battleground",
+      "tag1": "multiplayer",
+      "tag2": "action",
+      "image": "images/pubg.jpg",
+      "text": "Quam duis in venenatis laoreet class semper tincidunt fermentum phasellus."
+    },
+    {
+      "title": "Pathfinder Kingmaker",
+      "tag1": "singleplayer",
+      "tag2": "strategy",
+      "image": "images/pathfinder.jpg",
+      "text": "Ut elit consequat quam pretium orci accumsan felis venenatis nullam."
+    },
+    {
+      "title": "Battlefield V",
+      "tag1": "multiplayer",
+      "tag2": "action",
+      "image": "images/bf.jpg",
+      "text": "Lorem ipsum ut sollicitudin volutpat felis consectetur luctus conubia lobortis."
+    }
+  ]
+}
+
+
+
+

@@ -1,0 +1,479 @@
+/* Vanliga tags */
+body{
+    background-color: #fff;
+    color: black;
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h1{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+h2{
+    margin: 0 0 5px;
+    padding: 0;
+}
+
+p{
+    font-size: 16px;
+    line-height:130%;
+    padding: 0;
+    margin: 0;
+}
+a{
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: black;
+}
+.header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px 0;
+    justify-items: center;
+    align-items: center;
+}
+
+.logo-text {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+.logo-img{
+    width: 45px;
+    height: 45px;
+}
+
+.cart-img {
+    max-width: 45px;
+    max-height: 45px;
+}
+
+.navToggle {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 25px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* Nav */
+nav {
+    background-color: black;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: white;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+nav ul li {
+    cursor: pointer;
+    text-align: center;
+    flex: auto;
+}
+
+nav ul li a {
+    padding: 10px;
+    display: inline-block;
+    width: 90%;
+}
+
+nav li:hover {
+    background-color: #222;
+}
+
+/* Main - Grids */
+.grid-container section{
+    grid-area: main-content;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    display: grid;
+    max-width: 100vw;
+    max-height: 100vh;
+    grid-template-areas:
+            "main-content"
+            "footer";
+}
+
+.games-container section {
+    padding: 10px 0;
+    grid-area: main-content;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    margin: 20px;
+}
+
+/* Main */
+.backgroundPicture {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+    max-height: 100%;
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    overflow: hidden;
+    background: url("../images/CoDBackground.jpg") no-repeat fixed 20% 50%;
+
+}
+
+.mainContent {
+    background-color: transparent;
+    color: white;
+    border-radius: 8%;
+    grid-column: 2 / -1;
+    grid-row: 6 / 6;
+    z-index: 10;
+}
+.mainContent h1{
+    color: white;
+}
+/* Games - Grid*/
+.gameTemplate {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    border-radius: 30px;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+/* Innehåll till Games - Grid */
+.gamePicture {
+    margin-left: auto;
+    margin-right: auto;
+    grid-column: 1 / -1;
+    align-self: center;
+    width: 200px;
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+.gameTitle {
+    grid-column: 1 / -1;
+}
+
+.gameTag {
+    grid-column: 1 / -1;
+    margin: 0 0 5px;
+    padding: 0;
+}
+
+.gameTag span {
+    margin-right: 5px;
+    padding: 3px;
+}
+
+.gameText {
+    grid-column: 1 / -1;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.gameForm {
+    grid-column: 2 / -1;
+}
+
+.amount {
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.gameForm input[type="button"] {
+    box-shadow: 1px 1px 1px 1px grey;
+
+}
+
+.gameForm input[type="button"]:hover {
+    box-shadow: 2px 2px 2px 2px grey;
+}
+
+.gameForm input[type="button"]:focus {
+    outline: none;
+}
+
+.minusBtn {
+    background: transparent;
+    border: 0;
+    color: red;
+    font-size: 25px;
+    margin-right: 10px;
+
+}
+
+.plusBtn {
+    background: transparent;
+    border: 0;
+    color: forestgreen;
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.buyBtn{
+    max-width: 90px;
+    max-height: 20px;
+    overflow: hidden;
+    background: transparent;
+    border: 2px solid #188200;
+    border-radius: 7%;
+}
+
+.buyBtn:hover {
+    box-shadow: 2px 2px black;
+}
+
+.buyBtn:focus {
+    outline: none;
+}
+
+/*Tags till spelen */
+.singleplayer {
+    background-color: black;
+    color: white;
+}
+
+.multiplayer {
+    background-color: red;
+    color: white;
+}
+
+.action{
+    background: skyblue;
+    color: white;
+}
+
+.strategy {
+    background-color: forestgreen;
+    color: white;
+}
+
+/* Footer */
+footer{
+    margin: 0;
+    grid-area: footer;
+    background-color: #dddddd;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    overflow: hidden;
+    height: 250px;
+}
+
+/* Ej klara sidor (Contact, Upcoming, About */
+.underContruction {
+    width: 95vw;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.underContruction p {
+    font-size: 40px;
+}
+
+/* Modal */
+
+#preOrderBtn {
+    background: green;
+    color: white;
+    height: 40px;
+    width: 80px;
+    border: 0;
+    border-radius: 20%;
+    box-shadow: 3px 3px #194619;
+}
+#preOrderBtn:hover {
+    background: #009f00;
+    box-shadow: 3px 3px #328432;
+}
+#preOrderBtn:focus {
+    outline: none;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.modal-content {
+    background-color: #f4f4f4;
+    margin: 20% auto;
+    padding: 20px;
+    width: 80%;
+    color: black;
+}
+.closeBtn {
+    color: black;
+    float: right;
+    font-size: 30px;
+}
+.closeBtn:hover,.closeBtn:focus {
+    color: #0c7900;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.contactContainer {
+    max-width: 350px;
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+
+#contact h3 {
+    display: block;
+    font-size: 30px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#contact input[type="text"] {
+    width: 90%;
+    background: #FFF;
+    margin: 10px 0;
+    padding: 10px;
+}
+#contact input[type="email"] {
+    width: 90%;
+    background: #FFF;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+#contact #contactComment {
+    width: 90%;
+    background: #FFF;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+#contact #contactComment {
+    height: 200px;
+    max-width: 100%;
+    resize: none;
+}
+
+#contact button {
+    cursor: pointer;
+    width: 95%;
+    border: none;
+    background: #4CAF50;
+    color: #FFF;
+    padding: 10px;
+    font-size: 15px;
+    margin: 0 0 20px;
+}
+
+#contact input:focus,
+#contact #contactComment:focus {
+    outline: 0;
+    border: 1px solid #aaa;
+}
+
+
+
+/* Mobile */
+@media screen and (max-width: 600px){
+    h1{font-size: 40px;}
+
+    p{font-size: 16px;}
+
+    a{font-size: 15px;}
+
+    nav ul {flex-direction: column;}
+
+    #navBar{display: none;}
+
+    .logo-img {display: flex;}
+
+    .logo-text {display: none;}
+
+    .games-container section {grid-template-columns: 1fr;}
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    h1{font-size: 30px;}
+
+    p{font-size: 14px;}
+
+    a{font-size: 15px;}
+
+    nav ul {display: flex; flex-direction: row;}
+
+    #navBar{display: flex;}
+
+    #navToggle{display: none;}
+
+    .logo-text {display: contents;}
+
+    .games-container section {grid-template-columns: 1fr 1fr;}
+}
+
+/* Desktop */
+@media screen and (min-width: 1025px) {
+    h1{font-size: 30px;}
+
+    p{font-size: 14px;}
+
+    a{font-size: 15px;}
+
+    nav ul {display: flex; flex-direction: row;}
+
+    #navBar{display: flex;}
+
+    #navToggle{display: none;}
+
+    .logo-text {display: contents;}
+
+    .games-container section {grid-template-columns: 1fr 1fr 1fr;}
+}
